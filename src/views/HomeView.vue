@@ -10,12 +10,12 @@
                         <img src="../assets/images/kingsmead_front-page.jpg" class="w-full h-screen object-cover"
                             alt="">
                         <span
-                            class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50  w-full h-full top-0"></span>
-                        <div class="absolute top-1/2 -translate-y-1/2 w-9/12 md:w-8/12 xl:w-5/12 md:left-28 left-10">
-                            <h1 class="text-6xl xl:text-8xl font-extrabold text-blue-50">{{ item.title }}</h1>
+                            class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0"></span>
+                        <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-5/12 md:left-28 left-10">
+                            <h1 class="text-5xl xl:text-8xl font-extrabold text-blue-50">{{ item.title }}</h1>
                             <div class="btn-group max-sm:flex-col flex flex-row my-8 text-3xl">
                                 <button
-                                    class="py-4 md:w-1/2 bg-white rounded-full mr-4 hover:bg-transparent hover:text-white hover:ring ring-white">{{
+                                    class="py-4 md:w-1/2 text-blue-800 bg-white rounded-full mr-4 hover:bg-transparent hover:text-white hover:ring ring-white">{{
                                             item.btn1.name
                                     }}</button>
                                 <button
