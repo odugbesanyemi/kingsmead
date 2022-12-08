@@ -11,14 +11,14 @@ export default defineConfig({
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
   },
-  build:{
-    rollupOptions:{
-      input:{
-        main:resolve(__dirname,'index.html'),
-        college:resolve(__dirname,'pages/college/index.html'),
-        Elementary:resolve(__dirname,'pages/Elementary/index.html'),
-        preSchool:resolve(__dirname,'pages/pre-school/index.html')
-      }
-    }
-  }
+  // build:{
+  //   rollupOptions:{
+  //     input:{
+  //       main:resolve(__dirname,'index.html'),
+  //       college:resolve(__dirname,'pages/college/index.html'),
+  //       Elementary:resolve(__dirname,'pages/Elementary/index.html'),
+  //       preSchool:resolve(__dirname,'pages/pre-school/index.html')
+  //     }
+  //   }
+  // }
 })
