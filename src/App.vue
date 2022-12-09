@@ -1,16 +1,16 @@
 
 <template>
-    <NavbarComponentVue class="bg-gray-700 z-40" :class="{'fixed w-full top-0 bg-gray-500/20 backdrop-blur-sm':isFixed}"/>
-  <RouterView class=""/>
+  <NavbarComponentVue class="bg-gray-700 z-40" :class="{'fixed w-full top-0 bg-gray-500/20 backdrop-blur-sm':isFixed}"/>
+  <RouterView class="-z-20"/>
   <!-- add footer -->
-<footerComponentVue class=""/>
+  <footerComponentVue class=""/>
 </template>
 
 <style scoped>
 
 </style>
 <script>
-import { RouterLink, RouterView } from 'vue-router'
+import { RouterView } from 'vue-router'
 import NavbarComponentVue from './components/NavbarComponent.vue';
 import footerComponentVue from './components/footerComponent.vue';
 export default{

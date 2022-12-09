@@ -1,7 +1,7 @@
 <template >
     <!-- hero section -->
-    <section>
-        <div class="relative bg-blue-900 ">
+    <section class="">
+        <div class="relative bg-blue-900 -z-10">
             <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{
                 "delay": 2500
             }'>
