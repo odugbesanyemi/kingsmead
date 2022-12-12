@@ -10,5 +10,7 @@ module.exports = {
       'header':[]
     }
   },
-  plugins: [],
+  plugins: [
+    // require('@tailwindcss/forms')
+  ],
 }

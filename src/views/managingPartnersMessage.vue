@@ -1,31 +1,147 @@
 <template >
     <div>
-        <siteHeader title="About Kingsmead" prev-page-name="About" curr-page-name="History" :img-name="headerImg" />
-        <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
+        <siteHeader title="Managing Partner's Message" prev-page-name="About" curr-page-name="Partner's Message"
+            :img-name="headerImg" />
+        <div class="page-content relative -z-30">
+            <div class="bg-transparent  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
+                    <div class="md:flex gap-5">
+                        <div class="md:w-1/5 max-md:mb-6 ">
+                            <div class="hover:shadow-xl group shadow-blue-400/10 sticky top-0">
+                                <div class="mb-0 h-56 grayscale group-hover:grayscale-0">
+                                    <img src='../assets/images/principal-image.jpg' alt=""
+                                        class="w-full h-full object-cover">
+                                </div>
+                                <div class="desc text-center p-4 bg-blue-100">
+                                    <h3 class="font-bold">Mrs. Adeolu-Idowu Ngozi</h3>
+                                    <p class="text-slate-400">Managing Partner (Kingsmead Group of Schools)</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-4/5">
+                            <div class="">
+                                <h4>The Great Beginning</h4>
+                                <div class="p-md-5 p-2 ">
+                                    <p><i>
+                                            <blockquote class="fw-light">"And if education is always to be conceived
+                                                along the same antiquated lines of a mere knowledge, there is little to
+                                                be hoped from it in the bettering of man's future. For what is the use
+                                                if transmitting knowledge if the individual's total development lags
+                                                behind?"</blockquote><b> Maria Montessori,<br> the famous italian
+                                                physician and educator.</b>
+                                        </i></p><br>
+                                    <p class="mb-3">It is with a mindset to make difference, Kingsmead Schools, like a
+                                        knight in a
+                                        shining armour, sprang up on 1st August, 2016 to redefine quality education and
+                                        set a new paradigm in the delivery of functional world-class educational
+                                        services.</p>
+                                    <p class="mb-3">Located at 9, Hon. N. S. Sholaja Street, off Erunwen Road, the
+                                        School overlooks
+                                        Awolowo Road and its surrounding features and also gives a view of scenic beauty
+                                        of Nature in the neighborhood. There, standard, sublimity, skill, serenity,
+                                        simplicity and most importantly, strive for excellence, find their perfect
+                                        meanings in a functional union.</p>
+                                    <p class="mb-3">Our pupils constitute our centrepiece and our approach is the
+                                        recognition of each
+                                        child's uniqueness and helping them to develop their innate skills for cognitive
+                                        growth, psychomotor development, advanced emotional intelligence and
+                                        consequently, self- realization. This is what underlies our adoption of
+                                        differentiated teaching and learning.</p>
+                                    <p class="mb-3">We are driving by a vision to be an outstanding value-based school
+                                        striving for
+                                        excellence and enabling our children to achieve greatness. And to inspire
+                                        children to achieve the highest standard of intellectual and personal
+                                        development through a stimulating and comprehensive programme is our mission.
+                                    </p>
+                                    <p class="mb-3">We meet the educational needs of children, aged three months and
+                                        above,
+                                        irrespective of their educational, national, ethnic or religious background. And
+                                        aware that an unskilled scholar will apparently skew away from the path of sound
+                                        scholarship, we constantly engage our educators in continual professional
+                                        development. Our approach is to train our trainers until they become trainers'
+                                        trainers.</p>
+                                    <p class="mb-3">We run a hybrid of the Nigerian and the British curricula with our
+                                        Pre-school
+                                        section thriving on the Montessori Method of teaching. In our elementary and
+                                        secondary sections, the roles of the teachers is supervisory. Subject teachers
+                                        deploy their expertise in teaching the pupils in the overall interest of
+                                        thoroughness. To do this effectively, resources for twenty-first century
+                                        tutelage are made readily accessible.</p>
+                                    <p class="mb-3">And it is worthy to note that we give our pupils the needed global
+                                        exposure to
+                                        thrive. They are frequently exposed to state-wide, national and international
+                                        competitions and certifiable courses. It is our dream to welcome them as they
+                                        are and later release them to society as 'global citizens', equipped to make a
+                                        difference and positioned to shine.</p>
+                                    <p class="mb-3">To ease the movement of our pupils to and from school, we run
+                                        transport services
+                                        for interested parents. Our new air-conditioned buses, trained drivers and their
+                                        assistants make the journey to and from Kingsmead Schools a daily delight. We
+                                        also provide lunch, after school care and basic medical services to make the
+                                        package total.</p>
+                                    <p class="mb-3">We have also accorded security its primacy, considering the threat
+                                        to life and
+                                        property currently rocking our land. Besides engaging a renowned security firm
+                                        for its professional services, we monitor everything going on in every classroom
+                                        and the premises with CCTV cameras. </p>
+                                    <p class="mb-3">The understanding of each child is our approach and the progressive
+                                        realization
+                                        of their potentials is our goal.</p>
+                                    <br>
+                                    <p>Kingsmead Schools... Learning is life!</p>
+                                </div>
+
+                            </div>
+                            <div class="mt-20">
+                                <table>
+                                    <tr>
+                                        <th class="text-left">Writer</th>
+                                        <td class="w-56 text-center text-slate-400">Olasukanmi Titilope</td>
+                                    </tr>
+                                    <tr>
+                                        <th class="text-left">Date of launch</th>
+                                        <td class="w-56 text-center text-slate-400">Sept 22, 2017</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-            <div class="bg-gradient-to-tr from-yellow-100 via-indigo-500 to-yellow-500 py-20 md:py-32 backdrop-blur-md">
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0">
-
+            <div
+                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
+                        src="../assets/images/ass. class cpt g2 phlox.jpeg" alt=""
+                        class="w-full h-full object-cover -z-10"></span>
+                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
+                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
+                    <h3 class="max-md:text-3xl text-4xl text-white ">
+                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
+                        lifetime.” — Maimonides
+                    </h3>
+                    <div class="btnGrp mt-8">
+                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
+                            Today</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
-import { AcademicCapIcon,BookOpenIcon,EyeIcon,GlobeEuropeAfricaIcon,ArrowRightCircleIcon} from '@heroicons/vue/24/solid'
+import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
 import siteHeader from '../components/siteHeader.vue'
 import headerImg from '../assets/images/DSC_0515.jpg'
+import defaultPic from "../assets/logos/default.png"
 export default {
     components: {
-        siteHeader,AcademicCapIcon,BookOpenIcon,EyeIcon,GlobeEuropeAfricaIcon,ArrowRightCircleIcon
+        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon
     },
     data() {
         return {
-            headerImg
+            headerImg, defaultPic,
+
         }
     },
 }

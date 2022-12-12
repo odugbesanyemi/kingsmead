@@ -8,9 +8,18 @@ import principalMessage from "../views/principalMessage.vue"
 import FAQ from "../views/FAQ.vue"
 import contactUs from "../views/contactUs.vue"
 import aboutHistory from "../views/aboutHistory.vue"
+import studentLeadership from "../views/studentLeadership.vue"
+import curriculum from "../views/curriculum.vue"
+import learningEnvironment from "../views/learningEnvironment.vue"
+import library from "../views/library.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/home',
+      name: 'index',
+      component: HomeView
+    },
     {
       path: '/',
       name: 'home',
@@ -48,6 +57,27 @@ const router = createRouter({
           path:"contact-us",
           component:contactUs
         },
+      ]
+    },    {
+      path: '/Academics',
+      name: 'Academics',
+      children:[
+        {
+          path:"student-leadership",
+          component:studentLeadership
+        },
+        {
+          path:"curriculum",
+          component:curriculum
+        },
+        {
+          path:"learning-environment",
+          component:learningEnvironment
+        },
+        {
+          path:"library",
+          component:library
+        }
       ]
     },
     // {
