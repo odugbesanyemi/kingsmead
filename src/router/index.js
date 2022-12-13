@@ -16,6 +16,9 @@ import studentLife from "../views/studentLife.vue"
 import pastoralUnit from "../views/pastoral-unit.vue"
 import Alumni from "../views/Alumni.vue"
 import schoolReport from "../views/school-report.vue"
+import criteriaPolicy from "../views/criteria-policy.vue"
+import registrationForm from "../views/registration-form.vue"
+import feesDeposit from "../views/fees-deposit.vue"
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -115,7 +118,28 @@ const router = createRouter({
         component: schoolReport
       },
     ]
-    },
+    }, 
+    
+    {
+      path: "/Admissions",
+      name: "Admissions",
+      children: [
+        {
+          path: "criteria-policy",
+          component: criteriaPolicy,
+        },
+        {
+          path: "registration-form",
+          component: registrationForm,
+        },
+        {
+          path: "fees-deposit",
+          component: feesDeposit,
+        }
+
+      ]
+
+    }
   ]
 })
 

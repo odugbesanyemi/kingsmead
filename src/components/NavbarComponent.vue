@@ -170,19 +170,19 @@ export default {
                         },
                         {
                             title: "Criteria & Policy",
-                            to: "/",
+                            to: "/admissions/criteria-policy",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
                             title: "Registration Form",
-                            to: "/",
+                            to: "/admissions/registration-form",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
                             title: "Fees & Deposit",
-                            to: "/",
+                            to: "/admissions/fees-deposit",
                             dropdown: false,
                             dropdownLinks: []
                         },
