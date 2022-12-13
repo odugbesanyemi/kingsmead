@@ -10,22 +10,17 @@
                         <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
                             Kingsmead Schools</p>
                     </div>
-                    <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users">
-                            <div class="image h-80">
-                                <img src="../assets/images/senior prefect.jpeg"
-                                    class="h-full w-full object-cover object-top" alt="">
-                            </div>
-                            <div class="content p-5 bg-blue-100">
-                                <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                    {{ item.school }} </p>
-                            </div>
+                    <div class="flex">
+                        <div class="w- text-xl">
+                            <p>The Pastoral Care Unit of Kingsmead College is an all-inclusive emotional intelligence programme which is designed to identify, nurture and transform learners to excel in academics, character and morality. Our focus here is to inspire, guide and support the students to trust in their God and believe in the latent gem of greatness in them.</p>
+                            <p class="mt-5">Under the auspices of Life Skills Education, we inculcate in the learners eternal values to boost their self-esteem. We prepare them to develop a stable mental health attitude towards life. They are therefore vaccinated with courage, determination, persistence, faith, poise and hard work to  rule and dominate the ever-challenging world. They are disciplined to destroy the fear of any type and the phobia of learning. We build in them unflinching self-image in a distressed and competitive world. Hence, our students enjoy schooling in a friendly, caring and loving environment where"school is a place to be" and a home to grow in.</p>
+                        </div>
+                        <div class="w-auto">
+                            <img src="../assets/images/DSC_0049.JPG" alt="" srcset="">
                         </div>
                     </div>
-                    <div class="my-10">
-                        <!-- <div class="title text-3xl font-bold text-slate-500">What they are Saying</div> -->
-                    </div>
+                    
+                    
                 </div>
             </div>
             <div
@@ -59,23 +54,7 @@ export default {
     },
     data() {
         return {
-            headerImg, defaultPic,
-            users: [
-                {
-                    name: "Layode Philips",
-                    position: "Head Girl",
-                    school: "College",
-                },
-                {
-                    name: "Layode Philips",
-                    position: "Head Girl",
-                    school: "College",
-                }, {
-                    name: "Layode Philips",
-                    position: "Head Girl",
-                    school: "College",
-                },
-            ]
+            
         }
     },
 }
