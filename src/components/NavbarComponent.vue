@@ -192,30 +192,30 @@ export default {
                 {
                     id: 4,
                     title: "Life at Kingsmead",
-                    to: "/",
+                    to: "/Life-at-Kingsmead/studentLife",
                     dropdown: true,
                     dropdownLinks: [
                         {
                             title: "Student Life",
-                            to: "/",
+                            to: "/Life-at-Kingsmead/studentLife",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
                             title: "Pastoral Care Unit",
-                            to: "/",
+                            to: "/Life-at-Kingsmead/pastoral-unit",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
                             title: "Alumni",
-                            to: "/",
+                            to: "/Life-at-Kingsmead/Alumni",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
                             title: "School Reports",
-                            to: "/",
+                            to: "/Life-at-Kingsmead/school-report",
                             dropdown: false,
                             dropdownLinks: []
                         },
