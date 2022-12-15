@@ -20,7 +20,7 @@
                                     <RouterLink class='dropdown-item px-5 -z-10' :to='y.to'>{{ y.title }}</RouterLink>
                                     <ul class='dropDown-menu hidden group-hover/second:block absolute right-full text-blue-50 border-r border-white bg-blue-900 w-44 shadow-lg top-0 z-10'
                                         v-if="y.dropdown">
-                                        <li v-for="z in y.dropdownLinks" class="p-4 hover:text-blue-900 hover:bg-white">
+                                        <li v-for="z in y.dropdownLinks" class="p-4 hover:text-blue-900 hover:bg-white" :key="z">
                                             <RouterLink class='dropdown-item p-4' :to='z.to'>{{ z.title }}</RouterLink>
                                         </li>
                                     </ul>
@@ -119,22 +119,28 @@ export default {
                     dropdown: true,
                     dropdownLinks: [
                         {
+                            id: 1,
                             title: "Student Leadership",
                             to: "/academics/student-leadership",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
+                            id: 2,
                             title: "Curriculum",
                             to: "/academics/curriculum",
                             dropdown: false,
                             dropdownLinks: []
-                        }, {
+                        },
+                        {
+                            id: 3,
                             title: "Learning Environment",
                             to: "/academics/learning-environment",
                             dropdown: false,
                             dropdownLinks: []
-                        }, {
+                        }, 
+                        {
+                            id: 4,
                             title: "Library",
                             to: "/academics/library",
                             dropdown: false,
@@ -150,6 +156,7 @@ export default {
                     dropdown: true,
                     dropdownLinks: [
                         {
+                            id: 1,
                             title: "Schools",
                             to: "/",
                             dropdown: true,
@@ -169,18 +176,21 @@ export default {
                             ]
                         },
                         {
+                            id: 2,
                             title: "Criteria & Policy",
                             to: "/admissions/criteria-policy",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
+                            id: 3,
                             title: "Registration Form",
                             to: "/admissions/registration-form",
                             dropdown: false,
                             dropdownLinks: []
                         },
                         {
+                            id: 4,
                             title: "Fees & Deposit",
                             to: "/admissions/fees-deposit",
                             dropdown: false,

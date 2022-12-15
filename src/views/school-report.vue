@@ -11,7 +11,7 @@
                             Kingsmead Schools</p>
                     </div>
                     <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users">
+                        <div class="" v-for="item in users" :key="item">
                             <div class="image h-80">
                                 <img src="../assets/images/senior prefect.jpeg"
                                     class="h-full w-full object-cover object-top" alt="">
