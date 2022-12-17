@@ -65,12 +65,17 @@
             </div>
         </div>
     </div>
-        <h1>FUNDRAISING PRIORITIES</h1>
-    <div class="relative " style="height:700px">
-        <div class="w-full h-full absolute">
-            <img class="w-full h-full object-cover" src="../assets/images/alunmi.jpg" >
+  
+    <div class="flex">
+        <h1 class="ml-10 text-5xl mb-10 text-gray-600">FUNDRAISING PRIORITIES</h1>
+        <hr class="my-4 mx-auto w-1/2 h-1 bg-gray-100 rounded border-0 md:my-7 dark:bg-gray-700"> 
+    </div>
+        
+    <div class="relative" style="height: 700px;">
+        <div class="absolute h-full w-full">
+            <img class="h-full w-full" src="../assets/images/alunmi.jpg" >
         </div>
-        <div class="bg-blue-900 text-white absolute right-20 top-2/3 -translate-y-1/2 w-2/5 px-10 py-5 opacity-90">
+        <div class="bg-blue-700 absolute opacity-90 right-5 top-2/3 py-10 px-10 w-1/2 -translate-y-1/2 text-white">
             <p class="py-2"> Under the auspices of Life Skills Education, we inculcate in the learners eternal values to boost their self-esteem. </p>
             <p class="py-2">We prepare them to develop a stable mental health attitude towards life. </p>
             <p class="py-2"> They are disciplined to destroy the fear of any type and the phobia of learning.</p>
@@ -80,6 +85,80 @@
             </div>
         </div>
     </div>
+
+
+        <div class="flex pt-32">
+            <h1 class="ml-10 text-6xl mb-10 text-gray-600">ALUMNI EVENTS</h1>
+            <hr class="my-4 mx-auto w-1/2 h-1 bg-gray-100 rounded border-0 md:my-7 dark:bg-blue-300"> 
+        </div>
+    <section>
+        <div class="flex mx-10 w-full  space-x-20 px-20">
+            <div class="">
+                <p class="ml-7 text-blue-800 font-bold">DEC</p>
+                <p class="text-4xl text-blue-900 font-bold mx-2">17</p>
+                <p class="ml-7 text-blue-800 font-bold">Sat</p>
+            </div>
+            
+            <div class="divide-x-2 divide-black">
+                <button class="divide-x-2 divide-black"> 
+                    <div class="divide-x-2 divide-black text-3xl text-blue-900 italic font-bold hover:text-blue-500">
+                        <p class="divide-x-2 divide-black ">Christmas at</p>
+                        <p class="">Kingsmead</p>
+                    </div> 
+                </button>
+                <h2 class="font-bold px-2 py-2">6:00pm <span class="ml-10">Lagos</span></h2>
+            </div>
+
+            <div class="">
+                <p class="ml-7 text-blue-800 font-bold">DEC</p>
+                <p class="text-4xl text-blue-900 font-bold mx-2">20</p>
+                <p class="ml-7 text-blue-800 font-bold">Tue</p>
+            </div>
+
+            <div class="divide-x-2 divide-black">
+                <button class="divide-x-2 divide-black"> 
+                    <div class="hover:text-blue-500 divide-x-2 divide-black text-3xl text-blue-900 italic font-bold">
+                        <p class="divide-x-2 divide-black ">Christmas at</p>
+                        <p class="">Kingsmead</p>
+                    </div> 
+                </button>
+                <h2 class="font-bold px-2 py-2">6:00pm <span class="ml-10">Lagos</span></h2>
+            </div>
+
+            <div class="">
+                <p class="ml-7 text-blue-800 font-bold">JAN</p>
+                <p class="text-4xl text-blue-900 font-bold mx-2">17</p>
+                <p class="ml-7 text-blue-800 font-bold">Sat</p>
+            </div>
+
+            <div class="divide-x-2 divide-black">
+                <button class="divide-x-2 divide-black"> 
+                    <div class=" hover:text-blue-500 divide-x-2 divide-black text-3xl text-blue-900 italic font-bold">
+                        <p class="divide-x-2 divide-black "> Christmas at</p>
+                        <p class="">Kingsmead</p>
+                    </div> 
+                </button>
+                <h2 class="font-bold px-2 py-2">6:00pm <span class="ml-10">Lagos</span></h2>
+            </div>
+        </div>
+        <div class="mx-10 p-10">
+             <button class="hover:bg-blue-900 hover:text-white py-5 w-60 text-2xl text-blue-800 rounded outline outline-blue-500"> Views All Events </button>
+        </div>
+
+        <section>
+            <div class="bg-blue-900 mx-auto" style="height:400px">
+                <div class="w-1/2 text-white">
+                    <h1>STAY CONNECTED</h1>
+                    <p>There are dozens of ways for alumni to continue their lifelong connection to Creighton! Stay connected with former classmates, faculty, staff and the Jesuit community through alumni events, programs and more. Also, don’t forget to take advantage of your alumni benefits!</p>
+                </div>
+                <div>
+                    <button>Your School or College</button>
+                </div>
+            </div>
+        </section>
+       
+
+    </section>
 
     <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
         <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
