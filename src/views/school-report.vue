@@ -10,42 +10,48 @@
                         <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
                             Kingsmead Schools</p>
                     </div>
-                    <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users" :key="item">
-                            <div class="image h-80">
-                                <img src="../assets/images/senior prefect.jpeg"
-                                    class="h-full w-full object-cover object-top" alt="">
-                            </div>
-                            <div class="content p-5 bg-blue-100">
-                                <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                    {{ item.school }} </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-10">
-                        <!-- <div class="title text-3xl font-bold text-slate-500">What they are Saying</div> -->
-                    </div>
-                </div>
-            </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass. class cpt g2 phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
+                    
+                    
                 </div>
             </div>
         </div>
+
+        <section>
+            <div class="md:grid grid-cols-2 pb-20">
+                <div class="md:p-10 max-md:px-10">
+                    <h1 class="pb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam sit, ullam facere eligendi delectus, voluptas quis perspiciatis natus rerum ipsa eius magni molestiae voluptate modi sequi debitis exercitationem. Quas, architecto?</h1>
+                     <h1 class="pb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tenetur magni omnis explicabo maxime voluptatibus deleniti, sequi quo, soluta culpa, veniam beatae accusamus delectus incidunt laudantium! Et labore ratione voluptatibus nesciunt.</h1>   
+                     <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo temporibus quidem molestias dolor, nisi ipsum impedit fuga sunt ea accusantium soluta consectetur, iusto suscipit? Dolore impedit quae inventore quaerat explicabo.</h1>
+                </div>
+                <div class="relative max-md:pb-72">
+                    <div class="absolute md:h-full w-full">
+                       <img class=" md:w-9/12 py-10" src="../assets/images/DSC_0703.JPG">
+                       <div class="absolute bg-blue-900 p-12 max-md:top-44 top-56 text-white md:h-44 ">
+                        <h1 class="font-bold mt-10">Term Date</h1>
+                    </div>
+                    </div>
+                    
+                </div>    
+            </div>
+        </section>
+
+        <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+            <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
+                    src="../assets/images/ass. class cpt g2 phlox.jpeg" alt=""
+                    class="w-full h-full object-cover -z-10"></span>
+            <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
+            <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
+                <h3 class="max-md:text-3xl text-4xl text-white ">
+                    “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
+                    lifetime.” — Maimonides
+                </h3>
+                <div class="btnGrp mt-8">
+                    <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
+                        Today</button>
+                </div>
+            </div>
+        </div>
+
     </div>
 </template>
 <script>
