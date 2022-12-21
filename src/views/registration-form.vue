@@ -6,7 +6,7 @@
 
         <section>
             <div class="text-center py-10">
-                <h1 class="text-2xl font-bold">Kindly click the button below to download the form</h1>
+                <h1 class="md:text-2xl font-bold max-md:px-10">Kindly click the button below to download the form</h1>
                 <div class="p-5 ">
                    <button class="bg-blue-900 rounded-md text-white text-xl font-bold p-2 w-7/12">ADMISSION FORM</button> 
                 </div>
@@ -17,7 +17,7 @@
 
         <section>
             <div class="w-10/12 mx-auto">
-                 <h1 class="text-xl font-bold pb-8">ADMISSION FORM</h1>
+                 <h1 class="text-xl font-bold pb-5">ADMISSION FORM</h1>
             </div>
         </section>
 
@@ -39,7 +39,7 @@
                     <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="#1500">
                 </div>
 
-                <div class="grid grid-cols-2">
+                <div class="grid md:grid-cols-2">
                     <div class="p-2 w-full">
                         <p class="mb-2">Sex</p> 
                         <select class="w-full outline outline-1 outline-blue-400 p-2 mb-2" name="" id="">
@@ -105,7 +105,7 @@
         <form action="">
                 <div class="w-10/12 mx-auto py-5">
                     <h1 class="p-2 text-2xl font-bold">School History</h1>
-                    <div class="grid grid-cols-2">
+                    <div class="grid md:grid-cols-2">
                       
 
                         <div class="p-3">
@@ -136,7 +136,7 @@
         <form action="">
                 <div class="w-10/12 mx-auto py-5">
                     <h1 class="p-2 text-2xl font-bold">FAMILY: PERSONAL INFORMATION</h1>
-                    <div class="grid grid-cols-2">
+                    <div class="grid md:grid-cols-2">
                         <div class="p-3">
                             <p class="mb-2">Fathers's Surname</p>
                             <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Father'Surname">
@@ -150,7 +150,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Office Address">
+                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Office Address">
                     </div>
 
                     <div class="p-3">
@@ -160,7 +160,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Residence Address">
+                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Residence Address">
                     </div>
 
                     <div class="p-3">
@@ -180,7 +180,7 @@
              <!-- This is Family-Mother Personal Information form -->
         <form action="">
                 <div class="w-10/12 mx-auto py-5">
-                    <div class="grid grid-cols-2">
+                    <div class="grid md:grid-cols-2">
                         <div class="p-3">
                             <p class="mb-2">Mother's Surname</p>
                             <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Mother's Surname">
@@ -194,7 +194,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Office Address">
+                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Office Address">
                     </div>
 
                     <div class="p-3">
@@ -204,7 +204,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Residence Address">
+                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Residence Address">
                     </div>
 
                     <div class="p-3">
@@ -224,7 +224,7 @@
             <!-- This is Guardian Personal Information form -->
         <form action="">
                 <div class="w-10/12 mx-auto py-5">
-                    <div class="grid grid-cols-2">
+                    <div class="grid md:grid-cols-2">
                         <div class="p-3">
                             <p class="mb-2">Guardian's Surname</p>
                             <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Guardian Surname">
@@ -238,7 +238,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Office Address">
+                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Office Address">
                     </div>
 
                     <div class="p-3">
@@ -248,7 +248,7 @@
 
                     <div class="p-3">
                         <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full h-32 p-2" type="text" name="" placeholder="Enter Residence Address">
+                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Residence Address">
                     </div>
 
                     <div class="p-3">
@@ -262,7 +262,7 @@
                         <p>(Please note that all correspondence will be sent to this address unless the school is notified otherwise)</p>
                     </div>
 
-                    <div class="grid grid-cols-2">
+                    <div class="grid md:grid-cols-2">
                         <div class="p-3">
                             <p class="mb-2">Are parents living together?</p>
                             <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="-Select an option-">
