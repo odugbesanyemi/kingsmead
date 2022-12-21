@@ -44,7 +44,7 @@
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
                     <div class="md:flex">
                         <div class="md:w-1/2">
-                            <img src="../assets/images/DSC_0535.JPG" class="w-full h-full" alt="">
+                            <img src="../assets/images/dsc_053.jpg" class="w-full h-full" alt="">
                         </div>
                         <div class="bg-blue-800 md:p-20 p-5 md:w-1/2">
                             <h2 class="text-3xl font-bold mb-7 text-white w">Personalize</h2>
@@ -75,7 +75,7 @@
             <div
                 class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
                 <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass. class cpt g2 phlox.jpeg" alt=""
+                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                         class="w-full h-full object-cover -z-10"></span>
                 <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
                 <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">

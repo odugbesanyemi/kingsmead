@@ -18,7 +18,7 @@
                             <div class="p-2  text-xl py-5 w-full text-blue-400 max-md:px-16">
                                 <p>At Creighton, our Jesuit mission shapes our vision. But our alumni and friends — our
                                     one-</p>
-                                <p>of-a-kind community — you make that vision a reality. You can help us forge a bold
+                                <p>of-a-kind community — you make that vision a reality. You can help us forge a bol
                                     new</p>
                                 <p>chapter in Creighton’s extraordinary story. Learn how you can support Forward Blue —
                                     the</p>
@@ -169,7 +169,7 @@
 
     <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
         <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                src="../assets/images/ass. class cpt g2 phlox.jpeg" alt=""
+                src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                 class="w-full h-full object-cover -z-10"></span>
         <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
         <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
