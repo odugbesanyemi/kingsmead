@@ -48,7 +48,7 @@
                     <p class="">Lorem ipsum dolor sit.</p>
                     <p>Admissions Officer</p>
                     <p class="mt-7">+234XXXXXXX</p>
-                    <p class="">Kingmead.com</p>
+                    <p class="">Kingsmead.com</p>
                     <p class="mt-7">Mon – Fri 9:00A.M. – 4:00P.M.</p>
 
                         <h1 class="mt-10 text-xl font-bold">Social Info</h1>
