@@ -18,7 +18,7 @@
                             <div class="p-2  text-xl py-5 w-full text-blue-400 max-md:px-16">
                                 <p>At Creighton, our Jesuit mission shapes our vision. But our alumni and friends — our
                                     one-</p>
-                                <p>of-a-kind community — you make that vision a reality. You can help us forge a bold
+                                <p>of-a-kind community — you make that vision a reality. You can help us forge a bol
                                     new</p>
                                 <p>chapter in Creighton’s extraordinary story. Learn how you can support Forward Blue —
                                     the</p>
