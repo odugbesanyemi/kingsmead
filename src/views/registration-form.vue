@@ -300,7 +300,7 @@
             
 
 
-    <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+    <!-- <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
         <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
                 src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                 class="w-full h-full object-cover -z-10"></span>
@@ -315,7 +315,7 @@
                     Today</button>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
