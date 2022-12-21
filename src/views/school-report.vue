@@ -2,15 +2,8 @@
     <div>
         <siteHeader title="School Report" prev-page-name="About" curr-page-name="School Report" :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
+            <div class="bg-blue-50  py-10 md:py-">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <div class="mb-10">
-                        <h1 class="text-5xl font-bold text-blue-800 ">School Report</h1>
-                        <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
-                            Kingsmead Schools</p>
-                    </div>
-
-
                 </div>
             </div>
         </div>
@@ -30,8 +23,8 @@
                 </div>
                 <div class="relative max-md:pb-72">
                     <div class="absolute md:h-full w-full">
-                        <img class=" md:w-9/12 py-10" src="../assets/images/DSC_0703.jpg">
-                        <div class="absolute bg-blue-900 p-12 max-md:top-44 top-56 text-white md:h-44 ">
+                        <img class=" md:w-9/12  py-10" src="../assets/images/DSC_0703.jpg">
+                        <div class="absolute bg-blue-900 p-12 max-md:top-36 top-56 text-white md:h-44">
                             <h1 class="font-bold mt-10">Term Date</h1>
                         </div>
                     </div>
@@ -51,7 +44,7 @@
             </div>
         </section>
 
-        <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+        <!-- <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
             <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
                     src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                     class="w-full h-full object-cover -z-10"></span>
@@ -66,7 +59,7 @@
                         Today</button>
                 </div>
             </div>
-        </div>
+        </div> -->
 
     </div>
 </template>

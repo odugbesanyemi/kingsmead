@@ -4,35 +4,35 @@
         <div class="page-content">
             <div class="bg-blue-50  py-20">
                 <div class="max-w-7xl mx-auto">
-                    <div class="mb-10">
+                    <!-- <div class="mb-10">
                         <h1 class="text-5xl font-bold text-blue-800 ml-3 px-4 ">Alumni</h1>
                         <p class="mt-4 ml-3 max-md:ml-0 px-4 max-md:px-7">A showcase of our leaders who have earned their positions as Leaders
                             at
                             Kingsmead Schools</p>
-                    </div>
+                    </div> -->
 
                     <div class="relative w-full mx-auto bg-white drop-shadow-md border-radius rounded-md md:py-4 p-5">
                         <div class="mx-auto text-center">
                             <h1 class="text-4xl text-blue-900 font-black">KINGSMEAD</h1>
                             <p class="font-black mt-1">The Bold Future Of Students</p>
                             <div class="p-2  text-xl py-5 w-full text-blue-400 max-md:px-16">
-                                <p>At Creighton, our Jesuit mission shapes our vision. But our alumni and friends — our
+                                <p>At Kingsmead, our Jesuit mission shapes our vision. But our alumni and friends — our
                                     one-</p>
                                 <p>of-a-kind community — you make that vision a reality. You can help us forge a bol
                                     new</p>
-                                <p>chapter in Creighton’s extraordinary story. Learn how you can support Forward Blue —
+                                <p>chapter in Kingmead’s extraordinary story. Learn how you can support Forward Blue —
                                     the</p>
-                                <p>largest and most comprehensive fundraising campaign in Creighton's history.</p>
+                                <p>largest and most comprehensive fundraising campaign in Kingmead’s history.</p>
                             </div>
 
 
                             <div class="bg-indigo-800 mt-10">
                                 <div class="max-w-7xl mx-auto py-20 px-4 sm:py-16 sm:px-6 lg:px-8 lg:py-20">
                                     <div class="max-w-4xl mx-auto text-center">
-                                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">Trusted by developers
-                                            from over 80 planets</h2>
-                                        <p class="mt-3 text-xl text-indigo-200 sm:mt-4">Lorem ipsum dolor, sit amet
-                                            consectetur adipisicing elit. Repellendus repellat laudantium.</p>
+                                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl">89%to Goal of $650,000,000</h2>
+                                        <input class="w-full p-3" type="range">
+                                        <h2 class="text-3xl font-extrabold text-white sm:text-4xl pb-5">$578,000,000 Raised</h2>
+                                    
                                     </div>
                                     <dl
                                         class="mt-10 text-center sm:max-w-3xl sm:mx-auto sm:grid sm:grid-cols-3 sm:gap-8">
@@ -57,7 +57,7 @@
                         </div>
                     </div>
                     <div class="md:w-2/5 max-md:-top-16 md:-top-16  md:mx-auto md:py-4 mx-2 relative -top-6 font-bold ">
-                        <button class="hover:bg-blue-900 bg-white  hover:text-white text-blue-900 text-xl max-md:ml-10 
+                        <button class="hover:bg-blue-900 bg-white  hover:text-white text-blue-900 text-xl max-md:ml-6 
                                 shadow rounded-md md:p-4 p-4 md:px-20 outline outline-blue-800">Learn more about Kingsmead</button>
                     </div>
                 </div>
@@ -167,7 +167,7 @@
 
     </section>
 
-    <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+    <!-- <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
         <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
                 src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                 class="w-full h-full object-cover -z-10"></span>
@@ -181,7 +181,7 @@
                 <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register Today</button>
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
