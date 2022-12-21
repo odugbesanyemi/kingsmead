@@ -150,7 +150,7 @@
 
     <section>
         <h1 class="w-11/12 mx-auto text-4xl font-bold max-md:text-center mt-5">THE ALUMNI COUNCIL</h1>
-            <p class="w-11/12 p-2 text-xl ml-10">Together Everyone Achieves More</p>
+            <p class="w-11/12 p-2 text-xl text-slate-900 ml-14">Together Everyone Achieves More</p>
           <div class="grid md:grid-cols-3 w-11/12 mx-auto text-center">
             <div class="mt-5">
                 <img class="w-9/12 h-80 max-md:w-9/12 max-md:ml-10" src="../assets/images/ass._class_cpt_g3_jasmine.jpeg">
@@ -160,15 +160,15 @@
                 </div>  
             </div>
 
-            <div>
-                <img class="w-9/12 h-80 max-md:mt-10 max-md:w-9/12 max-md:ml-10" src="../assets/images/ass._class_cpt_g3_jasmine.jpeg">
+            <div class="mt-5">
+                <img class="w-9/12 h-80 max-md:mt-10 max-md:w-9/12 max-md:ml-10 " src="../assets/images/ass._class_cpt_g3_jasmine.jpeg">
                 <div class="bg-blue-900 p-2 text-white w-11/12  max-md:w-full">
                    <h3 class="text-3xl">Lorem, ipsum.</h3>
                     <p class="p-2">Alumni President</p> 
                 </div>  
             </div>
 
-            <div>
+            <div class="mt-5">
                 <img class="w-9/12 h-80 max-md:mt-10 max-md:w-9/12 max-md:ml-10" src="../assets/images/ass._class_cpt_g3_jasmine.jpeg">
                 <div class="bg-blue-900 p-2 text-white w-11/12 max-md:w-full">
                    <h3 class="text-3xl">Lorem, ipsum.</h3>
@@ -180,7 +180,7 @@
 
     <section>
         <div class="grid md:grid-cols-2 py-10 bg-blue-900 mt-20">
-            <div>
+            <div class="">
                 <img class="w-6/12 mx-auto" src="../assets/images/assembly_prefect.jpeg">
                 <div class="w-full mx-auto text-center text-white bg-blue-900 p-3">
                      <h3 class="text-3xl">Lorem, ipsum.</h3>
@@ -206,24 +206,6 @@
         </div>
     </section>
        
-
-   
-
-    <!-- <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-        <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                class="w-full h-full object-cover -z-10"></span>
-        <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-        <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-            <h3 class="max-md:text-3xl text-4xl text-white ">
-                “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                lifetime.” — Maimonides
-            </h3>
-            <div class="btnGrp mt-8">
-                <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register Today</button>
-            </div>
-        </div>
-    </div> -->
 </template>
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
