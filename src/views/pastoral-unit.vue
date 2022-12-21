@@ -22,7 +22,7 @@
                 <p class="mt-7">Under the auspices of Life Skills Education, we inculcate in the learners eternal values to boost their self-esteem. We prepare them to develop a stable mental health attitude towards life. They are therefore vaccinated with courage, determination, persistence, faith, poise and hard work to  rule and dominate the ever-challenging world. They are disciplined to destroy the fear of any type and the phobia of learning. We build in them unflinching self-image in a distressed and competitive world. Hence, our students enjoy schooling in a friendly, caring and loving environment where"school is a place to be" and a home to grow in.</p>
             </div>
             <div class="bg-gradient-to-br from-blue-500 to-blue-500 max-md:p-5">
-                <img class="" src="../assets/images/DSC_0049.JPG" alt="" srcset="">
+                <img class="" src="../assets/images/DSC_0049.jpg" alt="" srcset="">
                 <div>
                     <p class="text-center text-white p-3 text-xl">Mr Ene Raphael - <span class="text-gray-700">Vice-Principal</span></p>
                 </div>

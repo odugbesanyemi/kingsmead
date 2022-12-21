@@ -2,7 +2,7 @@
     <div>
         <siteHeader title="FAQ" prev-page-name="About" curr-page-name="Faq" :img-name="headerImg" />
         <div class="page-content relative -z-30">
-            <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.JPG"
+            <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.jpg"
                     class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span
                 class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
