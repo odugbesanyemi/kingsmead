@@ -30,7 +30,7 @@
                 </div>
                 <div class="relative max-md:pb-72">
                     <div class="absolute md:h-full w-full">
-                        <img class=" md:w-9/12 py-10" src="../assets/images/DSC_0703.JPG">
+                        <img class=" md:w-9/12 py-10" src="../assets/images/DSC_0703.jpg">
                         <div class="absolute bg-blue-900 p-12 max-md:top-44 top-56 text-white md:h-44 ">
                             <h1 class="font-bold mt-10">Term Date</h1>
                         </div>

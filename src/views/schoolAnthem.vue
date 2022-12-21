@@ -2,7 +2,7 @@
     <div>
         <siteHeader title="School Anthem" prev-page-name="About" curr-page-name="School Anthem" :img-name="headerImg" />
         <div class="page-content relative -z-30">
-            <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.JPG" class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
+            <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.jpg" class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
             <div class="bg-transparent  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">

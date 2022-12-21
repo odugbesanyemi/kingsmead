@@ -22,8 +22,8 @@
                             </div>
                             <div class="class md:w-1/2">
                                 <div class="relative">
-                                    <img src="../assets/images/DSC_0072.JPG" alt="" class="absolute inset-0 w-1/2 -top-20 h-full object-cover -left-10 rounded-xl shadow-lg">
-                                    <img src="../assets/images/DSC_0579.JPG" class="rounded border" alt="">
+                                    <img src="../assets/images/DSC_0072.jpg" alt="" class="absolute inset-0 w-1/2 -top-20 h-full object-cover -left-10 rounded-xl shadow-lg">
+                                    <img src="../assets/images/DSC_0579.jpg" class="rounded border" alt="">
                                 </div>
                             </div>
                         </div>
