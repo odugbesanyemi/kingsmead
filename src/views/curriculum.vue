@@ -44,7 +44,7 @@
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
                     <div class="md:flex">
                         <div class="md:w-1/2">
-                            <img src="../assets/images/DSC_0535.JPG" class="w-full h-full" alt="">
+                            <img src="../assets/images/DSC_0535.jpg" class="w-full h-full" alt="">
                         </div>
                         <div class="bg-blue-800 md:p-20 p-5 md:w-1/2">
                             <h2 class="text-3xl font-bold mb-7 text-white w">Personalize</h2>
