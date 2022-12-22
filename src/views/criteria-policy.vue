@@ -1,6 +1,6 @@
 <template >
     <div>
-        <siteHeader title="Criteria & Policy" prev-page-name="About" curr-page-name="Criteria & Policy"
+        <siteHeader class="w-full" title="Criteria & Policy" prev-page-name="About" curr-page-name="Criteria & Policy"
             :img-name="headerImg" />
         <div class="page-content">
             <div class="bg-blue-50 py-5">
