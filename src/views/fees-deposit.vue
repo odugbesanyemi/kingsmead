@@ -3,51 +3,44 @@
         <siteHeader title="Fees & Deposit" prev-page-name="About" curr-page-name="Fees & Deposit"
             :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <div class="mb-10">
-                        <h1 class="text-5xl font-bold text-blue-800 ">Fees & Deposit</h1>
-                        <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
-                            Kingsmead Schools</p>
-                    </div>
-                    <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users" :key="item">
-                            <div class="image h-80">
-                                <img src="../assets/images/senior_prefect.jpeg"
-                                    class="h-full w-full object-cover object-top" alt="">
-                            </div>
-                            <div class="content p-5 bg-blue-100">
-                                <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                    {{ item.school }} </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-10">
-                        <!-- <div class="title text-3xl font-bold text-slate-500">What they are Saying</div> -->
-                    </div>
-                </div>
-            </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
-                </div>
-            </div>
+            
         </div>
     </div>
+
+    <div class="">
+        <img class="w-full " src="../assets/images/DSC_05151.jpg">
+    </div>
+
+    <section>
+        <div class="w-8/12 mx-auto">
+            <p class="py-7 md:text-xl">Fees include costs associated with providing a thorough education; including teaching, essential educational materials and text books, and many curriculum trips. Fees also include the provision of pastoral care, meals and co-curricular activities.</p>
+            <h1 class="py-2">Payment Information</h1>
+            <ul class="list-disc md:ml-10 md:w-10/12 ">
+                <li class="py-2">Fees MUST be paid BEFORE RESUMPTION for each term/session</li>
+                <li class="py-2">Students will not be admitted into the Hostels unless ALL outstanding fees are settled.</li>
+                <li class="py-2">A 10% and 15% discount will be awarded as rebate on a third and fourth child to parents with three and four children respectively. The discount is given on the Tuition & Boarding Fees of the third child and fourth child AFTER FULL PAYMENT for the session for all children.</li>
+                <li class="py-2">MODE OF PAYMENT: BANK DRAFT is the only acceptable mode of payment. No personal/company cheques allowed.</li>
+                <li class="py-2">* Please Note: NO DISCOUNT will be granted for full payment of fees for the session/year</li>
+            </ul>
+
+            <p class="mt-5">We are pleased to inform you that Atlantic Hall School is now live on the GTBank And Zenith Bank channels.</p>
+            <p class="py-5">If you want to pay SCHOOL FEES now, Please click on any of the links below.</p>
+            <p class="py-2">You can pay with any of the following channels:</p>
+
+            <p class="py-2">1. MasterCard</p>
+            <p class="py-2">2. Visa Naira Card</p>
+            <p class="py-2">3. Interswitch Verve Card</p>
+            <p class="py-2">4. Bank Transfer (If you have GTB Internet Banking)</p>
+
+            <div class="mt-5">
+                <img class="w-96" src="../assets/logos/payment-logo.png" alt="">
+            </div>
+        </div>
+    </section>
+
 </template>
+
+
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
 import siteHeader from '../components/siteHeader.vue'
