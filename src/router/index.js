@@ -1,5 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/HomeView.vue";
+import collegeView from "../views/collegeView.vue";
+import elementaryView from "../views/elementaryView.vue"
+import preschoolView from "../views/preschoolView.vue"
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -104,6 +107,33 @@ const router = createRouter({
           component: () => import("../views/fees-deposit.vue"),
         },
       ],
+    },
+    {
+      path:"/schools/college/",
+      name:"collegeHome",
+      component:collegeView,
+      children:[
+        {
+          path:"",
+          component:  ()=> import('../views/pages/college/index.vue')
+        },
+      ]
+    },
+    {
+      path:"/schools/elementary",
+      name:"ElementaryHome",
+      component:elementaryView,
+      children:[
+
+      ]
+    },
+    {
+      path:"/schools/preschool",
+      name:"preschoolHome",
+      component:preschoolView,
+      children:[
+
+      ]
     },
   ],
   scrollBehavior(to, from, savedPosition) {
