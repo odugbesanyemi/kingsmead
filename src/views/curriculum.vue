@@ -4,9 +4,10 @@
         <div class="page-content">
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl font-bold text-blue-800 mb-10">Curriculum Overview</h1>
-                    <div class="md:flex items-center gap-7">
+                    <h1 class="text-5xl text-blue-800 mb-10">Curriculum Overview</h1>
+                    <div class="md:flex items-center gap-7 ">
                         <div class="md:w-1/2">
+                            
                             <p class="leading-loose">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus impedit placeat nemo
                                 veritatis aliquid quaerat ratione necessitatibus nulla aut inventore animi deserunt
                                 debitis dolorem, explicabo natus magni expedita? Ex, facere?
@@ -15,7 +16,7 @@
                                 molestias ut ullam voluptate, enim reiciendis corrupti, voluptatibus fugiat sunt quas
                                 deserunt animi error quae quisquam eveniet quam, autem aspernatur?</p>
                         </div>
-                        <div class="class md:w-1/2">
+                        <div class="class md:w-1/2 order-first">
                             <div class="grid grid-cols-2">
                                 <div
                                     class="bg-red-500 flex flex-col items-center justify-center p-10 hover:bg-opacity-90">
@@ -41,7 +42,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
+                <!-- <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
                     <div class="md:flex">
                         <div class="md:w-1/2">
                             <img src="../assets/images/dsc_053.jpg" class="w-full h-full" alt="">
@@ -51,9 +52,9 @@
                             <p class="text-white leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime ex optio explicabo voluptas, quidem quas harum vel mollitia expedita, accusantium qui blanditiis aliquam doloremque! Omnis quae deserunt qui cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum ab dolorem dicta dolor omnis laborum praesentium debitis odit, saepe, officia ratione voluptatum quo velit quaerat optio esse, blanditiis odio.</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
-                    <h1 class="my-10 text-slate-600 text-center text-4xl font-bold">Our Curriculums</h1>
+                    <h1 class="my-10 text-slate-600 text-center text-4xl">Our Curriculums</h1>
                     <div class="grid md:grid-cols-4  border border-dashed">
                         <div class="p-5" v-for="x in curriculumData" :key="x.id">
                             <h3 class="subject font-bold text-xl mb-5">{{x.title}}</h3>

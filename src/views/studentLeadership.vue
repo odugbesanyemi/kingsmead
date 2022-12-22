@@ -6,7 +6,7 @@
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="mb-10">
-                        <h1 class="text-5xl font-bold text-blue-800 ">Student Leadership</h1>
+                        <h1 class="text-5xl text-blue-800 ">Student Leadership</h1>
                         <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
                             Kingsmead Schools</p>
                     </div>

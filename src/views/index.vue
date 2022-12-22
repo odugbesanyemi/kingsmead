@@ -1,10 +1,10 @@
 <template >
     <!-- hero section -->
-    <section class="relative -z-10">
+    <section class="relative ">
             <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{"delay": 2500}'>
                 <swiper-slide class="relative " v-for="item in slides">
                     <div class="relative h-full bg-purple-100">
-                        <img src="../assets/images/kingsmead_front-page.jpg" class="-z-20 w-full h-screen object-cover" alt="">
+                        <img src="../assets/images/kingsmead_front-page.jpg" class="w-full h-screen object-cover" alt="">
                         <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0 "></span>
                         <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 left-10">
                             <h1 class="text-5xl xl:text-8xl text-blue-50">{{ item.title }}</h1>
@@ -54,7 +54,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
     <!-- partners section -->

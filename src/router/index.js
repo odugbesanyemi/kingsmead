@@ -110,11 +110,11 @@ const router = createRouter({
     },
     {
       path:"/schools/college/",
-      name:"collegeHome",
       component:collegeView,
       children:[
         {
           path:"",
+          name:"collegeHome",
           component:  ()=> import('../views/pages/college/index.vue')
         },
       ]

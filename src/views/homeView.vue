@@ -1,9 +1,9 @@
 
 <template>
-    <NavbarComponentVue class="bg-gray-700 text-white z-40" :class="{'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900':isFixed}"/>
-    <RouterView class="-z-20"/>
+    <HomeNavbarComponentVue  :class="{'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900 z-20':isFixed, 'bg-gray-700 text-white z-20':!isFixed}" />
+    <RouterView class="z-0"/>
     <!-- add footer -->
-    <footerComponentVue class=""/>
+    <footerComponentVue/>
   </template>
   
   <style scoped>
@@ -11,11 +11,11 @@
   </style>
   <script>
   import { RouterView } from 'vue-router'
-  import NavbarComponentVue from '../components/HomeViewNavbarComponent.vue';
+  import HomeNavbarComponentVue from '../components/HomeViewNavbarComponent.vue';
   import footerComponentVue from '../components/footerComponent.vue';
   export default{
     components:{
-      NavbarComponentVue,footerComponentVue
+      HomeNavbarComponentVue,footerComponentVue
     },
     data(){
       return{
