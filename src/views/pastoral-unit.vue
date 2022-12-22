@@ -2,7 +2,7 @@
     <div>
         <siteHeader title="Pastoral Care Unit" prev-page-name="About" curr-page-name="Pastoral Care Unit"
             :img-name="headerImg" />
-        <div class="page-content">
+        <!-- <div class="page-content">
             <div class="bg-blue-50  py-10 md:py-">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="">
@@ -12,11 +12,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <section>
-        <div class="flex max-md:flex-col">
+        <div class="flex max-md:flex-col py-10">
              <div class="md:w-full  text-justify bg-gradient-to-tr from-blue-500 to-blue-400 text-white max-md:p-10 p-10">
                 <p>The Pastoral Care Unit of Kingsmead College is an all-inclusive emotional intelligence programme which is designed to identify, nurture and transform learners to excel in academics, character and morality. Our focus here is to inspire, guide and support the students to trust in their God and believe in the latent gem of greatness in them.</p>
                 <p class="mt-7">Under the auspices of Life Skills Education, we inculcate in the learners eternal values to boost their self-esteem. We prepare them to develop a stable mental health attitude towards life. They are therefore vaccinated with courage, determination, persistence, faith, poise and hard work to  rule and dominate the ever-challenging world. They are disciplined to destroy the fear of any type and the phobia of learning. We build in them unflinching self-image in a distressed and competitive world. Hence, our students enjoy schooling in a friendly, caring and loving environment where"school is a place to be" and a home to grow in.</p>
