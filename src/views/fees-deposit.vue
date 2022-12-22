@@ -3,9 +3,12 @@
         <siteHeader title="Fees & Deposit" prev-page-name="About" curr-page-name="Fees & Deposit"
             :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-10 md:py-10">    
-            </div>
+            
         </div>
+    </div>
+
+    <div class="">
+        <img class="w-full " src="../assets/images/DSC_05151.jpg">
     </div>
 
     <section>
