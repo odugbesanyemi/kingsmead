@@ -2,9 +2,9 @@
     <div>
         <nav class='max-xl:py-4'>
             <div class='w-10/12 mx-auto flex justify-between items-center xl:w-11/12'>
-                <RouterLink to="/home" class='indexPage flex flex-row items-center'><img
+                <RouterLink to="/home" class='indexPage flex flex-row items-center w-1/2'><img
                         class="max-sm:w-8 max-sm:h-8 w-16 h-16" src='../assets/kingsmead.svg'>
-                    <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead</h3>
+                    <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead College</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
                     <Bars3Icon class=" w-8 h-8" />
@@ -92,17 +92,10 @@ export default {
             links: [
 
                 {
-                    id: 0,
-                    title: "Home",
-                    to: "/home",
-                    dropdown: false,
-
-                },
-                {
                     id: 1,
-                    title: "About Kingsmead",
-                    to: "/about/history",
-                    dropdown: true,
+                    title: "About",
+                    to: "#",
+                    dropdown: false,
                     dropdownLinks: [
                         {
                             id: 0,
@@ -159,8 +152,8 @@ export default {
                 {
                     id: 2,
                     title: "Academics",
-                    to: "/academics/student-Leadership",
-                    dropdown: true,
+                    to: "#",
+                    dropdown: false,
                     dropdownLinks: [
                         {
                             id: 1,
@@ -196,8 +189,8 @@ export default {
                 {
                     id: 3,
                     title: "Admissions",
-                    to: "/admissions/criteria-policy",
-                    dropdown: true,
+                    to: "#",
+                    dropdown: false,
                     dropdownLinks: [
                         {
                             id: 1,
@@ -207,15 +200,15 @@ export default {
                             dropdownLinks: [
                                 {
                                     title: "Pre-School",
-                                    to: "/"
+                                    to: "/schools/preschool"
                                 },
                                 {
                                     title: "Elementary",
-                                    to: "/"
+                                    to: "/schools/elementary"
                                 },
                                 {
                                     title: "College",
-                                    to: "/"
+                                    to: "/schools/college"
                                 },
                             ]
                         },
@@ -245,9 +238,9 @@ export default {
                 },
                 {
                     id: 4,
-                    title: "Life at Kingsmead",
-                    to: "/Life-at-Kingsmead/studentLife",
-                    dropdown: true,
+                    title: "College Life",
+                    to: "#",
+                    dropdown: false,
                     dropdownLinks: [
                         {
                             title: "Student Life",
@@ -278,7 +271,22 @@ export default {
                 {
                     id: 5,
                     title: "Gallery",
-                    to: "/",
+                    to: "#",
+                    dropdown: false,
+                    dropdownLinks: [
+                        {
+                            title: "History",
+                            to: "/",
+                            dropdown: false,
+                            dropdownLinks: []
+                        },
+
+                    ]
+                },
+                {
+                    id: 6,
+                    title: "Media & Clubs",
+                    to: "#",
                     dropdown: false,
                     dropdownLinks: [
                         {
