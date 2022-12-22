@@ -8,7 +8,13 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
+      redirect:"/home",
       children: [
+        {
+          path: "/home",
+          alias:"/",
+          component: () => import("../views/index.vue"),
+        },
         {
           path: "/about",
           component: () => import("../views/aboutHistory.vue"),

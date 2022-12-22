@@ -1,35 +1,27 @@
 <template >
     <!-- hero section -->
-    <section class="">
-        <div class="relative bg-blue-900 -z-10">
-            <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{
-                "delay": 2500
-            }'>
-                <swiper-slide class="relative" v-for="item in slides">
+    <section class="relative -z-10">
+            <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{"delay": 2500}'>
+                <swiper-slide class="relative " v-for="item in slides">
                     <div class="relative h-full bg-purple-100">
-                        <img src="../assets/images/kingsmead_front-page.jpg" class="w-full h-screen object-cover"
-                            alt="">
-                        <span
-                            class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0"></span>
-                        <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-5/12 md:left-28 left-10">
-                            <h1 class="text-5xl xl:text-8xl font-extrabold text-blue-50">{{ item.title }}</h1>
-                            <div class="btn-group max-sm:flex-col flex flex-row my-8 text-3xl">
+                        <img src="../assets/images/kingsmead_front-page.jpg" class="-z-20 w-full h-screen object-cover" alt="">
+                        <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0 "></span>
+                        <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 left-10">
+                            <h1 class="text-5xl xl:text-8xl text-blue-50">{{ item.title }}</h1>
+                            <div class="btn-group max-sm:flex-col flex flex-row my-8 text-2xl">
                                 <button
-                                    class="py-4 md:w-1/2 text-blue-800 bg-white rounded-full mr-4 hover:bg-transparent hover:text-white hover:ring ring-white">{{
+                                    class="py-3 md:w-2/5 text-blue-800 bg-white rounded-full mr-4 hover:bg-transparent hover:text-white hover:ring ring-white">{{
                                             item.btn1.name
                                     }}</button>
                                 <button
-                                    class="py-4 md:w-1/2 max-sm:mt-5 text-white rounded-full mr-4 max-sm:ring hover:ring ring-white">{{
+                                    class="py-3 md:w-2/5 max-sm:mt-5 text-white rounded-full mr-4 max-sm:ring ring hover:ring ring-white">{{
                                             item.btn2.name
                                     }}</button>
                             </div>
                         </div>
                     </div>
                 </swiper-slide>
-
             </Swiper>
-
-        </div>
     </section>
     <!-- Video plaback section -->
     <section>
@@ -147,7 +139,7 @@ export default {
             slides: [
                 {
                     img: "",
-                    title: "Leaning is not a CHOICE, it's a LIFE",
+                    title: "Learning is not a Choice, it's a Life",
                     btn1: {
                         name: "Learn More",
                         to: "/"
@@ -159,7 +151,7 @@ export default {
                 },
                 {
                     img: "",
-                    title: "School of Your Child's DREAM",
+                    title: "School of Your Child's Dream",
                     btn1: {
                         name: "Get Started",
                         to: "/"

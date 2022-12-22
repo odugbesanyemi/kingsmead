@@ -94,7 +94,7 @@ export default {
                 {
                     id: 0,
                     title: "Home",
-                    to: "/",
+                    to: "/home",
                     dropdown: false,
 
                 },
@@ -196,7 +196,7 @@ export default {
                 {
                     id: 3,
                     title: "Admissions",
-                    to: "/",
+                    to: "/admissions/criteria-policy",
                     dropdown: true,
                     dropdownLinks: [
                         {
