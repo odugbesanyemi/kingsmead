@@ -2,47 +2,50 @@
     <div>
         <nav class='max-xl:py-4'>
             <div class='w-10/12 mx-auto flex justify-between items-center xl:w-11/12'>
-                <RouterLink to="/home" class='indexPage flex flex-row items-center'><img
-                        class="max-sm:w-8 max-sm:h-8 w-16 h-16" src='../assets/kingsmead.svg'>
+                <RouterLink to="/home" class='indexPage flex flex-row items-center'><img class="max-sm:w-8 max-sm:h-8 w-16 h-16" src='../assets/kingsmead.svg'>
                     <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
                     <Bars3Icon class=" w-8 h-8" />
                 </div>
-                <!-- mobile navbar -->  
                 <transition>
-                    <div class="xl:hidden absolute bg-white w-11/12 left-1/2 -translate-x-1/2 -top-1 " v-show="dropdown">
-                        <span
-                            class="rounded-full bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 z-10 absolute top-3 -right-2 shadow-lg ring">
-                            <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
-                        </span>
-                        <ul class="absolute top-4 left-0 rounded rounded-tr-2xl bg-white w-full">
-                            <li class='nav-item group/first mr-5 group/d w-full' v-for="x in links" :key="x.id">
-                                <RouterLink :to="x.to"
-                                    class='text-md p-4 relative  border-b border-transparent border-2 text-gray-600 group-hover/d:border-b-white flex items-center justify-between'>
-                                    {{ x.title }}
-                                    <ChevronDownIcon class="w-5 h-5 ml-2" v-if="x.dropdown" />
-                                </RouterLink>
-                                <ul class='dropdown-menu hidden group-hover/first:block backdrop-blur-sm text-gray-600 bg-gradient-to-t from-white to-white'
-                                    v-if="(x.dropdown)">
-                                    <li v-for="y in x.dropdownLinks" :key="y.id"
-                                        class="py-3 px-2 hover:bg-gradient-to-tr from-blue-400 to-blue-600 hover:text-white group/second relative ">
-                                        <RouterLink class='dropdown-item px-5 -z-10' :to='y.to'>{{ y.title }}
-                                        </RouterLink>
-                                        <ul class='dropDown-menu hidden group-hover/second:block w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 z-10'
-                                            v-if="y.dropdown">
-                                            <li v-for="z in y.dropdownLinks"
-                                                class="p-4 hover:text-blue-500 hover:bg-white" :key="z">
-                                                <RouterLink class='dropdown-item p-4' :to='z.to'>{{ z.title }}
-                                                </RouterLink>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
+                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown"></span>
+                </transition>
+                <!-- mobile navbar -->
+                <transition>
+                        <div class="xl:hidden absolute bg-white w-11/12 left-1/2 -translate-x-1/2 -top-1 z-10"
+                            v-show="dropdown">
+                            <span
+                                class="rounded-full bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute top-3 -right-2 shadow-lg ring z-20">
+                                <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
+                            </span>
+                            <ul class="absolute top-4 left-0 rounded rounded-tr-2xl bg-white w-full ">
+                                <li class='nav-item group/first mr-5 group/d w-full' v-for="x in links" :key="x.id">
+                                    <RouterLink :to="x.to"
+                                        class='text-md p-4 relative  text-gray-600 flex items-center justify-between'>
+                                        {{ x.title }}
+                                        <ChevronDownIcon class="w-5 h-5 ml-2" v-if="x.dropdown" />
+                                    </RouterLink>
+                                    <ul class='dropdown-menu hidden group-hover/first:block backdrop-blur-sm  text-gray-600 bg-gradient-to-t from-white to-white'
+                                        v-if="(x.dropdown)">
+                                        <li v-for="y in x.dropdownLinks" :key="y.id"
+                                            class="py-3 w-full hover:bg-gradient-to-tr from-blue-400 to-blue-600 hover:text-white group/second relative ">
+                                            <RouterLink class='dropdown-item px-5 ' :to='y.to'>{{ y.title }}
+                                            </RouterLink>
+                                            <ul class='dropDown-menu hidden group-hover/second:block w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 '
+                                                v-if="y.dropdown">
+                                                <li v-for="z in y.dropdownLinks"
+                                                    class="p-4 hover:text-blue-500 hover:bg-white" :key="z">
+                                                    <RouterLink class='dropdown-item p-4' :to='z.to'>{{ z.title }}
+                                                    </RouterLink>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
 
-                    </div>
+                        </div>
                 </transition>
 
                 <!-- pc navbar -->
@@ -54,12 +57,12 @@
                                 {{ x.title }}
                                 <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
-                            <ul class='dropdown-menu hidden group-hover/first:block absolute  backdrop-blur-sm text-gray-600 bg-gradient-to-t from-white to-white'
+                            <ul class='dropdown-menu hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white'
                                 v-if="(x.dropdown)">
                                 <li v-for="y in x.dropdownLinks" :key="y.id"
                                     class="py-3 px-2 hover:bg-blue-900 hover:text-white group/second relative ">
-                                    <RouterLink class='dropdown-item px-5 -z-10' :to='y.to'>{{ y.title }}</RouterLink>
-                                    <ul class='dropDown-menu hidden group-hover/second:block absolute right-full text-blue-50 border-r border-white bg-blue-900 w-44 shadow-lg top-0 z-10'
+                                    <RouterLink class='dropdown-item px-5 ' :to='y.to'>{{ y.title }}</RouterLink>
+                                    <ul class='dropDown-menu hidden group-hover/second:block absolute right-full text-blue-50 border-r border-white bg-blue-900 w-44 shadow-lg top-0 '
                                         v-if="y.dropdown">
                                         <li v-for="z in y.dropdownLinks" class="p-4 hover:text-blue-900 hover:bg-white"
                                             :key="z">
@@ -88,7 +91,7 @@ export default {
     components: { Bars3Icon, ChevronDownIcon, UserCircleIcon, XMarkIcon },
     data() {
         return {
-            dropdown:false,
+            dropdown: false,
             links: [
 
                 {

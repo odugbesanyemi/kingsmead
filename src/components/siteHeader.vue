@@ -1,11 +1,11 @@
 <template >
-    <div class="relative max-md:h-44 h-36 -z-10" style="">
+    <div class="relative max-md:h-44 h-36 z-0" style="">
         <div class="relative  h-full px-30 flex flex-col items-start justify-center">
             <div class="absolute h-full w-full bg-fixed">
                 <img :src=imgName class="w-full h-full object-cover bg-fixed" alt="">
             </div>
-            <span class="absolute bg-gradient-to-r from-blue-900  to-blue-900/80 w-full h-full z-0"></span>
-            <div class="z-30 relative lg:max-w-7xl mx-auto max-sm:px-10 text-center">
+            <span class="absolute bg-gradient-to-r from-blue-900  to-blue-900/80 w-full h-full "></span>
+            <div class=" relative lg:max-w-7xl mx-auto max-sm:px-10 text-center">
                 <h1 class="text-white text-5xl max-md:text-4xl">{{ title }}</h1>
                 <ul class="breadcrumb text-white/50 flex gap-2 mt-2 justify-center">
                     <li>{{ prevPageName }} / </li>
