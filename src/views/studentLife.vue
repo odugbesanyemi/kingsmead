@@ -3,50 +3,90 @@
         <siteHeader title="Student Life" prev-page-name="About" curr-page-name="Student Life"
             :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <div class="mb-10">
-                        <h1 class="text-5xl font-bold text-blue-800 ">Student Life</h1>
-                        <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
-                            Kingsmead Schools</p>
-                    </div>
-                    <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users" :key="item">
-                            <div class="image h-80">
-                                <img src="../assets/images/senior_prefect.jpeg"
-                                    class="h-full w-full object-cover object-top" alt="">
-                            </div>
-                            <div class="content p-5 bg-blue-100">
-                                <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                    {{ item.school }} </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="my-10">
-                        <!-- <div class="title text-3xl font-bold text-slate-500">What they are Saying</div> -->
-                    </div>
-                </div>
-            </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img 
-                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
-                </div>
-            </div>
+            <!-- <div class="bg-blue-50  py-10 md:py-12">
+            </div> --> 
         </div>
     </div>
+
+    <section>
+        <div id="carouselExampleCaptions" class="carousel slide relative" data-bs-ride="carousel">
+  <div class="carousel-indicators absolute right-0 bottom-0 left-0 flex justify-center p-0 mb-4">
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="0"
+      class="active"
+      aria-current="true"
+      aria-label="Slide 1"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="1"
+      aria-label="Slide 2"
+    ></button>
+    <button
+      type="button"
+      data-bs-target="#carouselExampleCaptions"
+      data-bs-slide-to="2"
+      aria-label="Slide 3"
+    ></button>
+  </div>
+  <div class="carousel-inner relative w-full overflow-hidden">
+    <div class="carousel-item active relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(15).jpg"
+        class="block w-full"
+        alt="..."
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(22).jpg"
+        class="block w-full"
+        alt="..."
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item relative float-left w-full">
+      <img
+        src="https://mdbootstrap.com/img/Photos/Slides/img%20(23).jpg"
+        class="block w-full"
+        alt="..."
+      />
+      <div class="carousel-caption hidden md:block absolute text-center">
+        <h5 class="text-xl">Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button
+    class="carousel-control-prev absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline left-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="prev"
+  >
+    <span class="carousel-control-prev-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button
+    class="carousel-control-next absolute top-0 bottom-0 flex items-center justify-center p-0 text-center border-0 hover:outline-none hover:no-underline focus:outline-none focus:no-underline right-0"
+    type="button"
+    data-bs-target="#carouselExampleCaptions"
+    data-bs-slide="next"
+  >
+    <span class="carousel-control-next-icon inline-block bg-no-repeat" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+    </section>
 </template>
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon } from '@heroicons/vue/24/solid'
