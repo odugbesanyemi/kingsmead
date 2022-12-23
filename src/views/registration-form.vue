@@ -4,298 +4,351 @@
             :img-name="headerImg" />
     </div>
 
-        <section>
-            <div class="text-center py-10">
-                <h1 class="md:text-2xl font-bold max-md:px-10">Kindly click the button below to download the form</h1>
-                <div class="p-5 ">
-                   <button class="bg-blue-900 rounded-md text-white text-xl font-bold p-2 w-7/12">ADMISSION FORM</button> 
+    <div>
+        <div class="md:flex max-w-7xl mx-auto md:py-20 gap-10 ">
+            <div class="md:w-4/6 max-md:p-5">
+                <!-- advert -->
+                <div class="">
+                    <div class="rounded-3xl shadow p-10 relative">
+                        <img src="../assets/images/DSC_0568.jpg" class=" absolute inset-0 w-full h-full object-cover z-0" alt="">
+                        <span
+                            class="absolute bg-gradient-to-r from-blue-600 to-blue-900/70 inset-0 w-full h-full z-0"></span>
+                        <div class="relative">
+                            <h2 class="text-5xl text-white md:w-4/6 z-10">Admission in Progress</h2>
+                            <p class="md:w-4/6 mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Tempore,</p>
+
+                        </div>
+                    </div>
                 </div>
-                <p class="text-2xl p-1">Or fill the form below</p>
-                <p class="p-2 font-bold text-xl">NB: *Please fill the name field as written on your Birth Certificate or International Passport.</p>
+                <!--grids for actions -->
             </div>
-        </section>
+            <admissionSidebarVue />
+        </div>
+    </div>
 
-        <section>
-            <div class="w-10/12 mx-auto">
-                 <h1 class="text-xl font-bold pb-5">ADMISSION FORM</h1>
+    <!-- <section>
+        <div class="text-center py-10">
+            <h1 class="md:text-2xl  max-md:px-10">Kindly click the button below to download the form</h1>
+            <div class="p-5 ">
+                <button class="bg-blue-900 rounded-md text-white text-xl  p-4 w-7/12">ADMISSION FORM</button>
             </div>
-        </section>
+            <p class="text-2xl p-1">Or fill the form below</p>
+            <p class="p-4  text-xl">NB: *Please fill the name field as written on your Birth Certificate or
+                International Passport.</p>
+        </div>
+    </section> -->
 
-            <!-- This is Admission Form -->
+    <!-- <div>
         <form action="">
             <div class="w-10/12 mx-auto">
-                <div class="p-2">
-                    <p class="mb-2">Full Name</p> 
-                    <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" required type="text" name="" placeholder="First & Last Name">
+                <div class="p-4">
+                    <p class="mb-2">Full Name</p>
+                    <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" required type="text" name=""
+                        placeholder="First & Last Name">
                 </div>
 
-                <div class="p-2">
-                    <p class="mb-2">Email</p> 
-                    <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="Enter Email Address">
+                <div class="p-4">
+                    <p class="mb-2">Email</p>
+                    <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                        placeholder="Enter Email Address">
                 </div>
 
-                <div class="p-2">
-                    <p class="mb-2">Amount (NGN)</p> 
-                    <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="#1500">
+                <div class="p-4">
+                    <p class="mb-2">Amount (NGN)</p>
+                    <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                        placeholder="#1500">
                 </div>
 
                 <div class="grid md:grid-cols-2">
-                    <div class="p-2 w-full">
-                        <p class="mb-2">Sex</p> 
-                        <select class="w-full outline outline-1 outline-blue-400 p-2 mb-2" name="" id="">
+                    <div class="p-4 w-full">
+                        <p class="mb-2">Sex</p>
+                        <select class="w-full outline outline-1 outline-blue-400 p-4 mb-2" name="" id="">
                             <option value="">Male</option>
                             <option value="">Female</option>
                         </select>
                     </div>
 
-                    <div class="p-2 w-full">
-                        <p class="mb-2">Date of Birth</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="date" name="" placeholder="mm/dd/yyyy">
-                        <p>(JSS1 candidates are to be 10yrs old by September, the beginning of a new academic calendar)</p>
+                    <div class="p-4 w-full">
+                        <p class="mb-2">Date of Birth</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="date" name=""
+                            placeholder="mm/dd/yyyy">
+                        <p>(JSS1 candidates are to be 10yrs old by September, the beginning of a new academic calendar)
+                        </p>
                     </div>
 
-                    <div class="p-2 mt-3">
-                        <p class="mb-2">Upload Passport Photography </p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" required placeholder="no file selected">
+                    <div class="p-4 mt-3">
+                        <p class="mb-2">Upload Passport Photography </p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name="" required
+                            placeholder="no file selected">
                     </div>
 
-                    <div class="p-2 mt-3">
+                    <div class="p-4 mt-3">
                         <p class="mb-2">Country</p>
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="Enter date of birth">
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="Enter date of birth">
                     </div>
 
-                    <div class="p-2">
-                        <p class="mb-2">State</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="-Select an option-">
+                    <div class="p-4">
+                        <p class="mb-2">State</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="-Select an option-">
                     </div>
 
-                    <div class="p-2">
-                        <p class="mb-2">L.G Area</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="Enter L.G Area">
+                    <div class="p-4">
+                        <p class="mb-2">L.G Area</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="Enter L.G Area">
                     </div>
 
-                    <div class="p-2">
-                        <p class="mb-2">Present Class</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="-Select an option-">
+                    <div class="p-4">
+                        <p class="mb-2">Present Class</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="-Select an option-">
                     </div>
 
-                    <div class="p-2">
-                        <p class="mb-2">Names and Classes of siblings currently</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="Enter Names and Classes of siblings">
+                    <div class="p-4">
+                        <p class="mb-2">Names and Classes of siblings currently</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="Enter Names and Classes of siblings">
                     </div>
 
-                    <div class="p-2 w-full">
-                        <p class="mb-2">Religion</p> 
-                        <select class="w-full outline outline-1 outline-blue-400 p-2 mb-2" name="" id="">
+                    <div class="p-4 w-full">
+                        <p class="mb-2">Religion</p>
+                        <select class="w-full outline outline-1 outline-blue-400 p-4 mb-2" name="" id="">
                             <option value="">Christianity</option>
                             <option value="">Islam</option>
                             <option value="">Others</option>
                         </select>
                     </div>
 
-                    <div class="p-2">
-                        <p class="mb-2">Year/Class for which admission is beign sought*</p> 
-                        <input class="w-full p-2 outline outline-1 outline-blue-400 mb-2" type="text" name="" placeholder="-Select an option-">
+                    <div class="p-4">
+                        <p class="mb-2">Year/Class for which admission is beign sought*</p>
+                        <input class="w-full p-4 outline outline-1 outline-blue-400 mb-2" type="text" name=""
+                            placeholder="-Select an option-">
                     </div>
                 </div>
             </div>
         </form>
-
-            <!--This is School History Form -->
         <form action="">
-                <div class="w-10/12 mx-auto py-5">
-                    <h1 class="p-2 text-2xl font-bold">School History</h1>
-                    <div class="grid md:grid-cols-2">
-                      
+            <div class="w-10/12 mx-auto py-5">
+                <h1 class="p-4 text-2xl ">School History</h1>
+                <div class="grid md:grid-cols-2">
 
-                        <div class="p-3">
-                            <p class="mb-2">Name of School</p>
-                            <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Name of School">
-                        </div> 
 
-                        <div class="p-3">
-                            <p class="mb-2">Date</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Date">
-                        </div>
+                    <div class="p-3">
+                        <p class="mb-2">Name of School</p>
+                        <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                            placeholder="Enter Name of School">
+                    </div>
 
-                        <div class="p-3">
-                            <p class="mb-2">Name of School</p>
-                            <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Name of School">
-                        </div> 
+                    <div class="p-3">
+                        <p class="mb-2">Date</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="Enter Date">
+                    </div>
 
-                        <div class="p-3">
-                            <p class="mb-2">Date</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Date">
-                        </div>
+                    <div class="p-3">
+                        <p class="mb-2">Name of School</p>
+                        <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                            placeholder="Enter Name of School">
+                    </div>
+
+                    <div class="p-3">
+                        <p class="mb-2">Date</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="Enter Date">
                     </div>
                 </div>
+            </div>
         </form>
-
-
-            <!-- This is Family-Father Personal Information form -->
         <form action="">
-                <div class="w-10/12 mx-auto py-5">
-                    <h1 class="p-2 text-2xl font-bold">FAMILY: PERSONAL INFORMATION</h1>
-                    <div class="grid md:grid-cols-2">
-                        <div class="p-3">
-                            <p class="mb-2">Fathers's Surname</p>
-                            <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Father'Surname">
-                        </div> 
-
-                        <div class="p-3">
-                            <p class="mb-2">Other Names</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Other Names">
-                        </div>
+            <div class="w-10/12 mx-auto py-5">
+                <h1 class="p-4 text-2xl ">FAMILY: PERSONAL INFORMATION</h1>
+                <div class="grid md:grid-cols-2">
+                    <div class="p-3">
+                        <p class="mb-2">Fathers's Surname</p>
+                        <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                            placeholder="Enter Father'Surname">
                     </div>
 
                     <div class="p-3">
-                        <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Office Address">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Phone Number</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Phone Number">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Residence Address">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Residence Phone</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Residence Phone">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">E-mail Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="email" name="" placeholder="Enter E-mail Address">
+                        <p class="mb-2">Other Names</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="Enter Other Names">
                     </div>
                 </div>
-                
+
+                <div class="p-3">
+                    <p class="mb-2">Office Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Office Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Phone Number</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Phone Number">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                        placeholder="Enter Residence Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Phone</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Residence Phone">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">E-mail Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="email" name=""
+                        placeholder="Enter E-mail Address">
+                </div>
+            </div>
+
         </form>
-
-
-             <!-- This is Family-Mother Personal Information form -->
         <form action="">
-                <div class="w-10/12 mx-auto py-5">
-                    <div class="grid md:grid-cols-2">
-                        <div class="p-3">
-                            <p class="mb-2">Mother's Surname</p>
-                            <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Mother's Surname">
-                        </div> 
-
-                        <div class="p-3">
-                            <p class="mb-2">Other Names</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Other Names">
-                        </div>
+            <div class="w-10/12 mx-auto py-5">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-3">
+                        <p class="mb-2">Mother's Surname</p>
+                        <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                            placeholder="Enter Mother's Surname">
                     </div>
 
                     <div class="p-3">
-                        <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Office Address">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Phone Number</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="number" name="" placeholder="Enter Phone Number">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Residence Address">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">Residence Phone</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="number" name="" placeholder="Enter Residence Phone">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">E-mail Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="email" name="" placeholder="Enter E-mail Address">
+                        <p class="mb-2">Other Names</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="Enter Other Names">
                     </div>
                 </div>
-                
+
+                <div class="p-3">
+                    <p class="mb-2">Office Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                        placeholder="Enter Office Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Phone Number</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="number" name=""
+                        placeholder="Enter Phone Number">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                        placeholder="Enter Residence Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Phone</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="number" name=""
+                        placeholder="Enter Residence Phone">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">E-mail Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="email" name=""
+                        placeholder="Enter E-mail Address">
+                </div>
+            </div>
+
         </form>
-
-
-            <!-- This is Guardian Personal Information form -->
         <form action="">
-                <div class="w-10/12 mx-auto py-5">
-                    <div class="grid md:grid-cols-2">
-                        <div class="p-3">
-                            <p class="mb-2">Guardian's Surname</p>
-                            <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Guardian Surname">
-                        </div> 
-
-                        <div class="p-3">
-                            <p class="mb-2">Other Names</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Other Names">
-                        </div>
+            <div class="w-10/12 mx-auto py-5">
+                <div class="grid md:grid-cols-2">
+                    <div class="p-3">
+                        <p class="mb-2">Guardian's Surname</p>
+                        <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                            placeholder="Enter Guardian Surname">
                     </div>
 
                     <div class="p-3">
-                        <p class="mb-2">Office Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full p-2" type="text" name="" placeholder="Enter Office Address">
+                        <p class="mb-2">Other Names</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="Enter Other Names">
+                    </div>
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Office Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full p-4" type="text" name=""
+                        placeholder="Enter Office Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Phone Number</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Phone Number">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Residence Address">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">Residence Phone</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="Enter Residence Phone">
+                </div>
+
+                <div class="p-3">
+                    <p class="mb-2">E-mail Address</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="email" name=""
+                        placeholder="Enter E-mail Address">
+                    <p>(Please note that all correspondence will be sent to this address unless the school is notified
+                        otherwise)</p>
+                </div>
+
+                <div class="grid md:grid-cols-2">
+                    <div class="p-3">
+                        <p class="mb-2">Are parents living together?</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="-Select an option-">
                     </div>
 
                     <div class="p-3">
-                        <p class="mb-2">Phone Number</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Phone Number">
+                        <p class="mb-2">Is either parent a member of the Trust Council?</p>
+                        <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                            placeholder="-Select an option-">
                     </div>
+                </div>
 
-                    <div class="p-3">
-                        <p class="mb-2">Residence Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Residence Address">
-                    </div>
+                <div class="p-3">
+                    <p class="mb-2">Signature of Parent/Guardian</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="no file selected">
+                </div>
 
-                    <div class="p-3">
-                        <p class="mb-2">Residence Phone</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="Enter Residence Phone">
-                    </div>
-
-                    <div class="p-3">
-                        <p class="mb-2">E-mail Address</p>
-                        <input class="outline outline-1 outline-blue-400 w-full  p-2" type="email" name="" placeholder="Enter E-mail Address">
-                        <p>(Please note that all correspondence will be sent to this address unless the school is notified otherwise)</p>
-                    </div>
-
-                    <div class="grid md:grid-cols-2">
-                        <div class="p-3">
-                            <p class="mb-2">Are parents living together?</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="-Select an option-">
-                        </div>
-
-                        <div class="p-3">
-                            <p class="mb-2">Is either parent a member of the Trust Council?</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="-Select an option-">
-                        </div>
-                    </div>
-
-                    <div class="p-3">
-                            <p class="mb-2">Signature of Parent/Guardian</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="no file selected">
-                    </div>
-
-                    <h1 class="mt-10 fobt-bold text-xl">PREFERRED EXAM CENTER</h1>
-                    <div class="p-3">
-                            <p class="mb-2">Exam Center</p>
-                            <input class="outline outline-1 outline-blue-400 w-full  p-2" type="text" name="" placeholder="-Select an option-">
-                    </div>
+                <h1 class="mt-10 fobt-bold text-xl">PREFERRED EXAM CENTER</h1>
+                <div class="p-3">
+                    <p class="mb-2">Exam Center</p>
+                    <input class="outline outline-1 outline-blue-400 w-full  p-4" type="text" name=""
+                        placeholder="-Select an option-">
+                </div>
+                <div class="">
+                    <p class="p-4">are compulsor</p>
                     <div class="">
-                            <p class="p-2">are compulsor</p>
-                        <div class="">
-                             <img class="w-96" src="../assets/logos/payment-logo.png" alt="">  
-                        </div>
-                        <div class="p-7 grid grid-cols-2">
-                            <button class="p-3 text-xl w-11/12 bg-blue-800 rounded-md text-white hover:bg-blue-900" type="button">Pay</button>
-                            <button class="p-3 text-xl w-11/12 bg-blue-800 rounded-md text-white hover:bg-blue-900" type="button">Reset</button>
-                        </div>
-                    </div><br><br>
-                </div> 
+                        <img class="w-96" src="../assets/logos/payment-logo.png" alt="">
+                    </div>
+                    <div class="p-7 grid grid-cols-2">
+                        <button class="p-3 text-xl w-11/12 bg-blue-800 rounded-md text-white hover:bg-blue-900"
+                            type="button">Pay</button>
+                        <button class="p-3 text-xl w-11/12 bg-blue-800 rounded-md text-white hover:bg-blue-900"
+                            type="button">Reset</button>
+                    </div>
+                </div><br><br>
+            </div>
         </form>
+    </div> -->
+
 </template>
 
 
@@ -304,9 +357,10 @@ import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRig
 import siteHeader from '../components/siteHeader.vue'
 import headerImg from '../assets/images/DSC_0515.jpg'
 import defaultPic from "../assets/logos/default.png"
+import admissionSidebarVue from '../components/admissionSidebar.vue'
 export default {
     components: {
-        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon
+        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, admissionSidebarVue
     },
     data() {
         return {
