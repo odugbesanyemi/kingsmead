@@ -109,6 +109,10 @@ const router = createRouter({
       ],
     },
     {
+      path:"/schools",
+      redirect:"/schools/preschool"
+    },
+    {
       path:"/schools/college/",
       component:collegeView,
       children:[

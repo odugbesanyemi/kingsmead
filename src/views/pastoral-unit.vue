@@ -6,7 +6,7 @@
             <div class="bg-transparent  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="md:flex gap-5">
-                        <div class="md:w-1/5 max-md:mb-6">
+                        <!-- <div class="md:w-1/5 max-md:mb-6">
                             <div class="hover:shadow-xl group shadow-blue-400/10 sticky top-0">
                                 <div class="mb-0 h-56 grayscale group-hover:grayscale-0">
                                     <img src='../assets/images/principal-image.jpg' alt=""
@@ -17,8 +17,8 @@
                                     <p class="text-slate-400">Vice Principal ( Pastoral )</p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="md:w-3/5">
+                        </div> -->
+                        <div class="">
                             <div class="text-xl">
                                 <p>The Pastoral Care Unit of Kingsmead College is an all-inclusive emotional
                                     intelligence programme

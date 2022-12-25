@@ -285,7 +285,7 @@ export default {
                 },
                 {
                     id: 6,
-                    title: "Media & Clubs",
+                    title: "News & Events",
                     to: "#",
                     dropdown: false,
                     dropdownLinks: [

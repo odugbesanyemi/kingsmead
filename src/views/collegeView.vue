@@ -1,6 +1,6 @@
 
 <template>
-    <NavbarComponentVue class="bg-green-700 text-white z-40" :class="{'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900':isFixed}"/>
+    <NavbarComponentVue :class="{'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900 z-20 transition-all duration-300':isFixed, 'bg-blue-900 text-white z-20 transition-all duration-300':!isFixed}" />
     <RouterView class="-z-20"/>
     <!-- add footer -->
     <footerComponentVue class=""/>

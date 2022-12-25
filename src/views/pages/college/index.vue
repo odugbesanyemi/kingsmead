@@ -4,7 +4,7 @@
             <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{"delay": 2500}'>
                 <swiper-slide class="relative " v-for="item in slides">
                     <div class="relative h-full bg-purple-100">
-                        <img src="../assets/images/kingsmead_front-page.jpg" class="-z-20 w-full h-screen object-cover" alt="">
+                        <img :src="item.img" class="-z-20 w-full h-screen object-cover" alt="">
                         <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0 "></span>
                         <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 left-10">
                             <h1 class="text-5xl xl:text-8xl text-blue-50">{{ item.title }}</h1>
@@ -58,34 +58,6 @@
         </div>
     </section>
     <!-- partners section -->
-    <section class="bg-blue-50">
-        <div class=" md:max-w-7xl mx-auto md:py-36 py-20 max-md:px-10">
-             <h2 class="text-5xl font-extrabold text-blue-800 mb-14">Accredited By:</h2>
-             <div class="grid md:grid-cols-4 max-md:grid-cols-2 gap-5 group mix-blend-multiply justify-center">
-                <div class="grayscale hover:grayscale-0 flex-col flex items-center justify-center">
-                    <img src="../assets/logos/British_Council_logo.svg.png" alt="" >
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/cambridge.jpg" alt="">
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/Coat_of_arms_of_Nigeria.svg.png" alt="">
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/IELTS_logo.svg.png" alt="">
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/lagos-state.webp" alt="" class="w-full h-full object-cover">
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/neco.jfif" alt="" class="w-full h-full object-cover">
-                </div>
-                <div class="grayscale hover:grayscale-0 flex items-center justify-center">
-                    <img src="../assets/logos/waec.jpg" alt="">
-                </div>
-             </div>
-        </div>
-    </section>
     <!-- contact section -->
     <section>
         <div class="bg-green-100">
@@ -138,7 +110,7 @@ export default {
             modules: [Autoplay, Navigation, Pagination],
             slides: [
                 {
-                    img: "",
+                    img: "/src/assets/images/DSC_0544.jpg",
                     title: "Learning is not a Choice, it's a Life",
                     btn1: {
                         name: "Learn More",
@@ -150,7 +122,7 @@ export default {
                     }
                 },
                 {
-                    img: "",
+                    img: "/src/assets/images/DSC_0511.jpg",
                     title: "School of Your Child's Dream",
                     btn1: {
                         name: "Get Started",
@@ -162,7 +134,7 @@ export default {
                     }
                 },
                 {
-                    img: "",
+                    img: "/src/assets/images/DSC_0515.jpg",
                     title: "Enroll Today to Begin Learning",
                     btn1: {
                         name: "Begin Today",

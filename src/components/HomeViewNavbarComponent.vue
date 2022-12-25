@@ -200,7 +200,8 @@ export default {
                 {
                     id: 3,
                     title: "Schools",
-                    to: "#",
+                    to: "/schools",
+                    redirect:"/schools",
                     dropdown: true,
                     dropdownLinks: [
                         {
@@ -271,12 +272,12 @@ export default {
                             dropdown: false,
                             dropdownLinks: []
                         },
-                        {
-                            title: "School Reports",
-                            to: "/Life-at-Kingsmead/school-report",
-                            dropdown: false,
-                            dropdownLinks: []
-                        },
+                        // {
+                        //     title: "School Reports",
+                        //     to: "/Life-at-Kingsmead/school-report",
+                        //     dropdown: false,
+                        //     dropdownLinks: []
+                        // },
                     ]
                 },
                 {
