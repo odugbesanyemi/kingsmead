@@ -9,8 +9,8 @@
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
                     <Bars3Icon class=" w-8 h-8" />
                 </div>
-                <transition>
-                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown"></span>
+                <transition name="slide">
+                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown" @click="dropdown = !dropdown"></span>
                 </transition>
                 <!-- mobile navbar -->
                 <transition>
@@ -21,20 +21,19 @@
                             <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
                         </span>
                         <ul class="absolute top-4 left-0 rounded rounded-tr-2xl bg-white w-full ">
-                            <li class='nav-item group/first mr-5 group/d w-full' v-for="x in links" :key="x.id">
-                                <RouterLink :to="x.to"
-                                    class='text-md p-4 relative  text-gray-600 flex items-center justify-between'>
+                            <li class='nav-item  mr-5 w-full text-xl border-b border-slate-200/50 last:border-0' v-for="x in links" :key="x.id" @click="x.opened = !x.opened">
+                                <RouterLink :to="x.to" class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold'>
                                     {{ x.title }}
-                                    <ChevronDownIcon class="w-5 h-5 ml-2" v-if="x.dropdown" />
+                                    <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown" :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }"/>
                                 </RouterLink>
-                                <ul class='dropdown-menu hidden group-hover/first:block backdrop-blur-sm  text-gray-600 bg-gradient-to-t from-white to-white'
+                                <ul class="text-gray-600" :class="{'block bg-gray-100 transition-all duration-500 ease-in-out':x.opened,'dropdown-menu hidden backdrop-blur-sm  text-gray-600 transition-all duration-600':!x.opened}"
                                     v-if="(x.dropdown)">
                                     <li v-for="y in x.dropdownLinks" :key="y.id"
-                                        class="py-3 w-full hover:bg-gradient-to-tr from-blue-400 to-blue-600 hover:text-white group/second relative ">
-                                        <RouterLink class='dropdown-item px-5 ' :to='y.to'>{{ y.title }}
+                                        class="py-3 w-full hover:bg-gradient-to-tr from-blue-400 to-blue-600 hover:text-white relative border-b-white border">
+                                        <RouterLink class='dropdown-item px-5 text-gray-500' :to='y.to'>{{ y.title }}
                                         </RouterLink>
-                                        <ul class='dropDown-menu hidden group-hover/second:block w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 '
-                                            v-if="y.dropdown">
+                                        <ul class='dropDown-menu hidden w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 ' 
+                                            v-if="y.dropdown" >
                                             <li v-for="z in y.dropdownLinks"
                                                 class="p-4 hover:text-blue-500 hover:bg-white" :key="z">
                                                 <RouterLink class='dropdown-item p-4' :to='z.to'>{{ z.title }}
@@ -54,7 +53,7 @@
                     <ul class='flex items-center justify-center'>
                         <li class='nav-item group/first mr-5 group/d' v-for="x in links" :key="x.id">
                             <RouterLink :to="x.to"
-                                class='text-lg xl:text-base relative py-7 border-b border-transparent border-2  group-hover/d:border-b group-hover/d:text-gray-600 group-hover/d:border-b-white flex items-center'>
+                                class='text-lg xl:text-base relative py-7  border-transparent border-2  group-hover/d:border-b group-hover/d:text-gray-600 group-hover/d:border-b-white flex items-center'>
                                 {{ x.title }}
                                 <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
@@ -105,8 +104,9 @@ export default {
                 {
                     id: 1,
                     title: "About Kingsmead",
-                    to: "/about/history",
+                    to: "",
                     dropdown: true,
+                    opened:false,
                     dropdownLinks: [
                         {
                             id: 0,
@@ -163,8 +163,9 @@ export default {
                 {
                     id: 2,
                     title: "Academics",
-                    to: "/academics/student-Leadership",
+                    to: "",
                     dropdown: true,
+                    opened:false,
                     dropdownLinks: [
                         {
                             id: 1,
@@ -200,9 +201,9 @@ export default {
                 {
                     id: 3,
                     title: "Schools",
-                    to: "/schools",
-                    redirect:"/schools",
+                    to: "",
                     dropdown: true,
+                    opened:false,
                     dropdownLinks: [
                         {
                             title: "Pre-School",
@@ -221,8 +222,9 @@ export default {
                 {
                     id: 4,
                     title: "Admissions",
-                    to: "/admissions/criteria-policy",
+                    to: "",
                     dropdown: true,
+                    opened:false,
                     dropdownLinks: [
                         {
                             id: 2,
@@ -251,8 +253,9 @@ export default {
                 {
                     id: 5,
                     title: "Life at Kingsmead",
-                    to: "/Life-at-Kingsmead/studentLife",
+                    to: "",
                     dropdown: true,
+                    opened:false,
                     dropdownLinks: [
                         {
                             title: "Student Life",
@@ -299,13 +302,17 @@ export default {
             ]
         }
     },
+    methods:{
+        alertTrue(){
+            alert('true')
+        },
+        alertFalse(){
+            alert('false')
+        }
+    }
 }
 </script>
 <style scoped>
-nav .router-link-active:not(.indexPage, .dropdown-item) {
-    color: rgb(173, 173, 173);
-    border-bottom: 2px solid white !important;
-}
 
 /* transition */
 .v-enter-from,
@@ -323,5 +330,19 @@ nav .router-link-active:not(.indexPage, .dropdown-item) {
 .v-leave-from {
     opacity: 1;
     right: 200px !important;
+}
+@keyframes slide {
+    0%{
+        right: 0%;
+    }
+    100%{
+        right: 100%;
+    }
+}
+.slide-enter-active{
+    animation: slide 1s ease-in-out reverse;
+}
+.slide-leave-active{
+    animation: slide .3s ease-in-out;
 }
 </style>

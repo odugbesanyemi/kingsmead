@@ -304,7 +304,7 @@ export default {
     },
 }
 </script>
-<style >
+<style scoped>
 nav .router-link-active:not(.indexPage, .dropdown-item) {
     color: rgb(173, 173, 173);
     border-bottom: 2px solid white !important;
