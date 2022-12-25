@@ -86,7 +86,7 @@
                 </div>
                 <div class="imgflexed md:w-1/2">
                     <div class="grayscale h-full ">
-                        <img src="../assets/images/DSC_0515.jpg" alt="" class="w-full h-full object-cover rounded-br-3xl">
+                        <img src="" alt="" class="w-full h-full object-cover rounded-br-3xl">
                     </div>
                 </div>
             </div>
@@ -134,7 +134,7 @@ export default {
                     }
                 },
                 {
-                    img: "",
+                    img: "/src/assets/images/DSC_0515.jpg",
                     title: "Enroll Today to Begin Learning",
                     btn1: {
                         name: "Begin Today",
