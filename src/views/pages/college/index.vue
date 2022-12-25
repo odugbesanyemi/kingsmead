@@ -134,7 +134,7 @@ export default {
                     }
                 },
                 {
-                    img: "/src/assets/images/DSC_0515.jpg",
+                    img: "",
                     title: "Enroll Today to Begin Learning",
                     btn1: {
                         name: "Begin Today",
