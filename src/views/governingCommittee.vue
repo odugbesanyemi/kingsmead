@@ -4,7 +4,7 @@
         <div class="page-content">
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl font-bold text-blue-800 mb-10">Board of Governors</h1>
+                    <h1 class="text-5xl text-blue-800 mb-10">Board of Governors</h1>
                     <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
                         <div class="hover:shadow-xl group shadow-blue-400/10" v-for="x in governors" :key="x" >
                             <div class="mb-0 h-56 grayscale group-hover:grayscale-0">

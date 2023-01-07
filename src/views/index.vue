@@ -1,7 +1,7 @@
 <template >
     <!-- hero section -->
     <section class="relative ">
-            <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{"delay": 2500}'>
+            <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{"delay": 4500}'>
                 <swiper-slide class="relative " v-for="item in slides">
                     <div class="relative h-full bg-purple-100">
                         <img src="../assets/images/kingsmead_front-page.jpg" class="w-full h-screen object-cover" alt="">
@@ -32,8 +32,8 @@
                     </iframe>
                 </div>
                 <div class="content md:w-1/2 p-10 md:px-10 md:py-16 text-2xl text-blue-900">
-                    <p class="text-gray-400 max-sm:text-lg">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut maiores magni voluptatibus error minus debitis, odio atque totam, modi animi exercitationem praesentium omnis maxime aperiam culpa ratione, esse dolore. Cumque!</p>
-                    <p class="font-bold my-8">Enroll Today to Register your child and wards</p>
+                    <p class="text-blue-900 max-sm:text-lg">Kingsmead school was established in July, 2017 to provide qualitative educational opportunity for increasing number of primary school leavers within and outside Nigeria who have academic excellence as their focus.</p>
+                    <Router-link to="/about/history"><p class="text-blue-600 underline my-4 ">Read more</p></Router-link>
                     <div class="grid grid-cols-2">
                         <div class="bg-red-500 flex flex-col items-center justify-center p-10 hover:bg-opacity-90">
                             <LightBulbIcon class="text-white w-10 h-10 mb-4"/>
@@ -59,7 +59,7 @@
     <!-- partners section -->
     <section class="bg-blue-50">
         <div class=" md:max-w-7xl mx-auto md:py-36 py-20 max-md:px-10">
-             <h2 class="text-5xl font-extrabold text-blue-800 mb-14">Accredited By:</h2>
+             <h2 class="text-5xl text-blue-800 mb-14">Accredited By:</h2>
              <div class="grid md:grid-cols-4 max-md:grid-cols-2 gap-5 group mix-blend-multiply justify-center">
                 <div class="grayscale hover:grayscale-0 flex-col flex items-center justify-center">
                     <img src="../assets/logos/British_Council_logo.svg.png" alt="" >

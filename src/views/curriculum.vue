@@ -6,17 +6,13 @@
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <h1 class="text-5xl text-blue-800 mb-10">Curriculum Overview</h1>
                     <div class="md:flex items-center gap-7 ">
-                        <div class="md:w-1/2">
-                            
-                            <p class="leading-loose">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus impedit placeat nemo
-                                veritatis aliquid quaerat ratione necessitatibus nulla aut inventore animi deserunt
-                                debitis dolorem, explicabo natus magni expedita? Ex, facere?
-                            </p>
-                            <p class="leading-loose">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam assumenda
-                                molestias ut ullam voluptate, enim reiciendis corrupti, voluptatibus fugiat sunt quas
-                                deserunt animi error quae quisquam eveniet quam, autem aspernatur?</p>
+                        <div class="md:w-3/5 text-justify">
+                            <p class="leading-loose pb-3">At our school, we believe that a strong educational foundation is crucial for the success of our students. That's why we have developed a comprehensive and challenging curriculum that is designed to prepare our students for academic success in college and beyond.</p>
+                            <p class="leading-loose pb-3">Our curriculum is structured around the core subjects of math, science, English, and social studies. Within each of these subjects, we offer a range of courses at different levels to meet the needs and abilities of all our students. For example, in math, we offer courses ranging from basic arithmetic to advanced calculus, and in science, we offer courses in biology, chemistry, and physics.</p>
+                            <p class="leading-loose pb-3">In addition to the core subjects, we also offer a wide range of elective courses, such as art, music, and physical education, to help our students explore their passions and develop new skills.</p>
+                            <p class="leading-loose "></p>
                         </div>
-                        <div class="class md:w-1/2 order-first">
+                        <div class="class md:w-2/5">
                             <div class="grid grid-cols-2">
                                 <div
                                     class="bg-red-500 flex flex-col items-center justify-center p-10 hover:bg-opacity-90">
@@ -24,7 +20,7 @@
                                     <p class="text-white text-sm font-bold">Admission Guidlines</p>
                                 </div>
                                 <div
-                                    class="bg-purple-500 flex md:border-l flex-col items-center justify-center p-10 hover:bg-opacity-90">
+                                    class="bg-purple-500 flex flex-col items-center justify-center p-10 hover:bg-opacity-90">
                                     <UserGroupIcon class="text-white w-10 h-10 mb-4" />
                                     <p class="text-white text-sm font-bold">Pastoral Care Unit</p>
                                 </div>
@@ -34,7 +30,7 @@
                                     <p class="text-white text-sm font-bold">Portal Login</p>
                                 </div>
                                 <div
-                                    class="bg-indigo-500 flex flex-col md:border-l items-center justify-center p-10 hover:bg-opacity-90">
+                                    class="bg-indigo-500 flex flex-col tems-center justify-center p-10 hover:bg-opacity-90">
                                     <ChatBubbleBottomCenterIcon class="text-white w-10 h-10 mb-4" />
                                     <p class="text-white text-sm font-bold">Join Our community</p>
                                 </div>
@@ -42,19 +38,8 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
-                    <div class="md:flex">
-                        <div class="md:w-1/2">
-                            <img src="../assets/images/dsc_053.jpg" class="w-full h-full" alt="">
-                        </div>
-                        <div class="bg-blue-800 md:p-20 p-5 md:w-1/2">
-                            <h2 class="text-3xl font-bold mb-7 text-white w">Personalize</h2>
-                            <p class="text-white leading-loose">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo maxime ex optio explicabo voluptas, quidem quas harum vel mollitia expedita, accusantium qui blanditiis aliquam doloremque! Omnis quae deserunt qui cumque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea earum ab dolorem dicta dolor omnis laborum praesentium debitis odit, saepe, officia ratione voluptatum quo velit quaerat optio esse, blanditiis odio.</p>
-                        </div>
-                    </div>
-                </div> -->
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
-                    <h1 class="my-10 text-slate-600 text-center text-4xl">Our Curriculums</h1>
+                    <h1 class="my-10 text-blue-800 text-center text-4xl">Our Curriculums</h1>
                     <div class="grid md:grid-cols-4  border border-dashed">
                         <div class="p-5" v-for="x in curriculumData" :key="x.id">
                             <h3 class="subject font-bold text-xl mb-5">{{x.title}}</h3>

@@ -6,7 +6,7 @@
             <span class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
             <div class="bg-transparent  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl font-bold text-blue-800 mb-10">Our Anthem</h1>
+                    <h1 class="text-5xl text-blue-800 mb-10">Our Anthem</h1>
                     <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
                         <div class="">
                             <h2 class="text-3xl mb-5">1st Stanza</h2>

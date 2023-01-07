@@ -6,7 +6,7 @@
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="md:flex">
                         <div class="md:w-1/2 max-sm:text-base ">
-                            <h2 class="text-blue-800 font-bold text-5xl mb-4">The Great Journey</h2>
+                            <h2 class="text-blue-800 text-5xl mb-4">The Great Journey</h2>
                             <p class="pt-3 pb-3 leading-relaxed">The school was established in July, 2017 to provide qualitative
                                 educational opportunity for increasing number of primary school leavers within and
                                 outside Nigeria who have academic excellence as their focus.</p>
@@ -68,7 +68,7 @@
                             <img src="../assets/images/DSC_0515.jpg" alt="" class="rounded-xl rounded-tr-3xl h-full object-cover shadow-md">
                         </div>
                         <div class="md:p-10 max-md:mt-8 ">
-                            <h2 class="text-4xl font-bold text-white mb-8">Our Core Values</h2>
+                            <h2 class="text-4xl text-white mb-8">Our Core Values</h2>
                             <div class="grid max-md:grid-cols-2 grid-cols-3 gap-3">
                                 <div class="bg-white/10 backdrop-blur-md p-10 rounded flex items-center justify-center ring-white border border-opacity-50 hover:shadow-lg">
                                     <h3 class="font-bold text-xl text-white">INTEGRITY</h3>

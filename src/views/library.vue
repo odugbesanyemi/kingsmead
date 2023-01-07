@@ -4,21 +4,23 @@
         <div class="page-content">
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl text-blue-800 mb-10 md:w-3/5">Reading has never been this Intresting</h1>
-                    <div class="flex gap-3 items-center">
-                        <div class="libInt w-2/5 md:text-lg text-slate-500">
-                            <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ratione.
-                                Magnam asperiores quia eaque consectetur ipsum, tempore quae, blanditiis, provident vero
-                                alias eius exercitationem in fugit amet totam sequi vitae? Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Voluptas, fugiat doloribus neque suscipit optio sapiente
-                                ad, facere aliquid odit laboriosam mollitia soluta eaque harum iusto, sequi culpa
-                                voluptates vel maiores!</p>
-                            <p class="mb-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, ratione.
-                                Magnam asperiores quia eaque consectetur ipsum, tempore quae, blanditiis, provident vero
-                                alias eius exercitationem in fugit amet totam sequi vitae? Lorem ipsum dolor, sit amet
-                                consectetur adipisicing elit. Voluptas, fugiat doloribus neque suscipit optio sapiente
-                                ad, facere aliquid odit laboriosam mollitia soluta eaque harum iusto, sequi culpa
-                                voluptates vel maiores!</p>
+                    <h1 class="text-5xl text-blue-800 mb-10 md:w-3/5">Welcome to the school Library !</h1>
+                    <div class="flex gap-8 items-center">
+                        <div class="libInt w-2/5 md:text-lg text-slate-700 text-justify" >
+                            <p class="mb-5">Our library is a place where students can come to find books, do research,
+                                work on projects, and relax with a good book. We have a wide selection of fiction and
+                                nonfiction books for all ages, as well as magazines, newspapers, and online resources.
+                            </p>
+                            <p class="mb-3">Our librarian is always available to help students find the resources they
+                                need and to offer recommendations for books to read. We also offer library classes and
+                                host events such as book clubs and author visits.</p>
+                            <p class="mb-3">In addition to traditional print materials, our library also offers access
+                                to digital resources such as e-books and online databases. These resources can be
+                                accessed from anywhere with an internet connection, making it easy for students to do
+                                research and complete assignments.</p>
+                            <p class="mb-3">We encourage all students to visit the library and take advantage of the
+                                resources it has to offer. Happy reading!</p>
+
                         </div>
                         <div class="img w-3/5">
                             <img src="../assets/images/DSC_0633.jpg" alt="">
@@ -37,7 +39,7 @@
                                         v-slot="{ open }">
                                         <dt class="text-lg">
                                             <DisclosureButton
-                                                class="text-left w-full flex justify-between items-start text-gray-400">
+                                                class="text-left w-full flex justify-between items-start text-gray-700">
                                                 <span class="font-medium text-gray-900">
                                                     {{ option.question }}
                                                 </span>
@@ -49,9 +51,7 @@
                                             </DisclosureButton>
                                         </dt>
                                         <DisclosurePanel as="dd" class="mt-2 pr-12">
-                                            <p class="text-base text-gray-500">
-                                                {{option.answer}}
-                                            </p>
+                                            <div class="text-base text-gray-700" v-html="option.answer"></div>
                                         </DisclosurePanel>
                                     </Disclosure>
                                 </dl>
@@ -60,7 +60,7 @@
                     </div>
                 </div>
             </div>
-            <joinUsAdVue/>
+            <joinUsAdVue />
         </div>
     </div>
 </template>
@@ -74,7 +74,7 @@ import defaultPic from "../assets/logos/default.png"
 import joinUsAdVue from '../components/joinUsAd.vue'
 export default {
     components: {
-        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, Disclosure, DisclosureButton,joinUsAdVue,
+        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, Disclosure, DisclosureButton, joinUsAdVue,
         DisclosurePanel,
         ChevronDownIcon,
     },
@@ -83,28 +83,24 @@ export default {
             headerImg, defaultPic,
             options: [
                 {
-                    id:1,
+                    id: 1,
                     question: "Library Use?",
-                    answer:
-                        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+                    answer:     "The library is open to all students during school hours. Students are welcome to come in and browse the shelves, read a book, or use one of our computers. If you need help finding a book or resource, don't hesitate to ask the librarian for assistance.",
                 },
                 {
-                    id:2,
-                    question: "Library Collection?",
-                    answer:
-                        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
-                },
-                {
-                    id:3,
+                    id: 3,
                     question: "Borrowing and Lending",
-                    answer:
-                        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+                    answer: "Students are welcome to borrow books from the library. Most books can be checked out for a period of two weeks, and students are allowed to have up to three books checked out at a time. To borrow a book, students will need to present their school ID or library card.",
                 },
                 {
-                    id:1,
-                    question: "Kingsmead E-Library System",
-                    answer:
-                        "I don't know, but the flag is a big plus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cupiditate laboriosam fugiat.",
+                    id: 4,
+                    question: "Returning Books",
+                    answer: "Books should be returned to the library on or before the due date. If a student is unable to return a book by the due date, they may renew it by bringing it to the library and speaking with the librarian. If a book is lost or damaged, the student will be responsible for replacing it or paying for the damages.",
+                },
+                {
+                    id: 5,
+                    question: "Lending Policies",
+                    answer: "In order to ensure that all students have access to the resources in the library, we ask that students follow these lending policies: <ul class='list-circle py-5'><li> Return books on time </li><li> Keep books in good condition</li><li> Pay for lost or damaged books </li><li> Follow all library rules </li></ul> <p>We hope that these policies help to create a positive and welcoming library environment for all students.</p>",
                 },
             ]
         }

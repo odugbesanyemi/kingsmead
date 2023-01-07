@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "../views/homeView.vue";
 import collegeView from "../views/collegeView.vue";
-import elementaryView from "../views/elementaryView.vue"
-import preschoolView from "../views/preschoolView.vue"
+import elementaryView from "../views/elementaryView.vue";
+import preschoolView from "../views/preschoolView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -11,11 +11,11 @@ const router = createRouter({
       path: "/",
       name: "home",
       component: HomeView,
-      redirect:"/home",
+      redirect: "/home",
       children: [
         {
           path: "/home",
-          alias:"/",
+          alias: "/",
           component: () => import("../views/index.vue"),
         },
         {
@@ -106,39 +106,91 @@ const router = createRouter({
           path: "admissions/fees-deposit",
           component: () => import("../views/fees-deposit.vue"),
         },
+        {
+          path: "/gallery",
+          name: "gallery",
+          component: () => import("../views/galleryHome.vue"),
+          redirect: "/gallery/categories",
+          children: [
+            {
+              path: "categories",
+              component: () => import("../components/galleryCategory.vue"),
+            },
+            {
+              path: "categories/:id",
+              component: () => import("../components/galleryCatalogue.vue"),
+            },
+          ],
+        },
+        {
+          path: "/jobs",
+          name: "jobs",
+          component: () => import("../views/jobs.vue"),
+          redirect: "/jobs/postings",
+          children: [
+            {
+              path: "postings",
+              component: () => import("../components/jobPostings.vue"),
+            },
+            {
+              path: "postings/:id",
+              component: () => import("../components/jobPost.vue"),
+            },
+          ],
+        },
+        {
+          path: "/events",
+          name: "events",
+          component: () => import("../views/events.vue"),
+          children: [],
+        },
+        {
+          path: "/events/:id",
+          component: () => import("../views/eventDetail.vue"),
+        },
+        {
+          path: "/news",
+          name: "news",
+          component: () => import("../views/blog.vue"),
+          children: [],
+        },
+        {
+          path: "/news/:id",
+          component: () => import("../views/blogpost.vue"),
+        },
       ],
     },
     {
-      path:"/schools",
-      redirect:"/schools/preschool"
+      path: "/schools",
+      redirect: "/schools/preschool",
     },
     {
-      path:"/schools/college/",
-      component:collegeView,
-      children:[
+      path: "/schools/college/",
+      component: collegeView,
+      children: [
         {
-          path:"",
-          name:"collegeHome",
-          component:  ()=> import('../views/pages/college/index.vue')
+          path: "",
+          name: "collegeHome",
+          component: () => import("../views/pages/college/index.vue"),
         },
-      ]
+      ],
     },
     {
-      path:"/schools/elementary",
-      name:"ElementaryHome",
-      component:elementaryView,
-      children:[
-
-      ]
+      path: "/schools/elementary",
+      name: "ElementaryHome",
+      component: elementaryView,
+      children: [],
     },
     {
-      path:"/schools/preschool",
-      name:"preschoolHome",
-      component:preschoolView,
-      children:[
-
-      ]
+      path: "/schools/preschool",
+      name: "preschoolHome",
+      component: preschoolView,
+      children: [],
     },
+    {
+      path:"/admin",
+      component:()=>import("../admin/index.vue")
+    }
   ],
   scrollBehavior(to, from, savedPosition) {
     return { top: 0 };

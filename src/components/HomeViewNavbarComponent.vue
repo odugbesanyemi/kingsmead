@@ -93,14 +93,13 @@ export default {
         return {
             dropdown: false,
             links: [
+                // {
+                //     id: 0,
+                //     title: "Home",
+                //     to: "/home",
+                //     dropdown: false,
 
-                {
-                    id: 0,
-                    title: "Home",
-                    to: "/home",
-                    dropdown: false,
-
-                },
+                // },
                 {
                     id: 1,
                     title: "About Kingsmead",
@@ -286,17 +285,8 @@ export default {
                 {
                     id: 6,
                     title: "Gallery",
-                    to: "/",
+                    to: "/gallery",
                     dropdown: false,
-                    dropdownLinks: [
-                        {
-                            title: "History",
-                            to: "/",
-                            dropdown: false,
-                            dropdownLinks: []
-                        },
-
-                    ]
                 }
 
             ]

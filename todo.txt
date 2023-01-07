@@ -1,0 +1,14 @@
+the following are the neccessary things to do on the project 
+#server
+create a in-house admin for the website different from the admin page for the portal- reason being that the portal is a separate software
+// for the following we will be needing the admin of the website to easily change, add, and edit information pertaining to the website
+1. add pages to the website easily
+2. manage contacts and emails from contacts- see all those who have contact them and decide to 
+3. manage information like the events
+4. manage News blog
+5. Manage Announcements 
+6. manage downloads like - registration form, and other forms
+7. Alumnae data(alumni,transpcript request, alumni spotlight, Alumni News) 
+8. Manage Images(upload, remove and change uploaded images)
+9. Manage Jobs (Add jobs, Manage)
+10. settings page to add (more controls.)

@@ -66,57 +66,51 @@ export default {
             faqs: [
                 {
                     id: 1,
-                    question: "What is your school Philosophy or Vision?",
+                    question: "What is the school's mission statement?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Our school's mission is to provide a high-quality education that prepares all students for success in college and beyond, while also fostering a sense of community and personal growth.",
                 },
                 {
                     id: 2,
-                    question: "What type of students are you looking for?",
+                    question: "What are the school hours?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Our school's hours are from 8:00 AM to 3:00 PM, Monday through Friday",
                 },
                 {
                     id: 3,
-                    question: "What curriculum do you use?",
+                    question: "Is the school accredited?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Yes, our school is fully accredited by the state department of education and meets all necessary standards for academic quality.",
                 },
                 {
                     id: 4,
-                    question: "What are your class sizes and student-to-teacher ratios?",
+                    question: "What grade levels does the school serve?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Our school serves students in grades K-12.",
                 },
                 {
                     id: 5,
-                    question: "How much is tuition and what does it include?",
+                    question: "What extracurricular activities are available?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Our school offers a variety of extracurricular activities, including sports teams, music and drama programs, and clubs and organizations.",
                 },
                 {
                     id: 6,
-                    question: "What extracurricullar activities do you offer?",
+                    question: "How do I enroll my child in the school",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "To enroll your child in our school, please visit our website and fill out the online enrollment form. You can also contact our office for more information and to schedule a tour of the school.",
                 },
                 {
                     id: 7,
-                    question: "What are your teachers' qualifications and what professional development opportunities are available to them?",
+                    question: "What is the school's policy on bullying?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "Our school has a zero tolerance policy for bullying. We take all reports of bullying seriously and have established protocols in place for addressing and preventing it. If your child has experienced or witnessed bullying, please contact a school administrator or counselor.",
                 },
                 {
                     id: 8,
-                    question: "How do you integrate Technology into the classroom and curriculum?",
+                    question: "How do I contact a teacher or staff member?",
                     answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
-                },
-                {
-                    id: 9,
-                    question: "How do you measure individual achievement and progress?",
-                    answer:
-                        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo officia veritatis molestias reiciendis impedit natus laborum consequuntur recusandae. Quis ipsam consequatur quisquam quaerat non laboriosam minus voluptate ex tempore incidunt.",
+                        "You can find contact information for all teachers and staff members on our website, or you can call the main office to be directed to the appropriate person.",
                 },
             ]
         }

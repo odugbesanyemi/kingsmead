@@ -46,18 +46,6 @@
                                     potential, irrespective of creed, class or colour, in a safe, serene, supportive and
                                     sightly environment.</p>
                             </div>
-                            <div class="mt-20">
-                                <table>
-                                    <tr>
-                                        <th class="text-left">Writer</th>
-                                        <td class="w-56 text-center text-slate-400">Olasukanmi Titilope</td>
-                                    </tr>
-                                    <tr>
-                                        <th class="text-left">Date of launch</th>
-                                        <td class="w-56 text-center text-slate-400">Sept 22, 2017</td>
-                                    </tr>
-                                </table>
-                            </div>
                         </div>
                     </div>
 
