@@ -5,8 +5,8 @@
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <h1 class="text-5xl text-blue-800 mb-10 md:w-3/5">Welcome to the school Library !</h1>
-                    <div class="flex gap-8 items-center">
-                        <div class="libInt w-2/5 md:text-lg text-slate-700 text-justify" >
+                    <div class="md:flex gap-8 items-center">
+                        <div class="libInt md:w-2/5 md:text-lg text-slate-700 text-justify max-md:order-last" >
                             <p class="mb-5">Our library is a place where students can come to find books, do research,
                                 work on projects, and relax with a good book. We have a wide selection of fiction and
                                 nonfiction books for all ages, as well as magazines, newspapers, and online resources.
@@ -22,7 +22,7 @@
                                 resources it has to offer. Happy reading!</p>
 
                         </div>
-                        <div class="img w-3/5">
+                        <div class="img md:w-3/5 max-md:order-first">
                             <img src="../assets/images/DSC_0633.jpg" alt="">
                         </div>
                     </div>
@@ -30,7 +30,7 @@
             </div>
             <div class="bg-white">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:max-sm:px-10">
-                    <div class="bg-gray-50">
+                    <div class="">
                         <div class="max-w-7xl mx-auto py-12 px-4 sm:py-16 sm:px-6 lg:px-8">
                             <div class="max-w-6xl mx-auto divide-y-2 divide-gray-200">
                                 <h2 class="text-center text-3xl text-gray-900 sm:text-4xl">Know More</h2>

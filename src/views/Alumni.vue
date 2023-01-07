@@ -10,7 +10,7 @@
                     <div class="title p-4 text-center bg-slate-100">
                         <h3 class="font-bold text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNAE</h3>
                     </div>
-                    <div class="content p-5 md:px-20 md:py-10 text-justify text-slate-600">
+                    <div class="content p-5 md:px-20 md:py-10 x text-slate-600">
                         <p class="font-bold text-xl text-slate-800  ">
                             The alumni of the Kingsmead Schools are an impressive group of scientists, technology
                             professionals, engineers, artists, Media practictioners and many more who are making a
@@ -44,7 +44,7 @@
             <div class="max-w-7xl mx-auto">
                 <div class="relative p-5 md:p-10">
                     <div class="py-4 text-white text-2xl font-bold text-center">Alunmi Spotlight</div>
-                    <div class="grid grid-cols-3">
+                    <div class="grid gap-3 md:grid-cols-3 grid-cols-1">
                         <div class="relative cursor-pointer" v-for="item in alumniSpotlight" :key="item.id">
                             <img :src="item.imgName" alt=""
                                 class="relative h-72 w-full object-cover ">

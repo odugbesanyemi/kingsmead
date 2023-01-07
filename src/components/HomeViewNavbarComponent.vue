@@ -10,30 +10,35 @@
                     <Bars3Icon class=" w-8 h-8" />
                 </div>
                 <transition name="slide">
-                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown" @click="dropdown = !dropdown"></span>
+                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown"
+                        @click="dropdown = !dropdown"></span>
                 </transition>
                 <!-- mobile navbar -->
                 <transition>
-                    <div class="xl:hidden absolute bg-white w-11/12 left-1/2 -translate-x-1/2 -top-1 z-10"
-                        v-show="dropdown">
-                        <span
-                            class="rounded-full bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute top-3 -right-2 shadow-lg ring z-20">
-                            <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
-                        </span>
-                        <ul class="absolute top-4 left-0 rounded rounded-tr-2xl bg-white w-full ">
-                            <li class='nav-item  mr-5 w-full text-xl border-b border-slate-200/50 last:border-0' v-for="x in links" :key="x.id" @click="x.opened = !x.opened">
-                                <RouterLink :to="x.to" class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold'>
+                    <div class="xl:hidden absolute bg-white w-10/12 left-0 -top-1 z-10" v-show="dropdown">
+
+                        <ul class="absolute left-0 w-full bg-white h-screen">
+                            <span
+                                class=" bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute -right-12 top-5 shadow-lg ring z-20">
+                                <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
+                            </span>
+                            <li class='nav-item  mr-5 w-full text-xl border-b border-slate-200/50 last:border-0'
+                                v-for="x in links" :key="x.id" @click="x.opened = !x.opened">
+                                <RouterLink :to="x.to"
+                                    class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold'>
                                     {{ x.title }}
-                                    <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown" :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }"/>
+                                    <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown"
+                                        :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }" />
                                 </RouterLink>
-                                <ul class="text-gray-600" :class="{'block bg-gray-100 transition-all duration-500 ease-in-out':x.opened,'dropdown-menu hidden backdrop-blur-sm  text-gray-600 transition-all duration-600':!x.opened}"
+                                <ul class="text-gray-600"
+                                    :class="{ 'block bg-gray-100 transition-all duration-500 ease-in-out': x.opened, 'dropdown-menu hidden backdrop-blur-sm  text-gray-600 transition-all duration-600': !x.opened }"
                                     v-if="(x.dropdown)">
-                                    <li v-for="y in x.dropdownLinks" :key="y.id"
+                                    <li v-for="y in x.dropdownLinks" :key="y.id" @click="dropdown = !dropdown"
                                         class="py-3 w-full hover:bg-gradient-to-tr from-blue-400 to-blue-600 hover:text-white relative border-b-white border">
                                         <RouterLink class='dropdown-item px-5 text-gray-500' :to='y.to'>{{ y.title }}
                                         </RouterLink>
-                                        <ul class='dropDown-menu hidden w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 ' 
-                                            v-if="y.dropdown" >
+                                        <ul class='dropDown-menu hidden w-full text-blue-50 rounded-lg bg-blue-900 shadow-lg top-0 '
+                                            v-if="y.dropdown">
                                             <li v-for="z in y.dropdownLinks"
                                                 class="p-4 hover:text-blue-500 hover:bg-white" :key="z">
                                                 <RouterLink class='dropdown-item p-4' :to='z.to'>{{ z.title }}
@@ -44,7 +49,6 @@
                                 </ul>
                             </li>
                         </ul>
-
                     </div>
                 </transition>
 
@@ -105,7 +109,7 @@ export default {
                     title: "About Kingsmead",
                     to: "",
                     dropdown: true,
-                    opened:false,
+                    opened: false,
                     dropdownLinks: [
                         {
                             id: 0,
@@ -164,7 +168,7 @@ export default {
                     title: "Academics",
                     to: "",
                     dropdown: true,
-                    opened:false,
+                    opened: false,
                     dropdownLinks: [
                         {
                             id: 1,
@@ -202,7 +206,7 @@ export default {
                     title: "Schools",
                     to: "",
                     dropdown: true,
-                    opened:false,
+                    opened: false,
                     dropdownLinks: [
                         {
                             title: "Pre-School",
@@ -223,7 +227,7 @@ export default {
                     title: "Admissions",
                     to: "",
                     dropdown: true,
-                    opened:false,
+                    opened: false,
                     dropdownLinks: [
                         {
                             id: 2,
@@ -254,7 +258,7 @@ export default {
                     title: "Life at Kingsmead",
                     to: "",
                     dropdown: true,
-                    opened:false,
+                    opened: false,
                     dropdownLinks: [
                         {
                             title: "Student Life",
@@ -292,18 +296,17 @@ export default {
             ]
         }
     },
-    methods:{
-        alertTrue(){
+    methods: {
+        alertTrue() {
             alert('true')
         },
-        alertFalse(){
+        alertFalse() {
             alert('false')
         }
     }
 }
 </script>
 <style scoped>
-
 /* transition */
 .v-enter-from,
 .v-leave-to {
@@ -321,18 +324,22 @@ export default {
     opacity: 1;
     right: 200px !important;
 }
+
 @keyframes slide {
-    0%{
+    0% {
         right: 0%;
     }
-    100%{
+
+    100% {
         right: 100%;
     }
 }
-.slide-enter-active{
+
+.slide-enter-active {
     animation: slide 1s ease-in-out reverse;
 }
-.slide-leave-active{
+
+.slide-leave-active {
     animation: slide .3s ease-in-out;
 }
 </style>

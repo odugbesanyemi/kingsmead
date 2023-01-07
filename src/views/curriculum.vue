@@ -2,7 +2,7 @@
     <div>
         <siteHeader title="Curriculum" prev-page-name="About" curr-page-name="Curriculum" :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
+            <div class="bg-blue-50  py-8 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <h1 class="text-5xl text-blue-800 mb-10">Curriculum Overview</h1>
                     <div class="md:flex items-center gap-7 ">
@@ -38,8 +38,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-20">
-                    <h1 class="my-10 text-blue-800 text-center text-4xl">Our Curriculums</h1>
+                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-8">
+                    <h1 class="my-8 text-blue-800 text-center text-4xl">Our Curriculums</h1>
                     <div class="grid md:grid-cols-4  border border-dashed">
                         <div class="p-5" v-for="x in curriculumData" :key="x.id">
                             <h3 class="subject font-bold text-xl mb-5">{{x.title}}</h3>
@@ -58,8 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
+            <div class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-8 md:py-32 backdrop-blur-md min-h-96">
                 <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
                         src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
                         class="w-full h-full object-cover -z-10"></span>
