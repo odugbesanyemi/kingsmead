@@ -4,7 +4,7 @@
         <div class="page-content">
             <div class="bg-blue-50  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl text-blue-800 mb-10 md:w-3/5">Welcome to the school Library !</h1>
+                    <h1 class="text-5xl text-blue-800 mb-10  text-center">Welcome to the school Library !</h1>
                     <div class="md:flex gap-8 items-center">
                         <div class="libInt md:w-2/5 md:text-lg text-slate-700 text-justify max-md:order-last" >
                             <p class="mb-5">Our library is a place where students can come to find books, do research,

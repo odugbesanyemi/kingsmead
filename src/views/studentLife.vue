@@ -52,19 +52,19 @@ export default {
             activities: [
                 {
                     id: 1,
-                    img: "/src/assets/images/sport7.jpeg",
+                    img: "/img/sport7.jpeg",
                     title: "Sports",
                     desc: "<p> Kingsmead Schools offers a range of sports teams for students to join, including football, basketball, soccer, and more.</p> <p class='py-2'> Our teams have a long history of success and our coaches and athletes work hard to represent our school with pride.</p>"
                 },
                 {
                     id: 2,
-                    img: "/src/assets/images/sport1.jpeg",
+                    img: "/img/sport1.jpeg",
                     title: "Clubs",
                     desc: "<p class='mb-3'> We have a wide range of clubs for students to get involved in, including academic clubs like the science club and math club, as well as creative clubs like the art club and music club.</p> <p> There's something for everyone! </p>"
                 },
                 {
                     id: 3,
-                    img: "/src/assets/images/cultural4.jpeg",
+                    img: "/img/cultural4.jpeg",
                     title: "Cultural Events",
                     desc: "<p class='mb-3'> Kingsmead Schools offers a range of sports teams for students to join, including football, basketball, soccer, and more.</p> <p class='mb-3'> Our teams have a long history of success and our coaches and athletes work hard to represent our school with pride. </p>"
                 }
