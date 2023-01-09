@@ -3,9 +3,11 @@
         <div class="title mb-10 relative h-80">
             <img src="../assets/images/sport8.jpeg" class="w-full h-full object-cover object-top" alt="">
             <span class="bg-gradient-to-t from-white via-blue-50/50 to-transparent absolute inset-0"></span>
+            <div class="max-w-5xl absolute mx-auto inset-0 max-md:mx-5">
+                <h2 class="text-7xl text-blue-900 absolute top-1/2 -translate-y-1/2"> Gallery</h2>
+            </div>
         </div>
         <div class="elements max-w-5xl mx-auto p-5">
-            <h2 class="text-7xl text-blue-800 mb-20"> Gallery</h2>
             <div class="grid md:grid-cols-3 gap-5">
                 <div class="relative group" v-for="category in categories" :key="category.id">
                     <span

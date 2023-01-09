@@ -12,8 +12,8 @@
                         the way he should grow</p>
                 </div>
                 <div class="btnGrp max-md:mt-8">
-                    <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                        Today</button>
+                    <Router-link to="/admissions/registration-form" class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
+                        Today</Router-link>
                 </div>
             </div>
         </div>

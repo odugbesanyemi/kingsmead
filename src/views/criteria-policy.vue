@@ -1,6 +1,6 @@
 <template >
     <div>
-        <siteHeader class="w-full" title="Criteria & Policy" prev-page-name="About" curr-page-name="Criteria & Policy"
+        <siteHeader class="w-full" title="Criteria & Policy" prev-page-name="Admission" curr-page-name="Criteria & Policy"
             :img-name="headerImg" />
     </div>
 
@@ -9,7 +9,7 @@
             <div class="md:w-4/6 max-md:p-5">
                 <h2 class="text-4xl text-blue-800 py-3">Admissions Criteria</h2>
                 <div class="md:text-lg">
-                    <ul class="p-2 list-disc">
+                    <ul class="p-2 list-disc text-slate-600">
                         <li class="py-2">KINGSMEAD will admit students in line with the school’s philosophy and
                             professional discretion of the Principal.</li>
                         <li class="py-2">Students seeking admission into Year 7 at the start of a school year in
@@ -20,7 +20,7 @@
                     </ul>
                 </div>
                 <h2 class="text-3xl text-blue-900 mt-5 mb-8">Admissions Policy</h2>
-                <div class="md:text-lg">
+                <div class="md:text-lg text-slate-600">
                     <p class="py-3">KINGSMEAD is a selective school, in terms of seeking students with sound academic
                         ability as well as strengths in the areas of sports and the arts.</p>
                     <p class="py-3">KINGMEAD offers a broad, rigorous programme and is looking for evidence of a

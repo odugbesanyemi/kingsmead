@@ -2,13 +2,13 @@
     <div>
         <div class="content max-w-5xl mx-auto p-5  py-20">
             <div class="">
-                <h2 class="text-4xl text-red-500 pb-10">Recently Posted </h2>
+                <h2 class="text-4xl text-red-500 pb-10 text-center">Recently Posted </h2>
             </div>
-            <div class="no-jobs" v-if="jobs= !jobs">
+            <div class="no-jobs text-center bg-white shadow p-10" >
                 <div class="font-bold text-4xl">There are currently no Jobs Available.</div>
                 <p class="text-slate-500 py-6">Kindly check back later!!</p>
             </div>
-            <div class="job-content py-4" v-for="(job,i) in jobs" :key="i" v-if="jobs">
+            <div class="job-content py-4" v-for="(job,i) in jobs" :key="i" >
                 <h2 class="text-xl">{{job.jobTitle}}</h2>
                 <p class="py-2 desc text-slate-500">{{job.jobDesc}}</p>
                 <div class="details flex gap-4">

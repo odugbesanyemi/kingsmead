@@ -5,7 +5,7 @@
             <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.jpg"
                     class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
-            <div class="bg-transparent  py-8 md:py-32">
+            <div class="bg-transparent  py-8 md:py-10">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="">
                         <div class="max-w-7xl mx-auto py-16 px-2 sm:py-24 sm:px-6 lg:px-8">
@@ -65,10 +65,9 @@
                                                 </defs>
                                             </svg>
                                         </div>
-                                        <h3 class="text-lg font-medium text-white">Contact information</h3>
-                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">Nullam risus blandit ac
-                                            aliquam justo ipsum. Quam mauris volutpat massa dictumst amet. Sapien
-                                            tortor lacus arcu.</p>
+                                        <h3 class="text-lg font-bold text-white">Contact information</h3>
+                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">Welcome to our contact page! We appreciate your interest in Kingsmead Schools and are here to assist you with any questions or concerns you may have.</p>
+                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">To get in touch with us, you can use the form provided on this page, or you can reach out to us using the following methods:</p>
                                         <dl class="mt-8 space-y-6">
                                             <dt><span class="sr-only">Phone number</span></dt>
                                             <dd class="flex text-base text-indigo-50">
@@ -80,7 +79,7 @@
                                             <dd class="flex text-base text-indigo-50">
                                                 <EnvelopeIcon class="flex-shrink-0 w-6 h-6 text-indigo-200"
                                                     aria-hidden="true" />
-                                                <span class="ml-3">support@workcation.com</span>
+                                                <span class="ml-3">admin@kingsmead.edu.ng</span>
                                             </dd>
                                         </dl>
                                         <ul role="list" class="mt-8 flex space-x-12">
@@ -121,11 +120,14 @@
                                                 </a>
                                             </li>
                                         </ul>
+                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">We look forward to hearing from you and helping you with your needs.</p>
+                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">Thank you for choosing Kingsmead Schools.</p>
+                                        
                                     </div>
 
                                     <!-- Contact form -->
                                     <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
-                                        <h3 class="text-lg font-medium text-gray-900">Send us a message</h3>
+                                        <h3 class="text-lg font-bold text-gray-900">Send us a message</h3>
                                         <form action="#" method="POST"
                                             class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                             <div>
@@ -202,25 +204,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
-                </div>
-            </div>
         </div>
-
     </div>
 </template>
 <script>

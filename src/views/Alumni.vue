@@ -8,10 +8,10 @@
             <div class="max-w-6xl mx-auto">
                 <div class="border">
                     <div class="title p-4 text-center bg-slate-100">
-                        <h3 class="font-bold text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNAE</h3>
+                        <h3 class="font-bold text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNI</h3>
                     </div>
                     <div class="content p-5 md:px-20 md:py-10 x text-slate-600">
-                        <p class="font-bold text-xl text-slate-800  ">
+                        <p class="font-bold text-lg text-slate-800  ">
                             The alumni of the Kingsmead Schools are an impressive group of scientists, technology
                             professionals, engineers, artists, Media practictioners and many more who are making a
                             difference in their fields around the world.
@@ -109,19 +109,19 @@ export default {
             alumniSpotlight:[
                 {
                     id:1,
-                    imgName:"/src/assets/images/ass._class_cpt_g3_jasmine.jpeg",
+                    imgName:"/img/cultural4.jpeg",
                     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
                     to:"",
                 },
                 {
                     id:1,
-                    imgName:"/src/assets/images/ass._class_cpt_g3_jasmine.jpeg",
+                    imgName:"/img/sport1.jpeg",
                     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
                     to:"",
                 },
                 {
                     id:1,
-                    imgName:"/src/assets/images/ass._class_cpt_g3_jasmine.jpeg",
+                    imgName:"/img/sport7.jpeg",
                     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
                     to:"",
                 },

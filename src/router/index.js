@@ -189,7 +189,14 @@ const router = createRouter({
     },
     {
       path:"/admin",
-      component:()=>import("../admin/index.vue")
+      component:()=>import("../admin/index.vue"),
+      redirect:"/admin/signin",
+      children:[
+        {
+          path:"signin",
+          component:()=>import('../admin/login.vue')
+        }
+      ]
     }
   ],
   scrollBehavior(to, from, savedPosition) {

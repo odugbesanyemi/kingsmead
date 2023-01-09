@@ -6,7 +6,7 @@
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <h1 class="text-5xl text-blue-800 mb-10  text-center">Welcome to the school Library !</h1>
                     <div class="md:flex gap-8 items-center">
-                        <div class="libInt md:w-2/5 md:text-lg text-slate-700 text-justify max-md:order-last" >
+                        <div class="libInt md:w-2/5 md:text-lg text-slate-600 text-justify max-md:order-last" >
                             <p class="mb-5">Our library is a place where students can come to find books, do research,
                                 work on projects, and relax with a good book. We have a wide selection of fiction and
                                 nonfiction books for all ages, as well as magazines, newspapers, and online resources.
@@ -40,7 +40,7 @@
                                         <dt class="text-lg">
                                             <DisclosureButton
                                                 class="text-left w-full flex justify-between items-start text-gray-700">
-                                                <span class="font-medium text-gray-900">
+                                                <span class="font-semibold text-gray-900">
                                                     {{ option.question }}
                                                 </span>
                                                 <span class="ml-6 h-7 flex items-center">
@@ -50,8 +50,8 @@
                                                 </span>
                                             </DisclosureButton>
                                         </dt>
-                                        <DisclosurePanel as="dd" class="mt-2 pr-12">
-                                            <div class="text-base text-gray-700" v-html="option.answer"></div>
+                                        <DisclosurePanel as="dd" class="mt-5 pr-12">
+                                            <div class="text-md text-gray-600" v-html="option.answer"></div>
                                         </DisclosurePanel>
                                     </Disclosure>
                                 </dl>

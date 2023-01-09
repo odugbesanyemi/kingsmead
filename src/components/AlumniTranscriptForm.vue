@@ -72,7 +72,7 @@
                         <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Email Address">
                     </label>
                 </div>
-                <button class="submit my-6 text-xl font-bold bg-indigo-600 text-white py-4 px-10 hover:bg-indigo-500 rounded-full">
+                <button class="submit my-6 text-xl font-bold bg-indigo-600 text-white py-3 px-8 hover:bg-indigo-500 rounded-full">
                     CONTINUE
                 </button>
             </form>

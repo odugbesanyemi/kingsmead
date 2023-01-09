@@ -64,7 +64,7 @@
                                 <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
 
-                                <ul class='w-72 rounded-lg hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22' v-if="(x.dropdown)">
+                                <ul class='w-72 rounded-lg hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg' v-if="(x.dropdown)">
                                     <span class="before:w-6 before:h-6 before:bg-white before:absolute before:-top-2 before:rotate-45 "></span>
                                     <li v-for="y in x.dropdownLinks" :key="y.id"
                                         class="py-3 px-2 hover:bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 hover:text-white group/second relative rounded-lg hover:shadow-sm transition-all">

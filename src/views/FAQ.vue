@@ -8,7 +8,7 @@
                 class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
             <div class="bg-transparent  py-20 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl font-bold text-blue-800 mb-10">Frequently Asked Questions</h1>
+                    <h1 class="text-5xl font-bold text-blue-800 mb-10 text-center">Frequently Asked Questions</h1>
                     <div class="">
                         <div class="bg-white rounded-lg">
                             <div class="max-w-7xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:px-8">
@@ -16,10 +16,10 @@
                                     <dl
                                         class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-12 lg:grid-cols-3">
                                         <div v-for="faq in faqs" :key="faq.id">
-                                            <dt class="text-lg leading-6 font-medium text-gray-900">
+                                            <dt class="text-lg leading-6 font-semibold text-gray-900">
                                                 {{ faq.question }}
                                             </dt>
-                                            <dd class="mt-2 text-base text-gray-500">
+                                            <dd class="mt-2 text-base text-gray-500 italic">
                                                 {{ faq.answer }}
                                             </dd>
                                         </div>
@@ -30,23 +30,7 @@
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
         
     </div>
@@ -68,7 +52,7 @@ export default {
                     id: 1,
                     question: "What is the school's mission statement?",
                     answer:
-                        "Our school's mission is to provide a high-quality education that prepares all students for success in college and beyond, while also fostering a sense of community and personal growth.",
+                        "Our school's mission statement is to inspire students to achieve the highest standard of intellectual and personal development through a stimulating and comprehensive programme.",
                 },
                 {
                     id: 2,
@@ -106,12 +90,7 @@ export default {
                     answer:
                         "Our school has a zero tolerance policy for bullying. We take all reports of bullying seriously and have established protocols in place for addressing and preventing it. If your child has experienced or witnessed bullying, please contact a school administrator or counselor.",
                 },
-                {
-                    id: 8,
-                    question: "How do I contact a teacher or staff member?",
-                    answer:
-                        "You can find contact information for all teachers and staff members on our website, or you can call the main office to be directed to the appropriate person.",
-                },
+
             ]
         }
     },

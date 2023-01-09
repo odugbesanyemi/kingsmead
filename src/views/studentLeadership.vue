@@ -3,48 +3,48 @@
         <siteHeader title="Student Leadership" prev-page-name="About" curr-page-name="Student Leadership"
             :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <div class="mb-10">
-                        <h1 class="text-5xl text-blue-800 ">Student Leadership</h1>
-                        <p class="mt-4">A showcase of our leaders who have earned their positions as Leaders at
-                            Kingsmead Schools</p>
-                    </div>
-                    <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                        <div class="" v-for="item in users" :key="item">
-                            <div class="image h-80">
-                                <img src="../assets/images/senior_prefect.jpeg"
-                                    class="h-full w-full object-cover object-top" alt="">
-                            </div>
-                            <div class="content p-5 bg-blue-100">
-                                <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                    {{ item.school }} </p>
-                            </div>
+            <div class="bg-blue-50  py-10 md:py-20">
+                <div class="max-w-7xl mx-auto max-md:p-2 sm:px-10">
+                    <div class="bg-white max-md:p-5 p-10">
+                        <h1 class="text-5xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
+                        <hr>
+                        <div class="my-5">
+                            <img src="../assets/images/sch4.jpg" alt="">
                         </div>
+                        <div class="text-lg text-slate-600 mb-5">
+                            <p class="py-2">As student leaders at Kingsmead Schools, they will have the opportunity to
+                                make a positive impact on their school community. They will be responsible for
+                                representing the interests and concerns of their peers, and for fostering a culture of
+                                collaboration and mutual respect.</p>
+                            <p class="py-2">In this role, they will work closely with the school administration and
+                                faculty to identify and address issues of concern to students, and to promote the values
+                                and mission of the school. They will also have the opportunity to develop their
+                                leadership skills and to serve as role models for their peers.</p>
+                            <p class="py-2">We are looking for students who are proactive, positive, and committed to
+                                making a difference. If they are interested in this opportunity, we encourage them to
+                                apply as our leaders are selected by election which prepares them for a democratic and inclusive society.</p>
+                        </div>
+                        <!-- <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
+                            <div class="" v-for="item in users" :key="item">
+                                <div class="image h-80">
+                                    <img src="../assets/images/senior_prefect.jpeg"
+                                        class="h-full w-full object-cover object-top" alt="">
+                                </div>
+                                <div class="content p-5 bg-blue-100">
+                                    <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
+                                    <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
+                                        {{ item.school }} </p>
+                                </div>
+                            </div>
+                        </div> -->
                     </div>
+
                     <div class="my-10">
                         <!-- <div class="title text-3xl font-bold text-slate-500">What they are Saying</div> -->
                     </div>
                 </div>
             </div>
-            <div
-                class="bg-gradient-to-tr from-red-100 via-orange-500 to-red-500 py-20 md:py-32 backdrop-blur-md min-h-96">
-                <span class="absolute -z-10 w-full h-full inset-0 opacity-20"><img
-                        src="../assets/images/ass._class_cpt_g2_phlox.jpeg" alt=""
-                        class="w-full h-full object-cover -z-10"></span>
-                <span class="absolute -z-10 inset-0 bg-gradient-to-t from-indigo-500/80 to-purple-900/80 "></span>
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-50">
-                    <h3 class="max-md:text-3xl text-4xl text-white ">
-                        “Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a
-                        lifetime.” — Maimonides
-                    </h3>
-                    <div class="btnGrp mt-8">
-                        <button class="text-indigo-500 rounded-full text-2xl bg-white py-4 px-10 shadow">Register
-                            Today</button>
-                    </div>
-                </div>
-            </div>
+
         </div>
     </div>
 </template>
