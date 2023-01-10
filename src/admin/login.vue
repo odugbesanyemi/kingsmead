@@ -70,7 +70,18 @@
     methods: {
         async isloggedIn() {
             try{
-             const jwt = await cookie.get("jwt")                
+             const jwt = await cookie.get("jwt")  
+              //send data to the database to confirm session  
+              if(jwt !== ""){
+                await axios.get(`${import.meta.env.VITE_SERVER_API_URL}/isloggedin`,{
+                  headers:{
+                    Authorization:`Bearer ${jwt}`
+                  }
+                }).then((result)=>{
+                  console.log(result)
+                  return result
+                }).catch((error)=>{ return error})
+              }
             }catch{
                 console.log("can't access cookie")
             }
@@ -91,13 +102,11 @@
           }
         }
     },
-    created() {
+    mounted() {
         this.isloggedIn().then(result=>{
-            if(result==null){
-            // this would mean user is logged out so stay on page and wait for further instructions
-            }
-        }).catch(error=>{
-            console.log(error)
+          this.$router.push({path:"/admin/dashboard"})
+        }).catch(err=>{
+          this.$router.push({path:"/signin"})
         })
     }
   }

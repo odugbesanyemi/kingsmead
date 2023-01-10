@@ -9,11 +9,10 @@
                         class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0 "></span>
                     <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 left-10">
                         <h1 class="text-5xl xl:text-8xl text-blue-50">{{ item.title }}</h1>
-                        <div class="btn-group my-8 text-lg">
-                            <Router-link :to="item.btn1.to" v-if="item.btn1"
-                                class="md:py-4  p-3 px-24 md:w-2/5 max-md:inline-block bg-gradient-to-r from-blue-600 to-blue-900 rounded-full mr-4 hover:bg-transparent text-white text-center hover:ring ring-white">{{
+                        <div class="btn-group my-8 text-lg relative">
+                            <Router-link :to="item.btn1.to" v-if="item.btn1" class="md:py-4  p-3 px-16 md:w-2/5 max-md:inline-block bg-gradient-to-r from-blue-600 to-blue-900 rounded-full mr-4 hover:bg-transparent text-white text-center hover:ring ring-white">{{
                                     item.btn1.name
-                                }}</Router-link>
+                                }} <ArrowRightIcon class="inline-block w-6 h-6 ml-5"/></Router-link>
                             <Router-link :to="item.btn2.to" v-if="item.btn2"
                                 class="md:py-4 p-3 px-16 md:w-2/5 max-sm:mt-5 max-md:inline-block text-white rounded-full mr-4 max-sm:ring ring hover:ring ring-white text-center">{{
                                     item.btn2.name
@@ -136,7 +135,7 @@
     </section>
 </template>
 <script>
-import { LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon } from '@heroicons/vue/24/outline'
+import { LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon } from '@heroicons/vue/24/outline'
 import { Navigation, Pagination, Autoplay } from 'swiper'
 import { Swiper, SwiperSlide } from "swiper/vue"
 import 'swiper/css'
@@ -145,7 +144,7 @@ import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
 export default {
     components: {
-        Swiper, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon
+        Swiper, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon
     },
     data() {
         return {

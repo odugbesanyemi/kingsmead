@@ -1,10 +1,10 @@
 <template>
     <div>
-        <nav class='max-xl:py-4'>
+        <nav class='max-xl:py-4 '>
             <div class='w-10/12 mx-auto flex justify-between items-center xl:w-11/12'>
                 <RouterLink to="/home" class='indexPage flex flex-row items-center'><img
                         class="max-sm:w-8 max-sm:h-8 w-16 h-16" src='../assets/kingsmead.svg'>
-                    <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead</h3>
+                    <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead Schools</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
                     <Bars3Icon class=" w-8 h-8" />
@@ -82,12 +82,12 @@
                         </li>
                     </ul>
                 </div>
-                <div class="xl:w-2/12">
+                <!-- <div class="xl:w-2/12">
                     <UserCircleIcon class="w-9 h-9 xl:hidden" />
                     <button
                         class="max-xl:hidden shadow-lg rounded-full bg-gradient-to-tr from-blue-600 to-blue-800 py-2 w-full md:py-3 px-8 text-blue-50 hover:from-blue-800 hover:to-blue-600 text-xl">Sign
                         in</button>
-                </div>
+                </div> -->
             </div>
         </nav>
     </div>

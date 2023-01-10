@@ -163,6 +163,9 @@ const router = createRouter({
     {
       path: "/schools",
       redirect: "/schools/preschool",
+      children:[
+
+      ]
     },
     {
       path: "/schools/college/",
@@ -179,24 +182,39 @@ const router = createRouter({
       path: "/schools/elementary",
       name: "ElementaryHome",
       component: elementaryView,
-      children: [],
+      children: [
+        {
+          path:"",
+          name:"elementaryHome",
+          component:()=>import('../views/pages/elementary/index.vue')
+        }
+      ],
     },
     {
       path: "/schools/preschool",
       name: "preschoolHome",
       component: preschoolView,
-      children: [],
+      children: [
+        {
+          path:"",
+          name:"preschoolHome",
+          component:()=>import('../views/pages/preschool/index.vue')
+        }
+      ],
     },
     {
       path:"/admin",
       component:()=>import("../admin/index.vue"),
-      redirect:"/admin/signin",
+      redirect:"/admin/dashboard",
       children:[
         {
-          path:"signin",
-          component:()=>import('../admin/login.vue')
+          path:"dashboard",
+          component:()=>import('../admin/dashboard.vue')
         }
       ]
+    },{
+      path:"/admin/signin",
+      component:()=>import('../admin/login.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {
