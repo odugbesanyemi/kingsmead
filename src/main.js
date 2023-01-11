@@ -8,7 +8,6 @@ import '@splidejs/vue-splide/css';
 import VueViewer from 'v-viewer'
 import VAnimateCss from 'v-animate-css';
 
-
 // import '@heroicons/vue/outline'
 const app = createApp(App)
 app.use(VAnimateCss);

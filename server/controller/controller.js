@@ -21,11 +21,11 @@ export const loginCtrl = (req, res) => {
           const token = jwt.sign(data, jwtSecretKey, { expiresIn: "1h" });
           res.status(200).send(token);
         } else {
-          res.status(300).send({ message: "Password do not match" });
+          res.status(401).send({ message: "Password do not match" });
         }
       } else {
         // meaning the passwords do not match
-        res.status(401).send({ message: "No data found" });
+        res.status(400).send({ message: "No user found" });
       }
     }
   });

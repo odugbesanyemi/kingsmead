@@ -1,83 +1,75 @@
 <template >
-    <div>
-        <!-- sidebar  -->
-        <!-- mobile sidebar  -->
-        <TransitionRoot as="template" :show="sidebarOpen">
-            <Dialog as="div" class="fixed inset-0 flex z-40 md:hidden" @close="sidebarOpen = false">
-                <TransitionChild as="template" enter="transition-opacity ease-linear duration-300"
-                    enter-from="opacity-0" enter-to="opacity-100" leave="transition-opacity ease-linear duration-300"
-                    leave-from="opacity-100" leave-to="opacity-0">
-                    <DialogOverlay class="fixed inset-0 bg-gray-600 bg-opacity-75" />
-                </TransitionChild>
-                <TransitionChild as="template" enter="transition ease-in-out duration-300 transform"
-                    enter-from="-translate-x-full" enter-to="translate-x-0"
-                    leave="transition ease-in-out duration-300 transform" leave-from="translate-x-0"
-                    leave-to="-translate-x-full">
-                    <div class="relative flex-1 flex flex-col max-w-xs w-full pt-5 pb-4 bg-indigo-700">
-                        <TransitionChild as="template" enter="ease-in-out duration-300" enter-from="opacity-0"
-                            enter-to="opacity-100" leave="ease-in-out duration-300" leave-from="opacity-100"
-                            leave-to="opacity-0">
-                            <div class="absolute top-0 right-0 -mr-12 pt-2">
-                                <button type="button"
-                                    class="ml-1 flex items-center justify-center h-10 w-10 rounded-full focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                                    @click="sidebarOpen = false">
-                                    <span class="sr-only">Close sidebar</span>
-                                    <XMarkIcon class="h-6 w-6 text-white" aria-hidden="true" />
-                                </button>
-                            </div>
-                        </TransitionChild>
-                        <div class="flex-shrink-0 flex items-center px-4">
-                            <img class="h-8 w-auto"
-                                src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg"
-                                alt="Workflow" />
+    <div class="flex flex-row overflow-y-hidden overflow-x-hidden">
+        <transition name="sidenav">
+            <nav class="sidenav w-96 border-r min-h-screen" v-if="sidenavOpened">
+                <div class="iconLogo my-12 pl-9">
+                    <h3 class="font-bold text-lg">Kingsmead Admin</h3>
+                </div>
+                <hr>
+                <div class="p-4">
+                    <ul>
+                        <li v-for="item in navigation" class="p-3 px-5 rounded-full hover:bg-slate-100">
+                            <Router-link :to="item.href">{{ item.name }}</Router-link>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </transition>
+
+        <div class="w-full bg-slate-100 min-w-0">
+            <div class="header p-4 bg-slate-500">
+                <div class="flex flex-row text-white w-full items-center">
+                    <div class="sidebarToggle pr-5">
+                        <Bars3Icon class="w-8" @click="sidenavOpened = !sidenavOpened"></Bars3Icon>
+                    </div>
+                    <div class="searchCol flex flex-row w-full">
+                        <MagnifyingGlassIcon class="w-6 " />
+                        <input type="search" class="bg-transparent w-full focus:ring-0 border-0 text-white"
+                            placeholder="Search Dashboard">
+                    </div>
+                    <div class="notification mx-3">
+                        <BellIcon class="w-10 p-1 hover:ring rounded-full ring-white/50" />
+                    </div>
+                    <div class="userDropdown px-5 group relative w-72">
+                        <div class="flex items-center gap-2" @click="userDropdownOpened = !userDropdownOpened">
+                            <img src="" class="w-8 h-8 rounded-full border" alt="">
+                            <p class="text-md">Username Sur</p>
+                            <ChevronDownIcon class="w-4 text-white" />
                         </div>
-                        <div class="mt-5 flex-1 h-0 overflow-y-auto">
-                            <nav class="px-2 space-y-1">
-                                <a v-for="item in navigation" :key="item.name" :href="item.href"
-                                    :class="[item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-600', 'group flex items-center px-2 py-2 text-base font-medium rounded-md']">
-                                    <component :is="item.icon" class="mr-4 flex-shrink-0 h-6 w-6 text-indigo-300"
-                                        aria-hidden="true" />
-                                    {{ item.name }}
-                                </a>
-                            </nav>
+                        <div class="absolute top-12 left-0 text-slate-600 list-none bg-white rounded-lg p-2"
+                            v-if="userDropdownOpened">
+                            <span
+                                class="before:w-4 before:h-4 before:bg-white before:absolute before:-top-1 before:left-1/2 shadow before:rotate-45"></span>
+                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
+                                    to="profile">Profile</Router-link></li>
+                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
+                                    to="profile">Settings</Router-link></li>
+                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
+                                    to="profile">Logout</Router-link></li>
                         </div>
                     </div>
-                </TransitionChild>
-                <div class="flex-shrink-0 w-14" aria-hidden="true">
-                    <!-- Dummy element to force sidebar to shrink to fit close icon -->
-                </div>
-            </Dialog>
-        </TransitionRoot>
-        <!-- end of mobile sidebar -->
-        <!-- Static sidebar for desktop -->
-        <div class="hidden md:flex md:w-64 md:flex-col md:fixed md:inset-y-0">
-            <!-- Sidebar component, swap this element with another sidebar if you like -->
-            <div class="flex flex-col flex-grow pt-5 bg-indigo-700 overflow-y-auto">
-                <div class="flex items-center flex-shrink-0 px-4">
-                    <img class="h-8 w-auto"
-                        src="https://tailwindui.com/img/logos/workflow-logo-indigo-300-mark-white-text.svg"
-                        alt="Workflow" />
-                </div>
-                <div class="mt-5 flex-1 flex flex-col">
-                    <nav class="flex-1 px-2 pb-4 space-y-1">
-                        <a v-for="item in navigation" :key="item.name" :href="item.href"
-                            :class="[item.current ? 'bg-indigo-800 text-white' : 'text-indigo-100 hover:bg-indigo-600', 'group flex items-center px-2 py-2 text-sm font-medium rounded-md']">
-                            <component :is="item.icon" class="mr-3 flex-shrink-0 h-6 w-6 text-indigo-300"
-                                aria-hidden="true" />
-                            {{ item.name }}
-                        </a>
-                    </nav>
                 </div>
             </div>
+            <router-view></router-view>
         </div>
-        <!-- end of static sidebar -->
-        <!-- end of sidebar -->
-        <router-view></router-view>
+
     </div>
 </template>
 
-<style lang="">
-    
+<style>
+.sidenav-leave-active,
+.sidenav-enter-active {
+    transition: 0.3s ease-in-out;
+}
+
+.sidenav-enter-from {
+    transition: 0.3s;
+    width: 0%;
+}
+
+.sidenav-leave-to {
+    width: 0%;
+}
 </style>
 <script>
 import { ref } from 'vue'
@@ -102,21 +94,10 @@ import {
     UsersIcon,
     XMarkIcon,
 } from '@heroicons/vue/24/outline'
-import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid'
-
-const navigation = [
-    { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-    { name: 'Team', href: '#', icon: UsersIcon, current: false },
-    { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-    { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
-]
-const userNavigation = [
-    { name: 'Your Profile', href: '#' },
-    { name: 'Settings', href: '#' },
-    { name: 'Sign out', href: '#' },
-]
+import { MagnifyingGlassIcon, ChevronDownIcon } from '@heroicons/vue/24/solid'
+import errorComponent from "./components/error.vue"
+import cookie from 'js-cookie'
+import axios from 'axios'
 
 export default {
     components: {
@@ -132,15 +113,49 @@ export default {
         Bars3Icon,
         MagnifyingGlassIcon,
         XMarkIcon,
+        ChevronDownIcon
     },
-    setup() {
-        const sidebarOpen = ref(false)
-
+    data() {
         return {
-            navigation,
-            userNavigation,
-            sidebarOpen,
+            userDropdownOpened: false,
+            sidenavOpened: false,
+            navigation: [
+                { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
+                { name: 'Team', href: '#', icon: UsersIcon, current: false },
+                { name: 'Projects', href: '#', icon: FolderIcon, current: false },
+                { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
+                { name: 'Documents', href: '#', icon: InboxIcon, current: false },
+                { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
+            ],
+            userNavigation: [
+                { name: 'Your Profile', href: '#' },
+                { name: 'Settings', href: '#' },
+                { name: 'Sign out', href: '#' },
+            ]
         }
     },
+    methods: {
+        isloggedIn() {
+            const jwt = cookie.get("jwt")
+            if (jwt) {
+                axios.get(`${import.meta.env.VITE_SERVER_API_URL}/isloggedin`, { headers: { Authorization: `Bearer ${jwt}` } })
+                    .then((result) => {
+                        // get user data since user is logged in 
+                        console.log(result.response.data)
+                    })
+                    .catch((error) => {
+                        console.log("Your session has expired. Kindly log in to continue")
+                    })
+            } else {
+                // user is not logged in redirect to signin page
+                this.$router.push({ path: "/admin/signin" })
+            }
+        },
+    },
+    mounted(){
+        // this.isloggedIn()
+        
+    }
+
 }
 </script>
