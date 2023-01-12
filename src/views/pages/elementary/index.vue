@@ -67,42 +67,27 @@ export default {
                 },
                 {
                     title:"OUR CURRICULUM",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
+                    desc:"The Elementary school is equipped with didactiv materials in 5 Montesssori areas: Practical life, Sensorial Education, Mathematics, Lanaguage, and cultural Subjects…",
                     to:"/"
                 },
                 {
-                    title:"ASSESSMENT",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
+                    title:"HOMEWORK POLICY",
+                    desc:"Home work is a reinforcement of all taught concepts. Home work is given daily - Monday to Friday and it includes activities such as soft activities…",
                     to:"/"
                 },
                 {
-                    title:"MICROSOFT PIL",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
+                    title:"LEARNING AND DEVELOPMENT",
+                    desc:"The Kingsmead Elementary programme is adapted from the combination of Nigeria and British curriculum as guide for the Foundation Stage…",
                     to:"/"
                 },
                 {
-                    title:"BOARDING EXPERIENCE",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
+                    title:"PTA",
+                    desc:"The EYFS emphasises that parents are a child’s primary educators and therefore encourages parents to contribute to their child’s learning…",
                     to:"/"
                 },
                 {
-                    title:"CODE OF CONDUCT",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
-                    to:"/"
-                },
-                                {
-                    title:"MULTI CULTURALISM",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
-                    to:"/"
-                },
-                {
-                    title:"PARENTS AS PARTNERS",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
-                    to:"/"
-                },
-                {
-                    title:"GALLERY",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
+                    title:"ELEMENTARY GALLERY",
+                    desc:"Browse through our Gallery and explore the world where kids exhibit their raw talents...",
                     to:"/"
                 },
 

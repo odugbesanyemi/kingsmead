@@ -3,74 +3,50 @@
         <div class="title p-3 bg-white">
             <p class="font-bold text-lg">DASHBOARD</p>
         </div>
-        <div class="content">
-            
+        <div class="content max-w-6xl mx-auto py-20 max-md:px-10">
+            <!-- boards -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10 ">
+                <div class="rounded-xl bg-white p-3 shadow">
+                    <div class="p-5 text-center">
+                        <p class="text-6xl font-bold text-slate-500">200</p>
+                    </div>
+                    <div class="bg-gray-500 rounded-lg p-3 text-center text-white">
+                        Number of Visitors
+                    </div>
+                </div>
+                <div class="rounded-xl bg-white p-3 shadow">
+                    <div class="p-5 text-center">
+                        <p class="text-6xl font-bold text-slate-500">200</p>
+                    </div>
+                    <div class="bg-gray-500 rounded-lg p-3 text-center text-white">
+                        Page Views
+                    </div>
+                </div>
+                <div class="rounded-xl bg-white p-3 shadow">
+                    <div class="p-5 text-center">
+                        <p class="text-6xl font-bold text-slate-500">200</p>
+
+                    </div>
+                    <div class="bg-gray-500 rounded-lg p-3 text-center text-white">
+                        Page Views
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </template>
   
 <script>
 import { ref } from 'vue'
-import {
-    Dialog,
-    DialogOverlay,
-    Menu,
-    MenuButton,
-    MenuItem,
-    MenuItems,
-    TransitionChild,
-    TransitionRoot,
-} from '@headlessui/vue'
-import {
-    BellIcon,
-    CalendarIcon,
-    ChartBarIcon,
-    FolderIcon,
-    HomeIcon,
-    InboxIcon,
-    Bars3Icon,
-    UsersIcon,
-    XMarkIcon,
-} from '@heroicons/vue/24/outline'
+import {} from '@heroicons/vue/24/outline'
 import { MagnifyingGlassIcon } from '@heroicons/vue/24/solid'
-
-const navigation = [
-    { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-    { name: 'Team', href: '#', icon: UsersIcon, current: false },
-    { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-    { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-    { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-    { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
-]
-const userNavigation = [
-    { name: 'Your Profile', href: '#' },
-    { name: 'Settings', href: '#' },
-    { name: 'Sign out', href: '#' },
-]
 
 export default {
     components: {
-        Dialog,
-        DialogOverlay,
-        Menu,
-        MenuButton,
-        MenuItem,
-        MenuItems,
-        TransitionChild,
-        TransitionRoot,
-        BellIcon,
-        Bars3Icon,
-        MagnifyingGlassIcon,
-        XMarkIcon,
-    },
-    setup() {
-        const sidebarOpen = ref(false)
 
-        return {
-            navigation,
-            userNavigation,
-            sidebarOpen,
-        }
     },
+    beforeMounted(){
+        this.isloggedIn()
+    }
 }
 </script>

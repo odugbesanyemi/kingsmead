@@ -4,7 +4,7 @@
             :img-name="headerImg" />
     </div>
     <div>
-        <div class="md:flex max-w-7xl mx-auto md:py-20 gap-10 ">
+        <div class="md:flex max-w-6xl mx-auto md:py-20 gap-10 ">
             <div class="md:w-4/6 max-md:p-5">
                 <div class="">
                     <img class="w-full " src="../assets/images/DSC_05151.jpg">

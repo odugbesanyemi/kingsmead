@@ -80,7 +80,7 @@ export default {
             // we will expect a token for which we will save to cookies
             cookie.set('jwt', result.data, { expires: 1 })
             // we can now tell the user that they have successfully logged in
-            this.$router.push({path:"/admin/"})
+            this.$router.push({path:"/admin/dashboard"})
           }).catch(err => {
             this.errorStatus = err.response.data.message
           })
@@ -89,7 +89,7 @@ export default {
       }
     }
   },
-  mounted() {
+  beforeMounted() {
     this.isloggedIn()
   }
 }

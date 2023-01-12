@@ -4,42 +4,18 @@
         <div class="page-content">
             <div class="bg-blue-50  py-8 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl text-blue-800 mb-10 text-center">Curriculum Overview</h1>
+                    <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-10 text-center">Curriculum Overview</h1>
                     <div class="md:flex items-center gap-7 ">
-                        <div class=" text-justify text-slate-600 text-lg">
+                        <div class=" text-justify text-slate-600 text-lg max-md:text-md">
                             <p class="pb-2">At our school, we believe that a strong educational foundation is crucial for the success of our students. That's why we have developed a comprehensive and challenging curriculum that is designed to prepare our students for academic success in college and beyond.</p>
                             <p class="pb-2">Our curriculum is structured around the core subjects of math, science, English, and social studies. Within each of these subjects, we offer a range of courses at different levels to meet the needs and abilities of all our students. For example, in math, we offer courses ranging from basic arithmetic to advanced calculus, and in science, we offer courses in biology, chemistry, and physics.</p>
                             <p class="pb-2">In addition to the core subjects, we also offer a wide range of elective courses, such as art, music, and physical education, to help our students explore their passions and develop new skills.</p>
                             <p class=""></p>
                         </div>
-                        <!-- <div class="class md:w-2/5">
-                            <div class="grid grid-cols-2">
-                                <div
-                                    class="bg-red-500 bg-opacity-90 flex flex-col items-center justify-center p-10 hover:bg-opacity-100">
-                                    <LightBulbIcon class="text-white w-10 h-10 mb-4" />
-                                    <p class="text-white text-sm font-bold">Admission Guidlines</p>
-                                </div>
-                                <div
-                                    class="bg-purple-500 bg-opacity-90 flex flex-col items-center justify-center p-10 hover:bg-opacity-100">
-                                    <UserGroupIcon class="text-white w-10 h-10 mb-4" />
-                                    <p class="text-white text-sm font-bold">Pastoral Care Unit</p>
-                                </div>
-                                <div
-                                    class="bg-blue-500 bg-opacity-90 flex flex-col items-center justify-center p-10 hover:bg-opacity-100">
-                                    <ArrowRightOnRectangleIcon class="text-white w-10 h-10 mb-4" />
-                                    <p class="text-white text-sm font-bold">Portal Login</p>
-                                </div>
-                                <div
-                                    class="bg-indigo-500 bg-opacity-90 flex flex-col tems-center justify-center p-10 hover:bg-opacity-100">
-                                    <ChatBubbleBottomCenterIcon class="text-white w-10 h-10 mb-4" />
-                                    <p class="text-white text-sm font-bold">Join Our community</p>
-                                </div>
-                            </div>
-                        </div> -->
                     </div>
                 </div>
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 mt-8">
-                    <h1 class="my-8 text-blue-800 text-center text-4xl">Our Curriculums</h1>
+                    <h1 class="my-4 text-blue-800 text-center text-4xl">Our Curriculums</h1>
                     <div class="grid md:grid-cols-4  ">
                         <div class="p-5 border rounded-lg m-1" v-for="x in curriculumData" :key="x.id">
                             <h3 class="subject font-bold text-xl mb-3">{{x.title}}</h3>

@@ -1,10 +1,10 @@
 <template >
     <div>
-        <div class="title mb-10 relative h-80">
+        <div class="title mb-10 relative h-56">
             <img src="../assets/images/sport8.jpeg" class="w-full h-full object-cover object-top" alt="">
-            <span class="bg-gradient-to-t from-white via-blue-50/50 to-transparent absolute inset-0"></span>
-            <div class="max-w-5xl absolute mx-auto inset-0 max-md:mx-5">
-                <h3 class="text-5xl font-bold py-5 text-blue-900  absolute top-1/2 -translate-y-1/2 mx-5" >{{ `${$route.params.id} Title`}}</h3>
+            <span class="bg-white/10 backdrop-blur-sm absolute inset-0"></span>
+            <div class="max-w-5xl absolute mx-auto inset-0 max-md:mx-5 ">
+                <h3 class="text-5xl font-bold py-5 text-white  absolute top-1/2 -translate-y-1/2 mx-5" >{{ `${$route.params.id} Title`}}</h3>
             </div>
         </div>
         <div class="images max-w-5xl mx-auto py-10 px-5">

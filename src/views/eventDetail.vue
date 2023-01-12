@@ -5,6 +5,8 @@
             <img src="" alt="" class="absolute w-full h-full">
             <span
                 class="bg-gradient-to-tr from-blue-500 via-blue-800 to-blue-400 absolute inset-0 h-full w-full"></span>
+                <span class="absolute inset-0 bg-black/10 backdrop-blur-lg"></span>
+
             <div
                 class="content absolute top-1/2 left-1/2 text-white text-center -translate-y-1/2 -translate-x-1/2 max-md:w-full max-md:p-5">
                 <p class="text-md">26th January, 2023</p>

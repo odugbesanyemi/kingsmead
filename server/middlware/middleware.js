@@ -7,8 +7,7 @@ export const tokenAuth = (req,res,next)=>{
     jwt.verify(token,process.env.JWT_SECRET_KEY,(err,user)=>{
         if(err) {return res.status(403).send(err)}
         else{
-            res.status(200).send(req.user = user)
+            res.status(200).send(user)
          }
-        next();
     })
 }

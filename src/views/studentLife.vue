@@ -8,7 +8,7 @@
                         <div class="" v-for="item in activities">
                             <img :src="item.img" alt="" class="w-full h-64 object-cover rounded object-top">
                             <h2 class="text-blue-800 text-3xl mt-4">{{ item.title }}</h2>
-                            <p class="desc text-lg py-4 text-slate-600 " v-html="item.desc"></p>
+                            <p class="desc py-4 text-slate-600 " v-html="item.desc"></p>
                         </div>
                     </div>
                 </div>
@@ -16,7 +16,7 @@
                     <div class="item">
                         <img src="" alt="" class="">
                         <h2 class="text-blue-800 text-4xl ">Hostel Life at Kingsmead Schools</h2>
-                        <div class="desc text-lg mt-5 py-4 text-slate-600">
+                        <div class="desc  mt-5 py-4 text-slate-600">
                             <p class="mb-2">Hostel life at Kingsmead Schools provides students with a supportive and safe living environment that promotes personal growth and development.</p>
                             <p class="mb-2">Our hostels are fully furnished and equipped with all the necessary amenities, including internet access, laundry facilities, and recreational areas.</p>
                             <p class="mb-2">Residents of our hostels are supervised by a team of dedicated and caring staff members who are available to provide guidance and support whenever needed.</p>

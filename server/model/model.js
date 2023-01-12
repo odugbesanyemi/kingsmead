@@ -8,3 +8,7 @@ export const testDb=(result)=>{
         result(err,null)
     }
 }
+
+export const getUserById = (id,result)=>{
+    
+}

@@ -9,6 +9,8 @@ h1,h2{
     font-family:'DM Serif Display', serif;
     margin-bottom: 0;
 }
+
 p,ul,li{
-    font-family: "Hind Madurai", serif;  
+    font-family: "Hind Madurai", serif !important;  
+    /* @apply max-md:text-sm !important; */
 }

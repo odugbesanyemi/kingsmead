@@ -6,9 +6,9 @@
                     class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span
                 class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
-            <div class="bg-transparent  py-20 md:py-32">
+            <div class="bg-transparent  py-10 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl font-bold text-blue-800 mb-10 text-center">Frequently Asked Questions</h1>
+                    <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-10 text-center">Frequently Asked Questions</h1>
                     <div class="">
                         <div class="bg-white rounded-lg">
                             <div class="max-w-7xl mx-auto py-8 px-4 sm:py-16 sm:px-6 lg:px-8">

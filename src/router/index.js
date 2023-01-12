@@ -215,6 +215,10 @@ const router = createRouter({
     },{
       path:"/admin/signin",
       component:()=>import('../admin/login.vue')
+    },
+    {
+      path:"/admin/logout",
+      component:()=>import('../admin/components/logout.vue')
     }
   ],
   scrollBehavior(to, from, savedPosition) {

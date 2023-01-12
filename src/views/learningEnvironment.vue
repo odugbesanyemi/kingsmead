@@ -3,16 +3,16 @@
         <siteHeader title="Learning Environment" prev-page-name="Academics" curr-page-name="Learning Environment"
             :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
+            <div class="bg-blue-50  py-10 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <!-- <h1 class="text-5xl font-bold text-blue-800 mb-10">Learning Environment</h1> -->
                     <div class="">
                         <div class="md:flex items-center gap-7">
                             <div class="md:w-1/2 md:pr-5 text-lg text-slate-600">
-                                <h2 class="lg:text-3xl mb-8 text-blue-800"><span class="text-red-500">Empower Your Education:</span> A Collaborative and Hands-On Learning Experience</h2>
-                                <p class="leading-loose pb-3">Welcome to our school's learning environment! We are excited to have you join us and are committed to providing you with a high-quality education and a supportive learning experience.</p>
-                                <p class="leading-loose pb-3">Our learning environment is designed to be interactive and engaging, with a focus on collaborative learning and hands-on activities. We believe that learning should be an active process and that students learn best when they are actively involved in their own education.</p>
-                                <p class="leading-loose pb-3"></p>
+                                <h2 class="lg:text-3xl text-center mb-8 text-blue-800"><span class="text-red-500">Empower Your Education:</span> A Collaborative and Hands-On Learning Experience</h2>
+                                <p class="pb-3 max-md:text-md">Welcome to our school's learning environment! We are excited to have you join us and are committed to providing you with a high-quality education and a supportive learning experience.</p>
+                                <p class="pb-3 max-md:text-md">Our learning environment is designed to be interactive and engaging, with a focus on collaborative learning and hands-on activities. We believe that learning should be an active process and that students learn best when they are actively involved in their own education.</p>
+                                <p class="pb-3 max-md:text-md"></p>
                             </div>
                             <div class="class md:w-1/2">
                                 <div class="relative">
@@ -23,7 +23,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-white md:py-12">
+            <div class="bg-white">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10 py-14">
                     <div class=" bg-white rounded-lg ">
                         <span

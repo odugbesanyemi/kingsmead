@@ -3,11 +3,11 @@
         <!-- page -title -->
         <div class="h-96 relative">
             <img src="../assets/images/cultural3.jpeg" alt="" class="absolute w-full h-full object-cover">
-            <span class="bg-gradient-to-tr from-blue-500 via-blue-800 to-blue-400 absolute inset-0 h-full w-full mix-blend-multiply"></span>
+            <span class="bg-gradient-to-tr from-blue-500 via-gray-500 to-blue-400 absolute inset-0 h-full w-full mix-blend-multiply backdrop-blur-sm"></span>
             <div
                 class="content absolute top-1/2 left-1/2 text-white text-center -translate-y-1/2 -translate-x-1/2 max-md:w-full max-md:p-5">
                 <p class="text-md">26th January, 2023</p>
-                <p class="text-4xl font-bold">Tinubu visits Kingsmead Schools</p>
+                <p class="text-5xl font-bold">Tinubu visits Kingsmead Schools</p>
                 <hr class="w-20">
 
             </div>
@@ -16,7 +16,7 @@
         <!-- page content -->
         <div class="max-w-6xl mx-auto">
             <div class="">
-                <div class="main p-10">
+                <div class="main md:p-10 p-5">
                     <div class="main-content">
                         <img src="../assets/images/cultural1.jpeg" class="my-5" alt="">
                         <p class="text-slate-500">

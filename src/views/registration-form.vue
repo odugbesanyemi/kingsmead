@@ -5,11 +5,11 @@
     </div>
 
     <div>
-        <div class="md:flex max-w-7xl mx-auto md:py-20 gap-10 ">
+        <div class="md:flex max-w-6xl mx-auto md:py-20 gap-10 ">
             <div class="md:w-4/6 max-md:p-5">
                 <!-- advert -->
                 <div class="">
-                    <div class="rounded-3xl shadow p-10 relative">
+                    <div class="rounded-3xl shadow p-5 relative">
                         <img src="../assets/images/DSC_0568.jpg" class=" absolute inset-0 w-full h-full object-cover z-0" alt="">
                         <span
                             class="absolute bg-gradient-to-r from-blue-600 to-blue-900/70 inset-0 w-full h-full z-0"></span>
@@ -20,7 +20,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="mt-8 text-lg text-slate-600">
+                <div class="mt-8 text-lg max-md:text-sm text-slate-600">
                     <p class="mb-2">Welcome to Kingsmead Schools! We are delighted that you are considering joining our community.</p>
                     <p class="mb-2">At Kingsmead Schools, we pride ourselves on providing a high-quality education and a supportive learning environment. We are committed to helping our students reach their full potential and to preparing them for success in the world beyond our walls.</p>
                     <p class="mb-2 font-bold">Ready to apply? <Router-link class="underline" to="/admissions/registration-form">Download Application Form</Router-link></p>

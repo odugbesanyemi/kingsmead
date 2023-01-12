@@ -4,14 +4,14 @@
     </div>
 
     <section>
-        <div class="bg-white md:p-20 p-5">
+        <div class="bg-white md:p-20 p-2">
             <div class="max-w-6xl mx-auto">
                 <div class="border">
                     <div class="title p-4 text-center bg-slate-100">
-                        <h3 class="font-bold text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNI</h3>
+                        <h3 class="font-bold max-md:text-2xl text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNI</h3>
                     </div>
                     <div class="content p-5 md:px-20 md:py-10 x text-slate-600">
-                        <p class="font-bold text-lg text-slate-800  ">
+                        <p class="font-bold text-slate-800  ">
                             The alumni of the Kingsmead Schools are an impressive group of scientists, technology
                             professionals, engineers, artists, Media practictioners and many more who are making a
                             difference in their fields around the world.
@@ -61,12 +61,12 @@
         </div>
         <div class="alumni-updates bg-slate-50 py-10">
             <div class="max-w-6xl mx-auto">
-                <h2 class="py-10 text-center text-3xl">ALUMNI UPDATES</h2>
+                <h2 class="py-5 text-center text-3xl">ALUMNI UPDATES</h2>
                 <div class="update p-4 border-b cursor-pointer" v-for="item in alumniUpdates">
                     <div class="title">
-                        <h3 class="font-bold text-2xl text-slate-600">{{item.title}}</h3>
+                        <h3 class="font-bold md:text-2xl text-slate-600">{{item.title}}</h3>
                     </div>
-                    <p class="date text-slate-400 py-2">{{item.date}}</p>
+                    <p class="date text-slate-400 ">{{item.date}}</p>
                 </div>
             </div>
         </div>

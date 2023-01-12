@@ -5,7 +5,7 @@
     </div>
 
     <section>
-        <div class="md:flex max-w-7xl mx-auto md:py-20 gap-10 ">
+        <div class="md:flex max-w-6xl mx-auto md:py-20 gap-10 ">
             <div class="md:w-4/6 max-md:p-5">
                 <h2 class="text-4xl text-blue-800 py-3">Admissions Criteria</h2>
                 <div class="md:text-lg">

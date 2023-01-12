@@ -2,32 +2,40 @@
     <div>
         <siteHeader title="About Kingsmead" prev-page-name="About" curr-page-name="History" :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-20 md:py-32">
+            <div class="bg-blue-50  py-10 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="md:flex">
                         <div class="md:w-1/2 max-sm:text-base text-slate-600 text-justify text-lg">
                             <h2 class="text-blue-800 text-5xl mb-4 text-center">The Great Journey</h2>
-                            <p class="pt-3 pb-3 leading-relaxed">The school was established in July, 2017 to provide
-                                qualitative
-                                educational opportunity for increasing number of primary school leavers within and
-                                outside Nigeria who have academic excellence as their focus.</p>
-                            <p class="pb-3 leading-relaxed">The school is a purpose built college and is located in a
-                                serene and
-                                conducive environment devoid of distractions of a bustling city life. It is focused on
-                                students' needs for proper learning and sound upbringing. The school has supporting
-                                standard facilities and staff with passion for human development.</p>
-                            <p class="pb-3 leading-relaxed">The idea that resulted in the establishment of KINGSMEAD
-                                COLLEGE, Ikorodu
-                                was based on the demand of the parents of Kingsmead Primary School - the Elementary wing
-                                of the Kingsmead Educational Trust- and the immediate community for a sound secondary
-                                education comparable with what is obtained in the elementary school. More importantly,
-                                it came as a result of an objective assessment of the future education needs of the
-                                Nigerian State.</p>
-                            <p class="pb-3 leading-relaxed">KINGSMEAD COLLEGE, IKORODU opened its doors for academic
-                                activities in July,
-                                2017. All necessary facilities required for a fulfilling basic and secondary education
-                                has been in place prior to the official people.</p>
-                            <div class="grid md:grid-cols-2 mt-4 gap-4 max-md:mb-10 text-sm">
+                            <div class="max-md:text-sm">
+                                <p class="pt-3 pb-3 leading-relaxed">The school was established in July, 2017 to provide
+                                    qualitative
+                                    educational opportunity for increasing number of primary school leavers within and
+                                    outside Nigeria who have academic excellence as their focus.</p>
+                                <p class="pb-3 leading-relaxed">The school is a purpose built college and is located in
+                                    a
+                                    serene and
+                                    conducive environment devoid of distractions of a bustling city life. It is focused
+                                    on
+                                    students' needs for proper learning and sound upbringing. The school has supporting
+                                    standard facilities and staff with passion for human development.</p>
+                                <p class="pb-3 leading-relaxed">The idea that resulted in the establishment of KINGSMEAD
+                                    COLLEGE, Ikorodu
+                                    was based on the demand of the parents of Kingsmead Primary School - the Elementary
+                                    wing
+                                    of the Kingsmead Educational Trust- and the immediate community for a sound
+                                    secondary
+                                    education comparable with what is obtained in the elementary school. More
+                                    importantly,
+                                    it came as a result of an objective assessment of the future education needs of the
+                                    Nigerian State.</p>
+                                <p class="pb-3 leading-relaxed">KINGSMEAD COLLEGE, IKORODU opened its doors for academic
+                                    activities in July,
+                                    2017. All necessary facilities required for a fulfilling basic and secondary
+                                    education
+                                    has been in place prior to the official people.</p>
+                            </div>
+                            <div class="grid md:grid-cols-2 mt-4 gap-4 max-md:mb-10 text-sm text-center">
                                 <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg flex flex-col justify-center">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-red-300 rounded-bl-full ">
                                         <AcademicCapIcon class="text-white" />
@@ -38,7 +46,7 @@
                                     <p><span class="font-bold">Graduated</span> Students are all doing fine in their
                                         various fields</p>
                                 </div>
-                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg bg-orange-100">
+                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg ">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-orange-300 rounded-bl-full ">
                                         <GlobeEuropeAfricaIcon class="text-white" />
                                     </span>
@@ -79,7 +87,7 @@
                     </div>
                 </div>
             </div>
-            <div class="bg-gradient-to-tr from-yellow-100 via-indigo-500 to-yellow-500 py-20 md:py-32 backdrop-blur-md">
+            <div class="bg-gradient-to-tr from-yellow-100 via-indigo-500 to-yellow-500 py-10 md:py-32 ">
                 <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0">
                     <div class="md:flex">
                         <div class="md:w-1/2 md:pr-10">
@@ -111,7 +119,7 @@
                                 </div>
                                 <Router-link to="/admissions/registration-form"
                                     class="bg-white/10 backdrop-blur-md p-10 rounded flex items-center justify-center  ring-white border border-opacity-50 hover:shadow-lg">
-                                    <p class="text-white">join us</p>
+                                    <h3 class="font-bold text-xl text-white">JOIN US</h3>
                                     <ArrowRightCircleIcon class="w-9 h-9 ml-4 text-white" />
                                 </Router-link>
                             </div>

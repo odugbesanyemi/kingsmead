@@ -6,12 +6,12 @@
             <div class="bg-blue-50  py-10 md:py-20">
                 <div class="max-w-7xl mx-auto max-md:p-2 sm:px-10">
                     <div class="bg-white max-md:p-5 p-10">
-                        <h1 class="text-5xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
+                        <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
                         <hr>
                         <div class="my-5">
                             <img src="../assets/images/sch4.jpg" alt="">
                         </div>
-                        <div class="text-lg text-slate-600 mb-5">
+                        <div class="text-lg max-md:text-md text-slate-600 mb-5">
                             <p class="py-2">As student leaders at Kingsmead Schools, they will have the opportunity to
                                 make a positive impact on their school community. They will be responsible for
                                 representing the interests and concerns of their peers, and for fostering a culture of

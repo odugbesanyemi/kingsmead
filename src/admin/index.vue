@@ -1,15 +1,21 @@
 <template >
     <div class="flex flex-row overflow-y-hidden overflow-x-hidden">
         <transition name="sidenav">
-            <nav class="sidenav w-96 border-r min-h-screen" v-if="sidenavOpened">
+            <nav class="sidenav w-96 border-r min-h-screen " v-if="sidenavOpened">
                 <div class="iconLogo my-12 pl-9">
                     <h3 class="font-bold text-lg">Kingsmead Admin</h3>
                 </div>
                 <hr>
-                <div class="p-4">
+                <div class="p-4 overflow-y-hidden">
                     <ul>
-                        <li v-for="item in navigation" class="p-3 px-5 rounded-full hover:bg-slate-100">
-                            <Router-link :to="item.href">{{ item.name }}</Router-link>
+                        <li v-for="item in navigation" class="p-3 px-2 rounded-full relative" @click="item.optionOpened = !item.optionOpened">
+                            <ChevronDownIcon class="w-5 -rotate-45 absolute right-0 " v-if="item.dropdown"/>
+                            <Router-link :to="item.href" class="p-2 w-full min-w-full">{{ item.name }}</Router-link>
+                            <ul class="ml-3 py-2" v-if="item.optionOpened && item.dropdown">
+                                <router-link :to="child.path" v-for="child in item.children">
+                                    <li class="text-sm text-slate-500 p-3 border-b border-slate-100">{{ child.title }}</li>
+                                </router-link>
+                            </ul>
                         </li>
                     </ul>
                 </div>
@@ -17,10 +23,10 @@
         </transition>
 
         <div class="w-full bg-slate-100 min-w-0">
-            <div class="header p-4 bg-slate-500">
+            <div class="header p-4 bg-slate-500 sticky top-0">
                 <div class="flex flex-row text-white w-full items-center">
-                    <div class="sidebarToggle pr-5">
-                        <Bars3Icon class="w-8" @click="sidenavOpened = !sidenavOpened"></Bars3Icon>
+                    <div class="sidebarToggle pr-5 ">
+                        <Bars3Icon class="w-8 hover:outline-white" @click="sidenavOpened = !sidenavOpened"></Bars3Icon>
                     </div>
                     <div class="searchCol flex flex-row w-full">
                         <MagnifyingGlassIcon class="w-6 " />
@@ -38,14 +44,10 @@
                         </div>
                         <div class="absolute top-12 left-0 text-slate-600 list-none bg-white rounded-lg p-2"
                             v-if="userDropdownOpened">
-                            <span
-                                class="before:w-4 before:h-4 before:bg-white before:absolute before:-top-1 before:left-1/2 shadow before:rotate-45"></span>
-                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
-                                    to="profile">Profile</Router-link></li>
-                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
-                                    to="profile">Settings</Router-link></li>
-                            <li class="p-2 px-10 hover:bg-slate-100 rounded-lg"><Router-link
-                                    to="profile">Logout</Router-link></li>
+                            <span class="before:w-4 before:h-4 before:bg-white before:absolute before:-top-1 before:left-1/2 shadow before:rotate-45"></span>
+                            <Router-link to="profile"><li class="p-2 px-10 hover:bg-slate-100 rounded-lg">Profile</li></Router-link>
+                            <Router-link to="profile"><li class="p-2 px-10 hover:bg-slate-100 rounded-lg">Settings</li></Router-link>
+                            <Router-link to="logout"><li class="p-2 px-10 hover:bg-slate-100 rounded-lg">Logout</li></Router-link>
                         </div>
                     </div>
                 </div>
@@ -120,12 +122,58 @@ export default {
             userDropdownOpened: false,
             sidenavOpened: false,
             navigation: [
-                { name: 'Dashboard', href: '#', icon: HomeIcon, current: true },
-                { name: 'Team', href: '#', icon: UsersIcon, current: false },
-                { name: 'Projects', href: '#', icon: FolderIcon, current: false },
-                { name: 'Calendar', href: '#', icon: CalendarIcon, current: false },
-                { name: 'Documents', href: '#', icon: InboxIcon, current: false },
-                { name: 'Reports', href: '#', icon: ChartBarIcon, current: false },
+                {
+                    name: 'Dashboard', href: '#', icon: HomeIcon, current: true, dropdown: true, optionOpened:false, children: [
+                        {
+                            path: "/",
+                            title: "metrics",
+                        },
+                    ]
+                },
+                {
+                    name: 'content', href: '#', icon: UsersIcon, current: false, dropdown: true, optionOpened:false, children: [
+                        {
+                            path: "posts",
+                            title: "Manage Posts",
+                        },
+                    ]
+                },
+                {
+                    name: 'media', href: '#', icon: FolderIcon, current: false, dropdown: true, optionOpened:false, children: [
+                        {
+                            path: "images",
+                            title: "Manage Images",
+                        },
+                        {
+                            path: "images",
+                            title: "Manage Images",
+                        },
+                    ]
+                },
+                {
+                    name: 'Appearance', href: '#', icon: CalendarIcon, current: false, dropdown: false, optionOpened:false, children: [
+                        {
+                            path: "",
+                            title: "",
+                        },
+                    ]
+                },
+                {
+                    name: 'users', href: '#', icon: InboxIcon, current: false, dropdown: false, optionOpened:false, children: [
+                        {
+                            path: "",
+                            title: "",
+                        },
+                    ]
+                },
+                {
+                    name: 'settings', href: '#', icon: ChartBarIcon, current: false, dropdown: false, optionOpened:false, children: [
+                        {
+                            path: "",
+                            title: "",
+                        },
+                    ]
+                },
             ],
             userNavigation: [
                 { name: 'Your Profile', href: '#' },
@@ -135,26 +183,9 @@ export default {
         }
     },
     methods: {
-        isloggedIn() {
-            const jwt = cookie.get("jwt")
-            if (jwt) {
-                axios.get(`${import.meta.env.VITE_SERVER_API_URL}/isloggedin`, { headers: { Authorization: `Bearer ${jwt}` } })
-                    .then((result) => {
-                        // get user data since user is logged in 
-                        console.log(result.response.data)
-                    })
-                    .catch((error) => {
-                        console.log("Your session has expired. Kindly log in to continue")
-                    })
-            } else {
-                // user is not logged in redirect to signin page
-                this.$router.push({ path: "/admin/signin" })
-            }
-        },
     },
-    mounted(){
-        // this.isloggedIn()
-        
+    mounted() {
+        this.isloggedIn()
     }
 
 }
