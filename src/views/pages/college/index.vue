@@ -13,9 +13,7 @@
                     <p class="desc text-white leading-tight mb-4 max-md:text-sm">As an international school we are proud to provide the highest possible standard of education to our students</p>
                 </div>
                 <div class="gap-4 text-white items-center md:w-3/12 group">
-                    <p class="font-bold text-xl text-white flex items-center justify-center bg-blue-600 rounded-full"><span
-                            class="p-2 text-center text-white-900 ">ADMISSION PROCEDURE</span><ArrowRightCircleIcon class="group-hover:scale-125 transition-all rounded-full bg-gradient-to-r from-blue-600 to-blue-400 w-20 block group-hover:shadow-lg shadow-sm" />
-                    </p>
+                    <a href="/files/KingsmeadAdmissionFormCollege.pdf" download><p class="font-bold text-xl text-white flex items-center justify-center bg-blue-600 rounded-full"><span class="p-2 text-center text-white-900 ">ADMISSION PROCEDURE</span><ArrowRightCircleIcon class="group-hover:scale-125 transition-all rounded-full bg-gradient-to-r from-blue-600 to-blue-400 w-20 block group-hover:shadow-lg shadow-sm" /></p></a>
                 </div>
             </div>
         </div>
@@ -24,7 +22,7 @@
     <section class="content">
         <div class="max-w-6xl mx-auto py-10">
             <div class="image-slide ">
-                <Splide :options="{ rewind: true , autoplay:true }" aria-label="My Favorite Images">
+                <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
                     <SplideSlide class="max-h-96">
                         <img src="/img/cultural4.jpeg" alt="Sample 1" class="w-full object-cover">
                     </SplideSlide>
@@ -36,7 +34,7 @@
             <div class="programs py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
                     <div class="border p-3 shadow" v-for="item,i in pageContent" :key="i">
-                        <img src="/img/sport7.jpeg" alt="" class="">
+                        <img :src="item.img" alt="" class="">
                         <div class="div content" >
                             <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
                             <hr class="my-3">
@@ -63,32 +61,38 @@ export default {
                 {
                     title:"GETTING STARTED",
                     desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_0022.img"
                 },
                 {
                     title:"OUR CURRICULUM",
                     desc:"The Elementary school is equipped with didactiv materials in 5 Montesssori areas: Practical life, Sensorial Education, Mathematics, Lanaguage, and cultural Subjects…",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_.img"
                 },
                 {
                     title:"HOMEWORK POLICY",
                     desc:"Home work is a reinforcement of all taught concepts. Home work is given daily - Monday to Friday and it includes activities such as soft activities…",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_.img"
                 },
                 {
                     title:"LEARNING AND DEVELOPMENT",
                     desc:"The Kingsmead Elementary programme is adapted from the combination of Nigeria and British curriculum as guide for the Foundation Stage…",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_.img"
                 },
                 {
                     title:"PTA",
                     desc:"The EYFS emphasises that parents are a child’s primary educators and therefore encourages parents to contribute to their child’s learning…",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_.img"
                 },
                 {
                     title:"ELEMENTARY GALLERY",
                     desc:"Browse through our Gallery and explore the world where kids exhibit their raw talents...",
-                    to:"/"
+                    to:"/",
+                    img:"/img/collegeimages/DSC_.img"
                 },
 
 

@@ -199,7 +199,8 @@ const router = createRouter({
           path:"",
           name:"preschoolHome",
           component:()=>import('../views/pages/preschool/index.vue')
-        }
+        }, 
+        
       ],
     },
     {
@@ -210,6 +211,10 @@ const router = createRouter({
         {
           path:"dashboard",
           component:()=>import('../admin/dashboard.vue')
+        },
+        {
+          path:"posts",
+          component:()=>import('../admin/posts.vue')
         }
       ]
     },{

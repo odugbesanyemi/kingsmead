@@ -16,18 +16,17 @@
         <span
           class="group-hover:before:absolute group-hover:before:inset-0 group-hover:before:w-full before:w-0 group-hover:before:bg-blue-100 group-hover:before:-z-10"></span>
         <p
-          class="flex gap-1 max-md:p-2 p-3 rounded bg-transparent border font-semibold border-blue-300/50 z-10 max-md:text-sm">
+          class="flex gap-1 max-md:p-2 p-3 rounded items-center bg-transparent border font-semibold border-blue-300/50 z-10 max-md:text-sm">
           Student Portal
           <PlayIcon class="text-blue-400 w-6 " />
         </p>
       </div>
     </div>
   </nav>
-  <NavbarComponentVue
-    :class="{ 'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900 z-20 transition-all duration-300 shadow-sm': isFixed, 'bg-blue-900 text-white z-20 transition-all duration-300': !isFixed }" />
-  <RouterView class="-z-20" />
+  <NavbarComponentVue :class="{ 'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900 z-20 transition-all duration-300 shadow-sm': isFixed, 'bg-blue-900 text-white z-20 transition-all duration-300': !isFixed }" />
+  <RouterView  />
   <!-- add footer -->
-  <footerComponentVue class="" />
+  <footerComponentVue />
 </template>
 
 <style scoped>
@@ -35,7 +34,7 @@
 </style>
 <script>
 import { RouterView } from 'vue-router'
-import NavbarComponentVue from '../components/preschoolViewNavbar.vue';
+import NavbarComponentVue from '../components/HomeViewNavbarComponent.vue';
 import footerComponentVue from '../components/footerComponent.vue';
 import { PlayIcon } from "@heroicons/vue/24/solid"
 export default {

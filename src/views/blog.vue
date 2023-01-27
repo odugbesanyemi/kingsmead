@@ -3,7 +3,7 @@
       <img src="../assets/images/staff1.jpeg" alt="" class="w-full h-full object-cover object-top">
       <span class="absolute inset-0 bg-black/20 backdrop-blur-md"></span>
       <div class="content absolute inset-0 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-center">
-        <h2 class="text-6xl text-white">Kingsmead News</h2>
+        <h2 class="md:text-6xl text-4xl text-white">Kingsmead News</h2>
       </div>
     </div>
     <div class="bg-slate-100">

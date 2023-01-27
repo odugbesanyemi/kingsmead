@@ -16,7 +16,7 @@
         <span
           class="group-hover:before:absolute group-hover:before:inset-0 group-hover:before:w-full before:w-0 group-hover:before:bg-blue-100 group-hover:before:-z-10"></span>
         <p
-          class="flex gap-1 max-md:p-2 p-3 rounded bg-transparent border font-semibold border-blue-300/50 z-10 max-md:text-sm">
+          class="flex gap-1 items-center max-md:p-2 p-3 rounded bg-transparent border font-semibold border-blue-300/50 z-10 max-md:text-sm">
           Student Portal
           <PlayIcon class="text-blue-400 w-6 " />
         </p>
@@ -35,7 +35,7 @@
 </style>
 <script>
 import { RouterView } from 'vue-router'
-import NavbarComponentVue from '../components/elementaryViewNavbar.vue';
+import NavbarComponentVue from '../components/HomeViewNavbarComponent.vue';
 import footerComponentVue from '../components/footerComponent.vue';
 import { PlayIcon } from "@heroicons/vue/24/solid"
 export default {

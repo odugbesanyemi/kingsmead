@@ -18,8 +18,7 @@
                     <div class="xl:hidden absolute bg-white w-10/12 left-0 -top-1 z-10" v-show="dropdown">
 
                         <ul class="absolute left-0 w-full bg-white h-screen">
-                            <span
-                                class=" bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute -right-12 top-5 shadow-lg ring z-20">
+                            <span class=" bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute -right-12 top-5 shadow-lg ring z-20">
                                 <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />
                             </span>
                             <li class='nav-item  mr-5 w-full text-xl border-b border-slate-200/50 last:border-0'
@@ -28,8 +27,7 @@
                                 <RouterLink :to="x.to"
                                     class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold w-full'>
                                     {{ x.title }}
-                                    <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown"
-                                        :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }" />
+                                    <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown" :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }" />
                                 </RouterLink>
                                 <ul class="text-gray-600"
                                     :class="{ 'block bg-gray-100 transition-all duration-500 ease-in-out': x.opened, 'dropdown-menu hidden backdrop-blur-sm  text-gray-600 transition-all duration-600': !x.opened }"
@@ -59,8 +57,7 @@
                     <ul class='flex items-center justify-center'>
                         <li class='nav-item group/first mr-5 group/d relative' v-for="x in links" :key="x.id">
                             <RouterLink :to="x.to"
-                                class='text-lg xl:text-base relative py-7  group-hover/d:text-gray-600 group-hover/d:border-b-white flex items-center'>
-                                {{ x.title }}
+                                class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-200 group-hover/d:border-b-white flex items-center'>{{ x.title }}
                                 <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
 
@@ -82,12 +79,6 @@
                         </li>
                     </ul>
                 </div>
-                <!-- <div class="xl:w-2/12">
-                    <UserCircleIcon class="w-9 h-9 xl:hidden" />
-                    <button
-                        class="max-xl:hidden shadow-lg rounded-full bg-gradient-to-tr from-blue-600 to-blue-800 py-2 w-full md:py-3 px-8 text-blue-50 hover:from-blue-800 hover:to-blue-600 text-xl">Sign
-                        in</button>
-                </div> -->
             </div>
         </nav>
     </div>
@@ -101,13 +92,7 @@ export default {
         return {
             dropdown: false,
             links: [
-                // {
-                //     id: 0,
-                //     title: "Home",
-                //     to: "/home",
-                //     dropdown: false,
 
-                // },
                 {
                     id: 1,
                     title: "About Kingsmead",

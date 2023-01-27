@@ -6,14 +6,14 @@
                     <h3 class="font-bold text-lg">Kingsmead Admin</h3>
                 </div>
                 <hr>
-                <div class="p-4 overflow-y-hidden">
+                <div class="">
                     <ul>
-                        <li v-for="item in navigation" class="p-3 px-2 rounded-full relative" @click="item.optionOpened = !item.optionOpened">
-                            <ChevronDownIcon class="w-5 -rotate-45 absolute right-0 " v-if="item.dropdown"/>
-                            <Router-link :to="item.href" class="p-2 w-full min-w-full">{{ item.name }}</Router-link>
-                            <ul class="ml-3 py-2" v-if="item.optionOpened && item.dropdown">
-                                <router-link :to="child.path" v-for="child in item.children">
-                                    <li class="text-sm text-slate-500 p-3 border-b border-slate-100">{{ child.title }}</li>
+                        <li v-for="item in navigation" class="rounded-full relative" @click="item.optionOpened = !item.optionOpened">
+                            <ChevronDownIcon class="w-5 absolute top-4 right-4" v-if="item.dropdown"/>
+                            <Router-link :to="item.href" class="w-full min-w-full p-3 px-5">{{ item.name }}</Router-link>
+                            <ul class="" v-if="item.optionOpened && item.dropdown">
+                                <router-link :to="child.path" v-for="child in item.children" class="w-full p-1">
+                                    <li class="text-sm text-slate-500 border w-full p-3 hover:bg-slate-200 transition-all">{{ child.title }}</li>
                                 </router-link>
                             </ul>
                         </li>
@@ -25,21 +25,20 @@
         <div class="w-full bg-slate-100 min-w-0">
             <div class="header p-4 bg-slate-500 sticky top-0">
                 <div class="flex flex-row text-white w-full items-center">
-                    <div class="sidebarToggle pr-5 ">
+                    <div class="sidebarToggle pr-5">
                         <Bars3Icon class="w-8 hover:outline-white" @click="sidenavOpened = !sidenavOpened"></Bars3Icon>
                     </div>
-                    <div class="searchCol flex flex-row w-full">
-                        <MagnifyingGlassIcon class="w-6 " />
-                        <input type="search" class="bg-transparent w-full focus:ring-0 border-0 text-white"
-                            placeholder="Search Dashboard">
+                    <div class="searchCol flex flex-row w-auto group transition-all relative ml-auto bg-white/20 rounded-md">
+                        <MagnifyingGlassIcon class="w-6 text-slate-200 md:mx-4 max-md:m-2" />
+                        <input type="search" class="bg-transparent w-full focus:ring-0 border-0 text-slate-200 max-md:hidden " placeholder="Search Dashboard">
                     </div>
                     <div class="notification mx-3">
-                        <BellIcon class="w-10 p-1 hover:ring rounded-full ring-white/50" />
+                        <BellIcon class="w-8 p-1 hover:ring rounded-full ring-white/50" />
                     </div>
-                    <div class="userDropdown px-5 group relative w-72">
+                    <div class="userDropdown px-1 group relative w-auto">
                         <div class="flex items-center gap-2" @click="userDropdownOpened = !userDropdownOpened">
                             <img src="" class="w-8 h-8 rounded-full border" alt="">
-                            <p class="text-md">Username Sur</p>
+                            <p class="text-sm">Username Sur</p>
                             <ChevronDownIcon class="w-4 text-white" />
                         </div>
                         <div class="absolute top-12 left-0 text-slate-600 list-none bg-white rounded-lg p-2"
@@ -72,7 +71,15 @@
 .sidenav-leave-to {
     width: 0%;
 }
+.router-link-active.router-link-exact-active{
+    @apply bg-slate-100 text-slate-800
+}
+a{
+    width: 100% !important;
+    display: flex;
+}
 </style>
+
 <script>
 import { ref } from 'vue'
 import {
@@ -123,35 +130,58 @@ export default {
             sidenavOpened: false,
             navigation: [
                 {
-                    name: 'Dashboard', href: '#', icon: HomeIcon, current: true, dropdown: true, optionOpened:false, children: [
+                    name: 'Stats', href: 'dashboard', icon: HomeIcon, current: true, dropdown: false, optionOpened:false, children: [
                         {
                             path: "/",
-                            title: "metrics",
+                            title: "Stats",
                         },
                     ]
                 },
                 {
-                    name: 'content', href: '#', icon: UsersIcon, current: false, dropdown: true, optionOpened:false, children: [
+                    name: 'Posts', href: '', icon: UsersIcon, current: false, dropdown: true, optionOpened:false, children: [
                         {
                             path: "posts",
-                            title: "Manage Posts",
+                            title: "All posts",
+                        },
+                        {
+                            path: "posts/new",
+                            title: "Add New",
+                        },                        {
+                            path: "posts/categories",
+                            title: "Categories",
+                        },
+                        {
+                            path: "posts/tags",
+                            title: "Tags",
                         },
                     ]
                 },
                 {
-                    name: 'media', href: '#', icon: FolderIcon, current: false, dropdown: true, optionOpened:false, children: [
+                    name: 'media', href: '', icon: FolderIcon, current: false, dropdown: true, optionOpened:false, children: [
                         {
-                            path: "images",
-                            title: "Manage Images",
+                            path: "media/Library",
+                            title: "Library",
                         },
                         {
-                            path: "images",
-                            title: "Manage Images",
+                            path: "media/Library/new",
+                            title: "Add New",
                         },
                     ]
                 },
                 {
-                    name: 'Appearance', href: '#', icon: CalendarIcon, current: false, dropdown: false, optionOpened:false, children: [
+                    name: 'Pages', href: '', icon: CalendarIcon, current:false , dropdown: true, optionOpened:false, children: [
+                        {
+                            path: "pages/all",
+                            title: "All Pages",
+                        },
+                        {
+                            path: "pages/new",
+                            title: "Add New",
+                        },
+                    ]
+                },
+                {
+                    name: 'Comments', href: '', icon: InboxIcon, current: false, dropdown: false, optionOpened:false, children: [
                         {
                             path: "",
                             title: "",
@@ -159,15 +189,31 @@ export default {
                     ]
                 },
                 {
-                    name: 'users', href: '#', icon: InboxIcon, current: false, dropdown: false, optionOpened:false, children: [
+                    name: 'Feedback', href: 'feedback', icon: ChartBarIcon, current: false, dropdown: true, optionOpened:false, children: [
                         {
-                            path: "",
-                            title: "",
+                            path: "comments/form_responses",
+                            title: "Form Responses",
+                        },
+                        {
+                            path: "comments/form_responses",
+                            title: "Form Responses",
                         },
                     ]
                 },
                 {
-                    name: 'settings', href: '#', icon: ChartBarIcon, current: false, dropdown: false, optionOpened:false, children: [
+                    name: 'users', href: 'users', icon: ChartBarIcon, current: false, dropdown: true, optionOpened:false, children: [
+                        {
+                            path: "users/all",
+                            title: "All Users",
+                        },
+                        {
+                            path: "users/new",
+                            title: "Add new",
+                        },
+                    ]
+                },
+                {
+                    name: 'Settings', href: 'settings', icon: ChartBarIcon, current: false, dropdown: false, optionOpened:false, children: [
                         {
                             path: "",
                             title: "",

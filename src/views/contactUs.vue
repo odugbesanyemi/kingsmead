@@ -5,16 +5,16 @@
             <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.jpg"
                     class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
-            <div class="bg-transparent  py-8 md:py-10">
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-5">
+            <div class="bg-transparent py-3 md:py-10">
+                <div class="max-w-7xl mx-auto max-md:p-5 ">
                     <div class="">
-                        <div class="max-w-7xl mx-auto  px-2 sm:px-6 lg:px-8">
+                        <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                             <div class="relative bg-white shadow-xl ">
                                 <h2 class="sr-only">Contact us</h2>
 
                                 <div class="grid grid-cols-1 lg:grid-cols-3 z-40">
                                     <!-- Contact information -->
-                                    <div class="relative overflow-hidden py-10 px-6 bg-indigo-700 sm:px-10 xl:p-12">
+                                    <div class="relative overflow-hidden py-10 px-4 bg-indigo-700 sm:px-10 xl:p-12">
                                         <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                                             <svg class="absolute inset-0 w-full h-full" width="343" height="388"
                                                 viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice"
@@ -126,7 +126,7 @@
                                     </div>
 
                                     <!-- Contact form -->
-                                    <div class="py-10 px-6 sm:px-10 lg:col-span-2 xl:p-12">
+                                    <div class="py-10 px-4 sm:px-10 lg:col-span-2 xl:p-12">
                                         <h3 class="text-lg font-bold text-gray-900">Send us a message</h3>
                                         <form action="#" method="POST"
                                             class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">

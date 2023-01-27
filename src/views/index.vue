@@ -1,27 +1,23 @@
 <template >
     <!-- hero section -->
-    <section class="relative ">
-        <Swiper :modules="modules" :slides-per-view="1" navigation class="h-screen" :autoplay='{ "delay": 4500 }'>
-            <swiper-slide class="relative " v-for="item in slides">
-                <div class="relative h-full bg-purple-100">
-                    <img src="../assets/images/kingsmead_front-page.jpg" class="w-full h-screen object-cover" alt="">
-                    <span
-                        class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/50 mix-blend-multiply  w-full h-full top-0 "></span>
-                    <div class="absolute top-1/2 -translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 left-10">
-                        <h1 class="text-5xl xl:text-8xl text-blue-50">{{ item.title }}</h1>
-                        <div class="btn-group my-8 text-lg relative">
-                            <Router-link :to="item.btn1.to" v-if="item.btn1" class="md:py-4  p-3 px-16 md:w-2/5 max-md:inline-block bg-gradient-to-r from-blue-600 to-blue-900 rounded-full mr-4 hover:bg-transparent text-white text-center hover:ring ring-white">{{
-                                    item.btn1.name
-                                }} <ArrowRightIcon class="inline-block w-6 h-6 ml-5"/></Router-link>
-                            <Router-link :to="item.btn2.to" v-if="item.btn2"
-                                class="md:py-4 p-3 px-16 md:w-2/5 max-sm:mt-5 max-md:inline-block text-white rounded-full mr-4 max-sm:ring ring hover:ring ring-white text-center">{{
-                                    item.btn2.name
-                                }}</Router-link>
-                        </div>
-                    </div>
+    <section class="relative">
+        <Swiper :modules="modules" :slides-per-view="1"  class="md:h-screen " :autoplay='{ "delay": 1500 }'>
+            <swiper-slide class="relative h-full" v-for="item in slides">
+                <div class="relative h-full">
+                    <img :src="item.img" class="w-full md:h-screen object-cover" alt="" style="min-height:300px;">
+                    <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/20 mix-blend-multiply max-md:hidden w-full h-full top-0 "></span>
                 </div>
             </swiper-slide>
         </Swiper>
+        <div class="absolute z-10 bottom-0 max-md:bg-blue-900/90 max-md:p-3 max-md:w-full md:top-1/2 md:-translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 ">
+            <h1 class="text-3xl xl:text-8xl text-blue-50 ">Learning is not a <span class="text-blue-300">Choice</span> , It's a Life</h1>
+            <div class="btn-group my-8 text-lg relative max-md:hidden">
+                <Router-link to="/about"
+                    class="md:py-4  p-3 px-16 md:w-2/5 max-md:inline-block bg-gradient-to-r from-blue-600 to-blue-900 rounded-full mr-4 hover:bg-transparent text-white text-center hover:ring ring-white">Get
+                    Started</Router-link>
+                <Router-link to="/tour" class="md:py-4 p-3 px-16 md:w-2/5 max-sm:mt-5 max-md:inline-block text-white rounded-full mr-4 text-center">Take a tour</Router-link>
+            </div>            
+        </div>
     </section>
     <!-- Video plaback section -->
     <section id="tour">
@@ -151,46 +147,31 @@ export default {
             modules: [Autoplay, Navigation, Pagination],
             slides: [
                 {
-                    img: "",
-                    title: "Learning is not a Choice, it's a Life",
-                    btn1: {
-                        name: "Learn More",
-                        to: "/about"
-                    },
-                    btn2: {
-                        name: "Take a tour",
-                        to: "/#tour"
-                    }
+                    img: "img/kingsmead_front-page.jpg",
                 },
                 {
-                    img: "",
-                    title: "School of Your Child's Dream",
-                    btn1: {
-                        name: "Get Started",
-                        to: "/admissions/registration-form"
-                    },
-                    btn2: {
-                        name: "Call us Today",
-                        to: "/about/contact-us"
-                    }
+                    img: "img/DSC_0610.jpg",
                 },
                 {
-                    img: "",
-                    title: "Enroll Today to Begin Learning",
-                    btn1: {
-                        name: "Enroll Now",
-                        to: "/admissions/registration-form"
-                    },
-                    btn2: {
-                        name: "Take a tour",
-                        to: "/home/#tour"
-                    }
+                    img: "img/DSC_0621.jpg",
+                },
+                {
+                    img: "img/cultural6.jpeg",
+                },
+                {
+                    img: "img/sport7.jpeg",
+                },
+                {
+                    img: "img/DSC_0637.jpg",
+                },
+                {
+                    img: "img/DSC_0511.jpg",
                 },
             ]
         }
     }
 }
 </script>
-<style lang="">
-    
+<style>
+
 </style>
