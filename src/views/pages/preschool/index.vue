@@ -4,7 +4,7 @@
         <section class="school title ">
             <div class="relative">
                 <div class="h-72">
-                    <img src="/img/preschoolimages/DSC_0562.jpg" alt="" class="absolute w-full h-full object-cover">
+                    <img src="../../../assets/images/DSC_0562.jpg" alt="" class="absolute w-full h-full object-cover">
                 </div>
                 <span class="absolute inset-0 w-full bg-black/10 backdrop-blur-sm"></span>
                 <div
