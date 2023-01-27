@@ -42,7 +42,7 @@
                             <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
                             <hr class="my-3">
                             <p class="text-slate-600 text-sm mb-3">{{item.desc}}</p>
-                            <router-link :to="item.to" class="my-2 text-blue-500">Read more ..</router-link>
+                            <router-link :to="item.to" class="my-2 max-md:text-blue-500">Read more ..</router-link>
                         </div>
                     </div>
                 </div>
