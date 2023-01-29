@@ -2,21 +2,23 @@
     <div>
         <siteHeader title="Student Life" prev-page-name="Life at Kingsmead" curr-page-name="Student Life" :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50 p-5 py-10 md:py-24">
+            <div class="bg-blue-50 p-3 py-10 md:py-24">
                 <div class="max-w-6xl mx-auto">
                     <div class="grid md:grid-cols-3 gap-6">
-                        <div class="" v-for="item in activities">
+                        <div class="bg-white p-2" v-for="item in activities">
                             <img :src="item.img" alt="" class="w-full h-64 object-cover rounded object-top">
-                            <h2 class="text-blue-800 text-3xl mt-4">{{ item.title }}</h2>
-                            <p class="desc py-4 text-slate-600 " v-html="item.desc"></p>
+                            <div class="px-5">
+                                <h2 class="text-blue-800 text-3xl mt-4">{{ item.title }}</h2>
+                                <p class="desc py-4 text-slate-600 " v-html="item.desc"></p>
+                            </div>   
                         </div>
                     </div>
                 </div>
                 <div class="max-w-6xl mx-auto my-4 py-10">
                     <div class="item">
                         <img src="" alt="" class="">
-                        <h2 class="text-blue-800 text-4xl ">Hostel Life at Kingsmead Schools</h2>
-                        <div class="desc  mt-5 py-4 text-slate-600">
+                        <h2 class="text-blue-800 text-4xl max-md:text-3xl">Hostel Life at Kingsmead Schools</h2>
+                        <div class="desc  mt-5 py-3 text-slate-600">
                             <p class="mb-2">Hostel life at Kingsmead Schools provides students with a supportive and safe living environment that promotes personal growth and development.</p>
                             <p class="mb-2">Our hostels are fully furnished and equipped with all the necessary amenities, including internet access, laundry facilities, and recreational areas.</p>
                             <p class="mb-2">Residents of our hostels are supervised by a team of dedicated and caring staff members who are available to provide guidance and support whenever needed.</p>

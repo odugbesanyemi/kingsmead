@@ -10,13 +10,12 @@
                     <Bars3Icon class=" w-8 h-8" />
                 </div>
                 <transition name="slide">
-                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-10" v-show="dropdown"
+                    <span class="absolute h-screen inset-0 bg-gray-900/90 z-40" v-show="dropdown"
                         @click="dropdown = !dropdown"></span>
                 </transition>
                 <!-- mobile navbar -->
                 <transition>
-                    <div class="xl:hidden absolute bg-white w-10/12 left-0 -top-1 z-10" v-show="dropdown">
-
+                    <div class="xl:hidden absolute bg-white w-10/12 left-0 -top-1 z-40" v-show="dropdown">
                         <ul class="absolute left-0 w-full bg-white h-screen">
                             <span class=" bg-gradient-to-tr from-blue-500 to-blue-600 text-white px-2 py-2 absolute -right-12 top-5 shadow-lg ring z-20">
                                 <XMarkIcon class="text-white w-6 h-6" @click="dropdown = !dropdown" />

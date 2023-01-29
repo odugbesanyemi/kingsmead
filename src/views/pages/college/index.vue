@@ -23,24 +23,23 @@
         <div class="max-w-6xl mx-auto py-10">
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
-                    <SplideSlide class="max-h-96">
-                        <img src="/img/cultural4.jpeg" alt="Sample 1" class="w-full object-cover">
-                    </SplideSlide>
-                    <SplideSlide class='max-h-96'>
-                        <img src="/img/sport1.jpeg" alt="Sample 2" class="w-full h-full object-cover" >
+                    <SplideSlide class="max-h-96" v-for="item in pageContent">
+                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 w-full object-cover object-bottom">
                     </SplideSlide>
                 </Splide>
             </div>
-            <div class="programs py-10">
+            <div class="programs max-md:p-5 py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
-                    <div class="border p-3 shadow" v-for="item,i in pageContent" :key="i">
-                        <img :src="item.img" alt="" class="">
-                        <div class="div content" >
-                            <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
-                            <hr class="my-3">
-                            <p class="text-slate-600 text-sm mb-3">{{item.desc}}</p>
-                            <router-link :to="item.to" class="my-2 text-blue-500">Read more ..</router-link>
-                        </div>
+                    <div class="border p-3 md:shadow" v-for="item,i in pageContent" :key="i">
+                        <router-link :to="item.to" class="">
+                            <img :src="item.img" alt="" class="h-56 object-cover w-full object-top">
+                            <div class="div content" >
+                                <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
+                                <hr class="my-3">
+                                <p class="text-slate-600 text-sm mb-3">{{item.desc}}</p>
+                            </div>
+                        </router-link>
+
                     </div>
                 </div>
             </div>
@@ -60,39 +59,39 @@ export default {
             pageContent:[
                 {
                     title:"GETTING STARTED",
-                    desc:"As an international school we are proud to provide the highest possible standard of education to our students, enabling…",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_0022.img"
+                    desc:"We are excited to have you as a member of our school community and we want to make sure that you have all the information you need to get started.",
+                    to:"/schools/college/getting-started",
+                    img:"/img/collegeimages/DSC_0087.jpg"
                 },
                 {
-                    title:"OUR CURRICULUM",
-                    desc:"The Elementary school is equipped with didactiv materials in 5 Montesssori areas: Practical life, Sensorial Education, Mathematics, Lanaguage, and cultural Subjects…",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_.img"
+                    title:"CULTURAL DIVERSITY",
+                    desc:"We believe that embracing cultural diversity is essential to providing a well-rounded education and preparing our students for success in an increasingly globalized world. ",
+                    to:"/schools/college/cultural-diversity",
+                    img:"/img/collegeimages/DSC_0594.jpg"
                 },
                 {
-                    title:"HOMEWORK POLICY",
-                    desc:"Home work is a reinforcement of all taught concepts. Home work is given daily - Monday to Friday and it includes activities such as soft activities…",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_.img"
+                    title:"BOARDING EXPERIENCE",
+                    desc:"At Kingsmead College, our boarding program is designed to provide students with a safe, supportive and stimulating environment where they can grow both academically and personally. ",
+                    to:"/schools/college/boarding-experience",
+                    img:"/img/collegeimages/DSC_0633.jpg"
                 },
                 {
-                    title:"LEARNING AND DEVELOPMENT",
-                    desc:"The Kingsmead Elementary programme is adapted from the combination of Nigeria and British curriculum as guide for the Foundation Stage…",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_.img"
+                    title:"CODE OF CONDUCT",
+                    desc:"At Kingsmead college, we believe that every student has the right to a safe and positive learning environment. In order to maintain this environment, we have established a Code of Conduct that all students, staff, and visitors are expected to follow.",
+                    to:"/schools/college/code-of-conduct",
+                    img:"/img/collegeimages/DSC_0059.jpg"
                 },
                 {
                     title:"PTA",
-                    desc:"The EYFS emphasises that parents are a child’s primary educators and therefore encourages parents to contribute to their child’s learning…",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_.img"
+                    desc:"TThe PTA (Parent Teacher Association) is a valuable organization that plays a vital role in supporting our school community. The PTA is made up of parents, teachers, and staff who work together to enhance the education and well-being of our students.",
+                    to:"/schools/college/PTA",
+                    img:"/img/collegeimages/DSC_0637.jpg"
                 },
                 {
-                    title:"ELEMENTARY GALLERY",
+                    title:"COLLEGE GALLERY",
                     desc:"Browse through our Gallery and explore the world where kids exhibit their raw talents...",
-                    to:"/",
-                    img:"/img/collegeimages/DSC_.img"
+                    to:"/schools/college/gallery",
+                    img:"/img/collegeimages/cultural2.jpeg"
                 },
 
 

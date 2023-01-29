@@ -20,17 +20,15 @@
                         <li class="py-2">Fees MUST be paid BEFORE RESUMPTION for each term/session</li>
                         <li class="py-2">Students will not be admitted into the Hostels unless ALL outstanding fees
                             are settled.</li>
-                        <li class="py-2">A 10% and 15% discount will be awarded as rebate on a third and fourth
-                            child to parents with three and four children respectively. The discount is given on the
-                            Tuition & Boarding Fees of the third child and fourth child AFTER FULL PAYMENT for the
-                            session for all children.</li>
-                        <li class="py-2">MODE OF PAYMENT: BANK DRAFT is the only acceptable mode of payment. No
-                            personal/company cheques allowed.</li>
-                        <li class="py-2">Please Note: NO DISCOUNT will be granted for full payment of fees for the
-                            session/year</li>
+                        <li class="py-2">A 10% discount on two students and 50% discount or half-tuition for parents with four kids. <span class="text-red-500">NOTE:</span> The discount is given on the
+                            Tuition fourth child AFTER FULL PAYMENT for the session for all children.</li>
+                        <li class="py-2">MODE OF PAYMENT: Transfer into School Account or BANK DRAFT is the only acceptable mode of payment.</li>
                     </ul>
+                    <h3 class="font-bold my-5">PAYMENT CHANNELS</h3>
+                    <table class="table-auto">
 
-                    <p class="mt-3">We are pleased to inform you that Kingsmead School is now live on the GTBank
+                    </table>
+                    <!-- <p class="mt-3">We are pleased to inform you that Kingsmead School is now live on the GTBank
                         And Zenith Bank channels.</p>
                     <p class="py-3">If you want to pay SCHOOL FEES now, Please click on any of the links below.</p>
                     <p class="py-2">You can pay with any of the following channels:</p>
@@ -38,11 +36,8 @@
                     <p class="py-2">1. MasterCard</p>
                     <p class="py-2">2. Visa Naira Card</p>
                     <p class="py-2">3. Interswitch Verve Card</p>
-                    <p class="py-2">4. Bank Transfer (If you have GTB Internet Banking)</p>
+                    <p class="py-2">4. Bank Transfer (If you have GTB Internet Banking)</p> -->
 
-                    <div class="mt-5">
-                        <img class="w-96" src="../assets/logos/payment-logo.png" alt="">
-                    </div>
                 </div>
             </div>
             <admissionSidebarVue />

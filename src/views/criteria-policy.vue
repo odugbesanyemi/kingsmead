@@ -13,9 +13,9 @@
                         <li class="py-2">KINGSMEAD will admit students in line with the school’s philosophy and
                             professional discretion of the Principal.</li>
                         <li class="py-2">Students seeking admission into Year 7 at the start of a school year in
-                            September must reach the age of 11 years by the 30th September in that same year.</li>
+                            September must reach the age of 10 years by the 30th September in that same year.</li>
                         <li class="py-2">Similarly, students seeking admission into Year 8, 9 and 10 at the start of a
-                            school year in September must reach the age of 12, 13 and 14 years respectively by the 30th
+                            school year in September must reach the age of 11, 12 and 13 years respectively by the 30th
                             September of the year of entry.</li>
                     </ul>
                 </div>
@@ -28,10 +28,7 @@
                     <ul class="p-2 max-md:p-5 list-disc">
                         <li class="py-2">Enthusiasm, curiosity & a passion for learning</li>
                         <li class="py-2">Intellect, evidenced by a history of academic success</li>
-                        <li class="py-2">Ability to fit into a boarding environment</li>
                         <li class="py-2">Well-disciplined, social and respectful</li>
-                        <li class="py-2">Ability in sports or the arts</li>
-                        <li class="py-2">Leadership potential</li>
                     </ul>
 
                     <h3 class="mt-5">For more information about KINGMEAD Admissions please contact the Admissions

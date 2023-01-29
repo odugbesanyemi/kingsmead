@@ -20,32 +20,38 @@
             </div>
         </section>
         <section class="content">
-        <div class="max-w-6xl mx-auto py-10">
-            <div class="image-slide ">
-                <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
-                    <SplideSlide class="max-h-96" v-for="item in pageContent">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 w-full object-cover object-top">
-                    </SplideSlide>
-                </Splide>
-            </div>
-            <div class="programs max-md:p-5 py-10">
-                <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
-                    <div class="border p-3 md:shadow" v-for="item,i in pageContent" :key="i">
-                        <router-link :to="item.to" class="">
-                            <img :src="item.img" alt="" class="h-56 object-cover w-full object-top">
-                            <div class="div content" >
-                                <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
-                                <hr class="my-3">
-                                <p class="text-slate-600 text-sm mb-3">{{item.desc}}</p>
-                            </div>
-                        </router-link>
-
+            <div class="max-w-6xl mx-auto py-10">
+                <div class="image-slide ">
+                    <Splide :options="{ rewind: true , autoplay:true }" aria-label="My Favorite Images">
+                        <SplideSlide class="max-h-96">
+                            <img src="/img/preschoolimages/DSC_0568.jpg" alt="Sample 1" class="w-full object-cover object-bottom">
+                        </SplideSlide>
+                        <SplideSlide class='max-h-96'>
+                            <img src="/img/sport1.jpeg" alt="Sample 2" class="w-full h-full object-cover" >
+                        </SplideSlide>
+                        <SplideSlide class='max-h-96'>
+                            <img src="/img/preschoolimages/DSC_0586.jpg" alt="Sample 2" class="w-full h-full object-cover" >
+                        </SplideSlide>
+                    </Splide>
+                </div>
+                <div class="programs py-10">
+                    <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
+                        <div class="border p-3 hover:shadow-xl transition-all" v-for="item,i in pageContent" :key="i">
+                            <router-link :to="item.to">
+                                <img :src="item.img" alt="" class="">
+                                <div class="div content" >
+                                    <p class="font-bold pt-5 text-2xl">{{ item.title }}</p>
+                                    <hr class="my-3">
+                                    <p class="text-slate-600 text-sm mb-3">{{item.desc}}</p>
+                                    <router-link :to="item.to" class="my-2 text-blue-500">Read more ..</router-link>
+                                </div>                                
+                            </router-link>
+                        </div>
                     </div>
                 </div>
+                <div class="support-slide"></div>
             </div>
-            <div class="support-slide"></div>
-        </div>
-    </section>      
+        </section>        
     </div>
 
 

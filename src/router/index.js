@@ -161,13 +161,6 @@ const router = createRouter({
       ],
     },
     {
-      path: "/schools",
-      redirect: "/schools/preschool",
-      children:[
-
-      ]
-    },
-    {
       path: "/schools/college/",
       component: collegeView,
       children: [
@@ -176,6 +169,32 @@ const router = createRouter({
           name: "collegeHome",
           component: () => import("../views/pages/college/index.vue"),
         },
+        {
+          path:"getting-started",
+          component:()=>import("../views/pages/college/getting-started.vue")
+        },
+        {
+          path:"cultural-diversity",
+          component:()=>import("../views/pages/college/cultural-diversity.vue")
+        },
+        {
+          path:"boarding-experience",
+          component:()=>import("../views/pages/college/boarding-experience.vue")
+        }
+        ,
+        {
+          path:"code-of-conduct",
+          component:()=>import("../views/pages/college/code-of-coduct.vue")
+        }
+         ,
+        {
+          path:"PTA",
+          component:()=>import("../views/pages/college/pta.vue")
+        },
+        {
+          path:"gallery",
+          component:()=>import("../views/pages/college/gallery.vue")
+        }
       ],
     },
     {
@@ -187,6 +206,32 @@ const router = createRouter({
           path:"",
           name:"elementaryHome",
           component:()=>import('../views/pages/elementary/index.vue')
+        }, 
+        {
+          path:"getting-started",
+          component:()=>import("../views/pages/elementary/getting-started.vue")
+        },
+        {
+          path:"curriculum",
+          component:()=>import("../views/pages/elementary/curriculum.vue")
+        },
+        {
+          path:"homework-policy",
+          component:()=>import("../views/pages/elementary/homework-policy.vue")
+        }
+        ,
+        {
+          path:"learning-development",
+          component:()=>import("../views/pages/elementary/learning-development.vue")
+        }
+         ,
+        {
+          path:"PTA",
+          component:()=>import("../views/pages/elementary/pta.vue")
+        },
+        {
+          path:"gallery",
+          component:()=>import("../views/pages/elementary/gallery.vue")
         }
       ],
     },
@@ -200,7 +245,33 @@ const router = createRouter({
           name:"preschoolHome",
           component:()=>import('../views/pages/preschool/index.vue')
         }, 
-        
+        {
+          path:"getting-started",
+          component:()=>import("../views/pages/preschool/getting-started.vue")
+        },
+        {
+          path:"curriculum",
+          component:()=>import("../views/pages/preschool/curriculum.vue")
+        },
+        {
+          path:"homework-policy",
+          component:()=>import("../views/pages/preschool/homework-policy.vue")
+        }
+        ,
+        {
+          path:"learning-development",
+          component:()=>import("../views/pages/preschool/learning-development.vue")
+        }
+         ,
+        {
+          path:"PTA",
+          component:()=>import("../views/pages/preschool/pta.vue")
+        },
+        {
+          path:"gallery",
+          component:()=>import("../views/pages/preschool/gallery.vue")
+        }
+
       ],
     },
     {
