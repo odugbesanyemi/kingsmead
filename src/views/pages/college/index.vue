@@ -23,14 +23,14 @@
         <div class="max-w-6xl mx-auto py-10">
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
-                    <SplideSlide class="max-h-96" v-for="item in pageContent">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 w-full object-cover object-bottom">
+                    <SplideSlide class="" v-for="item in pageContent2">
+                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-h-96 object-center">
                     </SplideSlide>
                 </Splide>
             </div>
             <div class="programs max-md:p-5 py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
-                    <div class="border p-3 md:shadow" v-for="item,i in pageContent" :key="i">
+                    <div class="border p-3" v-for="item,i in pageContent" :key="i">
                         <router-link :to="item.to" class="">
                             <img :src="item.img" alt="" class="h-56 object-cover w-full object-top">
                             <div class="div content" >
@@ -67,25 +67,25 @@ export default {
                     title:"CULTURAL DIVERSITY",
                     desc:"We believe that embracing cultural diversity is essential to providing a well-rounded education and preparing our students for success in an increasingly globalized world. ",
                     to:"/schools/college/cultural-diversity",
-                    img:"/img/collegeimages/DSC_0594.jpg"
+                    img:"/img/collegeimages/cultural3.jpeg"
                 },
                 {
                     title:"BOARDING EXPERIENCE",
                     desc:"At Kingsmead College, our boarding program is designed to provide students with a safe, supportive and stimulating environment where they can grow both academically and personally. ",
                     to:"/schools/college/boarding-experience",
-                    img:"/img/collegeimages/DSC_0633.jpg"
+                    img:"/img/collegeimages/DSC_0832.jpg"
                 },
                 {
                     title:"CODE OF CONDUCT",
                     desc:"At Kingsmead college, we believe that every student has the right to a safe and positive learning environment. In order to maintain this environment, we have established a Code of Conduct that all students, staff, and visitors are expected to follow.",
                     to:"/schools/college/code-of-conduct",
-                    img:"/img/collegeimages/DSC_0059.jpg"
+                    img:"/img/collegeimages/DSC_0703.jpg"
                 },
                 {
                     title:"PTA",
                     desc:"TThe PTA (Parent Teacher Association) is a valuable organization that plays a vital role in supporting our school community. The PTA is made up of parents, teachers, and staff who work together to enhance the education and well-being of our students.",
                     to:"/schools/college/PTA",
-                    img:"/img/collegeimages/DSC_0637.jpg"
+                    img:"/img/collegeimages/parents2.jpg"
                 },
                 {
                     title:"COLLEGE GALLERY",
@@ -93,9 +93,27 @@ export default {
                     to:"/schools/college/gallery",
                     img:"/img/collegeimages/cultural2.jpeg"
                 },
-
-
-            ]
+            ],
+            pageContent2:[
+                {
+                    img:"/img/collegeimages/DSC_0087.jpg"
+                },
+                {
+                    img:"/img/collegeimages/cultural3.jpeg"
+                },
+                {
+                    img:"/img/collegeimages/DSC_0633.jpg"
+                },
+                {
+                    img:"/img/collegeimages/DSC_0515.jpg"
+                },
+                {
+                    img:"/img/collegeimages/parents2.jpg"
+                },
+                {
+                    img:"/img/collegeimages/DSC_0029.jpg"
+                },
+            ],
         }
     }
 }

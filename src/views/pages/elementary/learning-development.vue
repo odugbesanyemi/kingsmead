@@ -26,7 +26,7 @@
                     Development</router-link>
             </p>
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
-                <p class="py-4 ">The Kingsmead Elementary Pre-School programme is adapted from the combination of
+                <p class="py-4 ">The Kingsmead Elementary programme is adapted from the combination of
                     Nigeria and British curriculum as guide for the Foundation Stage. Learning and assessment is
                     organised into six main areas of learning:</p>
                 <p class="py-4">Here are some key things to keep in mind as you get started:</p>
@@ -40,7 +40,7 @@
                 </ol>
                 <p class="py-4">It is a well planned and resourced curriculum that provides opportunities for all
                     children to succeed in an atmosphere of care and high self-esteem.</p>
-                <p class="py-4">At Kingsmead Elementary Pre-School, particular attention is paid to the monitoring of
+                <p class="py-4">At Kingsmead Elementary, particular attention is paid to the monitoring of
                     each child’s progress through Teachers observation and regular consultation with parents. Parents
                     are encouraged to share their knowledge and views of their child’s development and raise any
                     concerns to ensure that the children are making progress. This is to ensure that difficulties in  

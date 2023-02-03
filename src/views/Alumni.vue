@@ -7,11 +7,11 @@
         <div class="bg-white md:p-20 p-2">
             <div class="max-w-6xl mx-auto">
                 <div class="border">
-                    <div class="title p-4 text-center bg-slate-100">
-                        <h3 class="font-bold max-md:text-2xl text-3xl text-slate-600">KINGSMEAD COLLEGE ALUMNI</h3>
+                    <div class="title p-4 text-center bg-slate-700 text-slate-50">
+                        <h3 class="font-bold max-md:text-2xl text-3xl ">KINGSMEAD COLLEGE ALUMNI</h3>
                     </div>
-                    <div class="content p-5 md:px-20 md:py-10 x text-slate-600">
-                        <p class="font-bold text-slate-800  ">
+                    <div class="content md:p-5 p-8 md:px-20 md:py-10 md:text-lg text-slate-600">
+                        <p class="font-bold text-slate-800">
                             The alumni of the Kingsmead Schools are an impressive group of scientists, technology
                             professionals, engineers, artists, Media practictioners and many more who are making a
                             difference in their fields around the world.
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="bg-blue-100 md:p-20 p-5 transition-all duration-300">
+        <div class="bg-slate-700 md:p-20 p-5 transition-all duration-300">
             <div class="max-w-6xl mx-auto">
                 <accordionComponentVue :data="accordionArray" />
             </div>
@@ -59,14 +59,14 @@
             </div>
 
         </div>
-        <div class="alumni-updates bg-slate-50 py-10">
+        <div class="alumni-updates bg-slate-700 py-10 text-white">
             <div class="max-w-6xl mx-auto">
                 <h2 class="py-5 text-center text-3xl">ALUMNI UPDATES</h2>
-                <div class="update p-4 border-b cursor-pointer" v-for="item in alumniUpdates">
+                <div class="update p-4 group group-odd: border-b border-white/10 cursor-pointer" v-for="item in alumniUpdates">
                     <div class="title">
-                        <h3 class="font-bold md:text-2xl text-slate-600">{{item.title}}</h3>
+                        <h3 class="font-bold md:text-2xl ">{{item.title}}</h3>
                     </div>
-                    <p class="date text-slate-400 ">{{item.date}}</p>
+                    <p class="date text-slate-50 text-xs">{{item.date}}</p>
                 </div>
             </div>
         </div>

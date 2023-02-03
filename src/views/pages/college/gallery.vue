@@ -28,7 +28,7 @@
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
                 <div class="">
                     <viewer :images="images" class="columns columns-4 max-md:columns-2 gap-5">
-                        <img v-for="src,i in images" :key="i" :src="src" class="border h-full object-cover mb-5">
+                        <img v-for="src, i in images" :key="i" :src="src" class="border h-full object-cover mb-5">
                     </viewer>
                 </div>
             </div>
@@ -45,28 +45,14 @@ export default {
     },
     data() {
         return {
-            images:[
-                '/img/collegeimages/cultural2.jpeg',
-                '/img/collegeimages/cultural3.jpeg',
-                '/img/collegeimages/DSC_0022.jpg',
-                '/img/collegeimages/DSC_0029.jpg',
-                '/img/collegeimages/DSC_0034.jpg',
-                '/img/collegeimages/DSC_0043.jpg',
-                '/img/collegeimages/DSC_0049.jpg',
-                '/img/collegeimages/DSC_0059.jpg',
-                '/img/collegeimages/DSC_0075.jpg',
-                '/img/collegeimages/DSC_0087.jpg',
-                '/img/collegeimages/DSC_0511.jpg',
-                '/img/collegeimages/DSC_0515.jpg',
-                '/img/collegeimages/DSC_0594.jpg',
-                '/img/collegeimages/DSC_0603.jpg',
-                '/img/collegeimages/DSC_0613.jpg',
-                '/img/collegeimages/DSC_0621.jpg',
-                '/img/collegeimages/DSC_0632.jpg',
-                '/img/collegeimages/DSC_0633.jpg',
-                '/img/collegeimages/DSC_0637.jpg',
-                '/img/collegeimages/DSC_0703.jpg',
-                '/img/collegeimages/sport10.jpeg',
+            images: [
+                "/img/collegeimages/DSC_0087.jpg",
+                "/img/collegeimages/cultural3.jpeg",
+                "/img/collegeimages/DSC_0633.jpg",
+                "/img/collegeimages/DSC_0515.jpg",
+                "/img/collegeimages/parents2.jpg",
+                "/img/collegeimages/DSC_0029.jpg",
+                "/img/collegeimages/DSC_0832.jpg",
             ]
         }
     }

@@ -9,7 +9,7 @@
                         <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
                         <hr>
                         <div class="my-5">
-                            <img src="../assets/images/sch4.jpg" alt="">
+                            <img src="../assets/images/prefects.jpg" alt="">
                         </div>
                         <div class="text-lg max-md:text-md text-slate-600 mb-5">
                             <p class="py-2">As student leaders at Kingsmead Schools, they will have the opportunity to
@@ -24,19 +24,7 @@
                                 making a difference. If they are interested in this opportunity, we encourage them to
                                 apply as our leaders are selected by election which prepares them for a democratic and inclusive society.</p>
                         </div>
-                        <!-- <div class="grid grid-cols-3 max-md:grid-cols-1 gap-3">
-                            <div class="" v-for="item in users" :key="item">
-                                <div class="image h-80">
-                                    <img src="../assets/images/senior_prefect.jpeg"
-                                        class="h-full w-full object-cover object-top" alt="">
-                                </div>
-                                <div class="content p-5 bg-blue-100">
-                                    <h3 class="font-bold text-xl text-blue-900">{{ item.name }}</h3>
-                                    <p class="text-slate-600"><span class="font-bold">{{ item.position }}</span> -
-                                        {{ item.school }} </p>
-                                </div>
-                            </div>
-                        </div> -->
+
                     </div>
 
                     <div class="my-10">

@@ -45,10 +45,9 @@ export default {
     data() {
         return {
             images:[
-                '/img/preschoolimages/DSC_0524.jpg',
-                '/img/preschoolimages/DSC_0528.jpg',
-                '/img/preschoolimages/DSC_0529.jpg',
-                '/img/preschoolimages/DSC_0532.jpg',
+                '/img/preschoolimages/preschool1.jpg',
+                '/img/preschoolimages/preschool2.jpg',
+                '/img/preschoolimages/preschool3.jpg',
                 '/img/preschoolimages/DSC_0558.jpg',
                 '/img/preschoolimages/DSC_0559.jpg',
                 '/img/preschoolimages/DSC_0561.jpg',

@@ -37,7 +37,7 @@
                     <li class="p-4 my-4 bg-blue-300/20 text-xl rounded-2xl ">Personal, Social and Emotional Development
                     </li>
                 </ol>
-                <span class="my-6 text-2xl font-bold ">7 Specific areas</span>
+                <span class="my-6 text-2xl font-bold md:ml-10">7 Specific areas</span>
                 <ol class="py-4 md:px-10 px-4 grid max-md:grid-cols-2 grid-cols-3 gap-2 ">
                     <li class="p-4 bg-indigo-300/20  rounded-2xl flex items-center justify-center">Literacy</li>
                     <li class="p-4 bg-green-300/20 rounded-2xl flex items-center justify-center">Numeracy</li>
@@ -48,7 +48,7 @@
                     <li class="p-4 bg-orange-300/20 rounded-2xl flex items-center justify-center">Creative Arts</li>
                     <li class="p-4 bg-blue-300/20 rounded-2xl flex items-center justify-center">Knowing God </li>
                 </ol>
-                <p class="py-4">Whilst all learning areas are important and inter-connected, the 3 Prime areas are crucial for igniting children’s curiosity and enthusiasm for learning, building their capacity to learn and form relationships and thrive. The Specific areas will enable children to be self-motivated learners who are confident to succeed.</p>
+                <p class="py-4 md:ml-10">Whilst all learning areas are important and inter-connected, the 3 Prime areas are crucial for igniting children’s curiosity and enthusiasm for learning, building their capacity to learn and form relationships and thrive. The Specific areas will enable children to be self-motivated learners who are confident to succeed.</p>
             </div>
         </section>
     </div>

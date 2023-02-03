@@ -17,16 +17,16 @@
                 <div class="max-w-6xl mx-auto my-4 py-10">
                     <div class="item">
                         <img src="" alt="" class="">
-                        <h2 class="text-blue-800 text-4xl max-md:text-3xl">Hostel Life at Kingsmead Schools</h2>
-                        <div class="desc  mt-5 py-3 text-slate-600">
+                        <h2 class="text-blue-800 text-4xl max-md:text-3xl tracking-normal">Hostel Life at Kingsmead Schools</h2>
+                        <div class="desc  mt-5 py-3 text-slate-600 max-md:leading-loose">
                             <p class="mb-2">Hostel life at Kingsmead Schools provides students with a supportive and safe living environment that promotes personal growth and development.</p>
-                            <p class="mb-2">Our hostels are fully furnished and equipped with all the necessary amenities, including internet access, laundry facilities, and recreational areas.</p>
+                            <p class="mb-2">Our hostels are fully furnished and equipped with all the necessary amenities.</p>
                             <p class="mb-2">Residents of our hostels are supervised by a team of dedicated and caring staff members who are available to provide guidance and support whenever needed.</p>
                             <p class="mb-2">In addition to ensuring the safety and well-being of our students, our staff members also help to create a sense of community and belonging within the hostel.</p>
                             <p class="mb-2">Hostel life at Kingsmead Schools offers numerous opportunities for students to get involved in a variety of activities and events. These may include sports, clubs, cultural events, and more.</p>
                             <p class="mb-2">Our goal is to provide a well-rounded and enriching experience for all of our hostel residents.</p>
                         </div>
-                        <p class="py-3 text-slate-600">We believe that hostel life is an important part of the overall educational experience at Kingsmead Schools and we strive to create a welcoming and supportive environment for all of our students. If you have any questions about hostel life at Kingsmead Schools, please don't hesitate to reach out to us.</p>
+                        <p class="py-3 text-slate-600 max-md:leading-loose">We believe that hostel life is an important part of the overall educational experience at Kingsmead Schools and we strive to create a welcoming and supportive environment for all of our students. If you have any questions about hostel life at Kingsmead Schools, please don't hesitate to reach out to us.</p>
                     </div>
                 </div>
                 <div class="max-w-6xl mx-auto">
@@ -67,7 +67,7 @@ export default {
                     id: 3,
                     img: "/img/cultural4.jpeg",
                     title: "Cultural Events",
-                    desc: "<p class='mb-3'> Kingsmead Schools offers a range of sports teams for students to join, including football, basketball, soccer, and more.</p> <p class='mb-3'> Our teams have a long history of success and our coaches and athletes work hard to represent our school with pride. </p>"
+                    desc: "<p class='mb-3'> At our school, we believe that exposure to a variety of cultual experiences helps students broaden thier horizons and develop a deeper appreciation for diverse perspectives. throughout the year, we host a range of cultural events to give our students a chance to explore differnt traditions and ways of life </p>"
                 }
             ]
         }

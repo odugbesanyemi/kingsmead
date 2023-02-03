@@ -11,12 +11,12 @@
                 </div>
 
                 <div class="text-slate-600">
-                    <p class="py-7 md:text-lg">Fees include costs associated with providing a thorough education;
+                    <p class="py-7 md:text-lg leading-loose">Fees include costs associated with providing a thorough education;
                         including teaching, essential educational materials and text books, and many curriculum
                         trips. Fees also include the provision of pastoral care, meals and co-curricular activities.
                     </p>
                     <h2 class="py-2 text-2xl">Payment Information</h2>
-                    <ul class="list-disc md:ml-10 md:w-10/12 ">
+                    <ul class="md:list-disc md:ml-5 md:w-10/12 leading-loose">
                         <li class="py-2">Fees MUST be paid BEFORE RESUMPTION for each term/session</li>
                         <li class="py-2">Students will not be admitted into the Hostels unless ALL outstanding fees
                             are settled.</li>
@@ -25,9 +25,25 @@
                         <li class="py-2">MODE OF PAYMENT: Transfer into School Account or BANK DRAFT is the only acceptable mode of payment.</li>
                     </ul>
                     <h3 class="font-bold my-5">PAYMENT CHANNELS</h3>
-                    <table class="table-auto">
+                    <div class="responsive">
+                        <table class="table-auto w-full max-md:text-xs">
+                            <thead class="">
+                                <tr class="text-slate-600 bg-slate-200" >
+                                    <th class="py-2 border-b border">Account Name</th>
+                                    <th class="py-2 border-b border">Account Number</th>
+                                    <th class="py-2 border-b border">Bank Name</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="text-slate-500 text-center hover:bg-slate-50">
+                                    <td class="py-2 border-b">Kingsmead College</td>
+                                    <td class="py-2 border-b">4781370012</td>
+                                    <td class="py-2 border-b">First Bank of Nigeria</td>
+                                </tr>
+                            </tbody>
+                        </table>                        
+                    </div>
 
-                    </table>
                     <!-- <p class="mt-3">We are pleased to inform you that Kingsmead School is now live on the GTBank
                         And Zenith Bank channels.</p>
                     <p class="py-3">If you want to pay SCHOOL FEES now, Please click on any of the links below.</p>

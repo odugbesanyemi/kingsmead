@@ -4,10 +4,10 @@
         <div class="page-content">
             <div class="bg-blue-50  py-10 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <div class="md:flex">
-                        <div class="md:w-1/2 max-sm:text-base text-slate-600 text-justify text-lg">
+                    <div class="md:flex relative">
+                        <div class="md:w-1/2 max-sm:text-base text-slate-600  text-lg">
                             <h2 class="text-blue-800 text-5xl mb-4 text-center">The Great Journey</h2>
-                            <div class="max-md:text-sm">
+                            <div class="max-md:text-md text-justify">
                                 <p class="pt-3 pb-3 leading-relaxed">The school was established in July, 2017 to provide
                                     qualitative
                                     educational opportunity for increasing number of primary school leavers within and
@@ -81,13 +81,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="md:w-1/2 md:pl-10 grayscale hover:grayscale-0">
-                            <img src="../assets/images/DSC_0075.jpg" alt="" class="rounded-tl-3xl h-full object-cover">
+                        <div class="md:w-1/2 md:pl-10 relative">
+                            <img src="../assets/images/DSC_0865.jpg" alt="" class="rounded-tl-3xl h-full object-cover absolute w-full left-10">
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="bg-gradient-to-tr from-yellow-100 via-indigo-500 to-yellow-500 py-10 md:py-32 ">
+            <div class="py-10 md:py-32  relative">
+                <img src="../assets/images/pexels-mudassir-ali-2680270.jpg" alt="" class="w-full h-full absolute inset-0">
                 <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0">
                     <div class="md:flex">
                         <div class="md:w-1/2 md:pr-10">
@@ -95,7 +96,7 @@
                                 class="rounded-xl rounded-tr-3xl h-full object-cover shadow-md">
                         </div>
                         <div class="md:p-10 max-md:mt-8 ">
-                            <h2 class="text-4xl text-white mb-8">Our Core Values</h2>
+                            <h2 class="text-5xl text-white mb-8">Our Core Values</h2>
                             <div class="grid max-md:grid-cols-2 grid-cols-3 gap-3">
                                 <div
                                     class="bg-white/10 backdrop-blur-md p-10 rounded flex items-center justify-center ring-white border border-opacity-50 hover:shadow-lg">

@@ -45,17 +45,11 @@ export default {
     data() {
         return {
             images:[
-                '/img/preschoolimages/DSC_0524.jpg',
-                '/img/preschoolimages/DSC_0528.jpg',
-                '/img/preschoolimages/DSC_0529.jpg',
-                '/img/preschoolimages/DSC_0532.jpg',
-                '/img/preschoolimages/DSC_0558.jpg',
-                '/img/preschoolimages/DSC_0559.jpg',
-                '/img/preschoolimages/DSC_0561.jpg',
-                '/img/preschoolimages/DSC_0562.jpg',
-                '/img/preschoolimages/DSC_0566.jpg',
-                '/img/preschoolimages/DSC_0568.jpg',
-                '/img/preschoolimages/DSC_0586.jpg',
+                '/img/elementaryimages/DSC_0548.jpg',
+                '/img/elementaryimages/sport6.jpeg',
+                '/img/elementaryimages/DSC_0554.jpg',
+                '/img/elementaryimages/DSC_0579.jpg',
+                '/img/elementaryimages/DSC_0722.jpg',
             ]
         }
     }

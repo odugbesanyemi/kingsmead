@@ -24,13 +24,13 @@
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
                     <SplideSlide class="max-h-96" v-for="item in pageContent">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 w-full object-cover object-top">
+                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 object-top">
                     </SplideSlide>
                 </Splide>
             </div>
             <div class="programs max-md:p-5 py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
-                    <div class="border p-3 md:shadow" v-for="item,i in pageContent" :key="i">
+                    <div class="border p-3" v-for="item,i in pageContent" :key="i">
                         <router-link :to="item.to" class="">
                             <img :src="item.img" alt="" class="h-56 object-cover w-full object-top">
                             <div class="div content" >
@@ -85,7 +85,7 @@ export default {
                     title:"PTA",
                     desc:"The EYFS emphasises that parents are a child’s primary educators and therefore encourages parents to contribute to their child’s learning…",
                     to:"/schools/elementary/PTA",
-                    img:"/img/Elementaryimages/teacher_consultation_grp4ece_sa_1_0.jpg"
+                    img:"/img/Elementaryimages/parent1.jpg"
                 },
                 {
                     title:"ELEMENTARY GALLERY",

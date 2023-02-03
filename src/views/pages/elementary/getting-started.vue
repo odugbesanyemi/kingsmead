@@ -25,7 +25,7 @@
                 <router-link to="/schools/preschool/getting-started" class="text-slate-400">Getting Started</router-link>
             </p>
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
-                <p class="py-4 ">Welcome to Kingsmead Schools Preschool! We are thrilled to have you and your child join our community of learners. We understand that starting preschool can be an exciting but also a daunting experience for both children and parents. That's why we have put together this guide to help make the transition as smooth as possible.</p>
+                <p class="py-4 ">Welcome to Kingsmead  Elementary Schools! We are thrilled to have you and your child join our community of learners. We understand that starting preschool can be an exciting but also a daunting experience for both children and parents. That's why we have put together this guide to help make the transition as smooth as possible.</p>
                 <p class="py-4">Here are some key things to keep in mind as you get started:</p>
                 <ol class="py-4  list-decimal md:px-10 px-4 ">
                     <li class="py-2">Review our Curriculum: Take the time to familiarize yourself with our curriculum and program offerings. This will give you a better understanding of what your child will be learning and what to expect.</li>
@@ -33,10 +33,9 @@
                     <li class="py-2">Prepare your child: Talk to your child about what to expect in preschool and encourage independence. This will help them feel more comfortable and confident when they start.</li>
                     <li class="py-2">Get to know the teachers: Take the time to get to know your child's teachers and other staff members. They are a valuable resource and can provide support and guidance throughout the year.</li>
                     <li class="py-2">Get involved: Get involved in the school community by attending events and volunteering. This is a great way to meet other families and stay informed about what's happening at the school.</li>
-                    <li class="py-2">Communicate regularly: Keep in touch with your child's teachers to stay informed about their progress and address any concerns. This will help ensure that your child is getting the support they need to succeed.</li>
                     <li class="py-2">Encourage extracurricular activities: Encourage your child to take part in extracurricular activities and other opportunities to explore their interests. This will help them develop new skills and have fun at the same time.</li>
                 </ol>
-                <p class="py-4">At Kingsmead Schools Preschool, we are committed to providing a safe, nurturing, and stimulating environment where children can learn and grow. Our experienced teachers use a variety of methods to engage and inspire children, such as play-based learning, hands-on activities, and interactive lessons. We are here to support your child's development and look forward to working with you to ensure a successful preschool experience.</p>
+                <p class="py-4">At Kingsmead Elementary Schools, we are committed to providing a safe, nurturing, and stimulating environment where children can learn and grow. Our experienced teachers use a variety of methods to engage and inspire children, such as play-based learning, hands-on activities, and interactive lessons. We are here to support your child's development and look forward to working with you to ensure a successful learning experience.</p>
             </div>
         </section>        
     </div>

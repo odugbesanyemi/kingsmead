@@ -2,7 +2,7 @@
     <!-- hero section -->
     <div class="">
         <section class="relative">
-            <Swiper :modules="modules" :slides-per-view="1"  class="md:h-screen " :autoplay='{ "delay": 1500 }'>
+            <Swiper :modules="modules" :slides-per-view="1"  class="md:h-screen " :autoplay='{ "delay": 4500 }'>
                 <swiper-slide class="relative h-full" v-for="item in slides">
                     <div class="relative h-full">
                         <img :src="item.img" class="w-full md:h-screen object-cover" alt="" style="min-height:300px;">
@@ -23,7 +23,7 @@
         <!-- Video plaback section -->
         <section id="tour">
             <div class="relative bg-slate-50 min-h-5/6 md:py-20">
-                <div class="md:max-w-7xl mx-auto md:flex">
+                <div class="md:max-w-7xl mx-auto md:flex px-10 max-md:px-0">
                     <div class="md:w-3/4 max-md:h-96 md:py-16 max-md:order-last">
                         <iframe class="w-full h-full" src="https://www.youtube.com/embed/tgbNymZ7vqY">
                         </iframe>
@@ -68,28 +68,28 @@
         </section>
         <!-- partners section -->
         <section class="bg-blue-50">
-            <div class=" md:max-w-7xl mx-auto md:py-28 py-10 max-md:px-5">
+            <div class=" md:max-w-7xl mx-auto md:py-28 py-10 max-md:px-5 px-10">
                 <h2 class="text-5xl text-blue-800 mb-14">Accredited By:</h2>
                 <div class="grid md:grid-cols-4 max-md:grid-cols-2  group mix-blend-multiply justify-center">
-                    <div class="grayscale hover:grayscale-0 flex-col flex items-center justify-center p-10 border">
+                    <div class="flex-col flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/British_Council_logo.svg.png" alt="">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed">
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/cambridge.jpg" alt="">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed">
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/Coat_of_arms_of_Nigeria.svg.png" alt="">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed">
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/IELTS_logo.svg.png" alt="">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed">
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/lagos-state.webp" alt="" class="w-full h-full object-cover">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed" >
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed" >
                         <img src="../assets/logos/neco.jfif" alt="" class="w-full h-full object-cover">
                     </div>
-                    <div class="grayscale hover:grayscale-0 flex items-center justify-center p-10 border border-black/20 border-dashed">
+                    <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/waec.jpg" alt="">
                     </div>
                 </div>
@@ -100,21 +100,21 @@
             <div class="md:bg-green-100">
                 <div class="md:max-w-7xl mx-auto md:p-20 md:flex gap-2 md:gap-5">
                     <div class="grid md:grid-cols-2 md:gap-5 grid-cols-1 md:w-1/2 gap-3 max-md:p-5">
-                        <div class="bg-white p-10 hover:shadow-xl text-center rounded-tl-3xl border transition-all">
+                        <div class="bg-white p-10 hover:shadow-xl text-center rounded-tl-3xl  transition-all">
                             <MapIcon class="w-10 h-10 mb-4 mx-auto text-blue-500" />
                             <p class="text-gray-500">9, Hon. N. S. Sholaja Street, off Erunwen Road, </p>
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center border transition-all">
+                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
                             <ChatBubbleBottomCenterIcon class="w-10 h-10 mb-4 mx-auto text-green-500" />
                             <p class="text-gray-500  flex-wrap ">Kingsmeadelementary lagos@gmail.com</p>
                             <!-- <p class="text-gray-500"></p> -->
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center border transition-all">
+                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
                             <PhoneIcon class="w-10 h-10 mb-4 mx-auto text-yellow-500" />
                             <p class="text-gray-500 tracking-wide">+234 09060407160</p>
                             <p class="text-gray-500 tracking-wide">+234 09060407160</p>
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center border transition-all">
+                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
                             <ChatBubbleBottomCenterIcon class="w-10 h-10 mb-4 mx-auto text-purple-500" />
                             <p class="text-gray-500">Write to us</p>
                             <Router-link class="underline p-3 bg-text-green-500 rounded-full my-2"
