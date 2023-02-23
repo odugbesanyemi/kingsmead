@@ -5,7 +5,7 @@
             <div class="bg-blue-50 p-3 py-10 md:py-24">
                 <div class="max-w-6xl mx-auto">
                     <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white p-2" v-for="item in activities">
+                        <div class="bg-white p-2 rounded-lg" v-for="item in activities">
                             <img :src="item.img" alt="" class="w-full h-64 object-cover rounded object-top">
                             <div class="px-5">
                                 <h2 class="text-blue-800 text-3xl mt-4">{{ item.title }}</h2>
@@ -18,7 +18,7 @@
                     <div class="item">
                         <img src="" alt="" class="">
                         <h2 class="text-blue-800 text-4xl max-md:text-3xl tracking-normal">Hostel Life at Kingsmead Schools</h2>
-                        <div class="desc  mt-5 py-3 text-slate-600 max-md:leading-loose">
+                        <div class="desc  mt-5 py-3 text-slate-600 max-md:leading-loose text-lg">
                             <p class="mb-2">Hostel life at Kingsmead Schools provides students with a supportive and safe living environment that promotes personal growth and development.</p>
                             <p class="mb-2">Our hostels are fully furnished and equipped with all the necessary amenities.</p>
                             <p class="mb-2">Residents of our hostels are supervised by a team of dedicated and caring staff members who are available to provide guidance and support whenever needed.</p>

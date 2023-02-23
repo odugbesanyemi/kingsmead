@@ -6,17 +6,15 @@
                 <swiper-slide class="relative h-full" v-for="item in slides">
                     <div class="relative h-full">
                         <img :src="item.img" class="w-full md:h-screen object-cover" alt="" style="min-height:300px;">
-                        <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/20 max-md:hidden w-full h-full top-0 "></span>
+                        <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/20 max-md:hidden w-full h-full top-0 backdrop-blur-sm"></span>
                     </div>
                 </swiper-slide>
             </Swiper>
             <div class="absolute z-10 bottom-0 max-md:bg-blue-900/80 max-md:p-3 max-md:w-full md:top-1/2 md:-translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 ">
-                <h1 class="text-4xl md:text-6xl xl:text-8xl text-blue-50 ">Learning is not a <span class="max-md:text-blue-300">Choice</span> , It's a Life</h1>
-                <div class="btn-group my-8 text-lg relative max-md:hidden">
-                    <Router-link to="/about"
-                        class="md:py-4  p-3 px-16 md:w-2/5 max-md:inline-block bg-gradient-to-r from-blue-600 to-blue-900 rounded-full mr-4 hover:bg-transparent text-white text-center hover:ring ring-white">Get
-                        Started</Router-link>
-                    <Router-link to="/tour" class="md:py-4 p-3 px-16 md:w-2/5 max-sm:mt-5 max-md:inline-block text-white rounded-full mr-4 text-center">Take a tour</Router-link>
+                <h1 class="text-4xl md:text-6xl xl:text-7xl text-white ">Learning is not a <span class="max-md:text-blue-300">Choice</span> , It's a Life</h1>
+                <div class="btn-group my-8  gap-4 text-lg relative max-md:hidden">
+                    <Router-link draggable=false to="/about" class="font-bold md:py-3 p-3 px-10 md:w-2/5 max-md:inline-block rounded-lg mr-2  text-white text-center bg-indigo-800 hover:bg-indigo-700 transition-all">Get Started</Router-link>
+                    <Router-link draggable="false" to="/tour" class="font-bold ml-2 bg-gradient-to-t from-white to-gray-100 shadow-inner text-blue-600 md:py-3 p-3 px-10 md:w-2/5 max-sm:mt-5 max-md:inline-block rounded-lg mr-4 text-center">Take a tour</Router-link>
                 </div>            
             </div>
         </section>
@@ -44,13 +42,12 @@
                                 <p class="text-white text-sm font-bold text-center">Admission Guidlines</p>
                             </Router-link>
                             <Router-link to="life-at-kingsmead/pastoral-unit"
-                                class="bg-purple-500 flex md:border-l flex-col items-center justify-center p-10 max-sm:p-5 hover:bg-purple-600">
+                                class="bg-purple-500 flex md:border-l flex-col items-center justify-center p-10 max-sm:p-5 hover:bg-purple-600 rounded">
                                 <UserGroupIcon class="text-white w-10 h-10 mb-4" />
                                 <p class="text-white text-sm font-bold text-center">Pastoral Care Unit</p>
-
                             </Router-link>
                             <Router-link to="/"
-                                class="bg-blue-500 flex flex-col items-center justify-center p-10 max-sm:p-5 hover:blue-600">
+                                class="bg-blue-500 flex flex-col items-center justify-center p-10 max-sm:p-5 hover:blue-600 rounded">
                                 <ArrowRightOnRectangleIcon class="text-white w-10 h-10 mb-4" />
                                 <p class="text-white text-sm font-bold text-center">Portal Login</p>
                             </Router-link>
@@ -68,63 +65,68 @@
         </section>
         <!-- partners section -->
         <section class="bg-blue-50">
-            <div class=" md:max-w-7xl mx-auto md:py-28 py-10 max-md:px-5 px-10">
-                <h2 class="text-5xl text-blue-800 mb-14">Accredited By:</h2>
+            <div class=" md:max-w-7xl mx-auto md:py-28 py-10 max-md:px-5 px-10 ">
+                <!-- <h2 class="text-5xl text-blue-800 mb-14">Accredited By:</h2> -->
                 <div class="grid md:grid-cols-4 max-md:grid-cols-2  group mix-blend-multiply justify-center">
                     <div class="flex-col flex items-center justify-center p-5 border border-black/10 border-dashed">
-                        <img src="../assets/logos/British_Council_logo.svg.png" alt="">
+                        <img src="../assets/logos/British_Council_logo.svg.png"  alt="">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
-                        <img src="../assets/logos/cambridge.jpg" alt="">
+                        <img src="../assets/logos/cambridge.jpg"  alt="">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
                         <img src="../assets/logos/Coat_of_arms_of_Nigeria.svg.png" alt="">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
-                        <img src="../assets/logos/IELTS_logo.svg.png" alt="">
+                        <img src="../assets/logos/IELTS_logo.svg.png"  alt="">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
-                        <img src="../assets/logos/lagos-state.webp" alt="" class="w-full h-full object-cover">
+                        <img src="../assets/logos/lagos-state.webp"  alt="" class=" object-cover">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed" >
-                        <img src="../assets/logos/neco.jfif" alt="" class="w-full h-full object-cover">
+                        <img src="../assets/logos/neco.jfif"  alt="" class=" object-cover">
                     </div>
                     <div class="flex items-center justify-center p-5 border border-black/10 border-dashed">
-                        <img src="../assets/logos/waec.jpg" alt="">
+                        <img src="../assets/logos/waec.jpg"  alt="">
                     </div>
                 </div>
             </div>
         </section>
+        <!-- testimonial section -->
+        <div class="bg-blue-200 relative">
+            <span class="absolute inset-0 mix-blend-multiply opacity-20 z-0"> <img src="../assets/rough texture.webp" class="w-full h-full" alt=""></span>
+            <testimonial class=""/>
+        </div>
         <!-- contact section -->
         <section>
-            <div class="md:bg-green-100">
-                <div class="md:max-w-7xl mx-auto md:p-20 md:flex gap-2 md:gap-5">
-                    <div class="grid md:grid-cols-2 md:gap-5 grid-cols-1 md:w-1/2 gap-3 max-md:p-5">
-                        <div class="bg-white p-10 hover:shadow-xl text-center rounded-tl-3xl  transition-all">
+            <div class="md:bg-blue-100">
+                <div class="md:max-w-7xl mx-auto md:p-20 md:flex ">
+                    <div class="grid md:grid-cols-2  grid-cols-1 md:w-1/2 max-md:p-5">
+                        <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">
                             <MapIcon class="w-10 h-10 mb-4 mx-auto text-blue-500" />
                             <p class="text-gray-500">9, Hon. N. S. Sholaja Street, off Erunwen Road, </p>
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
+                        <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">
                             <ChatBubbleBottomCenterIcon class="w-10 h-10 mb-4 mx-auto text-green-500" />
                             <p class="text-gray-500  flex-wrap ">Kingsmeadelementary lagos@gmail.com</p>
                             <!-- <p class="text-gray-500"></p> -->
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
+                        <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">
                             <PhoneIcon class="w-10 h-10 mb-4 mx-auto text-yellow-500" />
                             <p class="text-gray-500 tracking-wide">+234 09060407160</p>
                             <p class="text-gray-500 tracking-wide">+234 09060407160</p>
                         </div>
-                        <div class="bg-white p-10 hover:shadow-xl text-center  transition-all">
+                        <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">
                             <ChatBubbleBottomCenterIcon class="w-10 h-10 mb-4 mx-auto text-purple-500" />
                             <p class="text-gray-500">Write to us</p>
                             <Router-link class="underline p-3 bg-text-green-500 rounded-full my-2"
                                 to="/about/contact-us">Click here</Router-link>
                         </div>
                     </div>
-                    <div class="imgflexed md:w-1/2">
+                    <div class="md:w-1/2">
                         <div class="grayscale h-full ">
                             <img src="../assets/images/DSC_0515.jpg" alt=""
-                                class="w-full h-full object-cover md:rounded-br-3xl">
+                                class="w-full h-full object-cover ">
                         </div>
                     </div>
                 </div>
@@ -141,10 +143,11 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/autoplay'
+import testimonial from '../components/testimonial.vue'
 // import 'swiper/css/effect'
 export default {
     components: {
-        Swiper, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon,EffectFade
+        Swiper, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon,EffectFade,testimonial
     },
     data() {
         return {

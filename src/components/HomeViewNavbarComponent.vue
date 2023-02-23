@@ -7,7 +7,7 @@
                     <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead Schools</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
-                    <Bars3Icon class=" w-8 h-8" />
+                    <Bars3Icon class=" w-8 h-8 outline-white outline p-1" :class="[isFixed?'outline-blue-400 rounded text-blue-400':'rounded']"/>
                 </div>
                 <transition name="slide">
                     <span class="absolute h-screen inset-0 bg-gray-900/90 z-40" v-show="dropdown"
@@ -55,13 +55,11 @@
                 <div class='md:w-7/12 max-xl:hidden xl:w-8/12 '>
                     <ul class='flex items-center justify-center'>
                         <li class='nav-item group/first mr-5 group/d relative' v-for="x in links" :key="x.id">
-                            <RouterLink :to="x.to"
-                                class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-200 group-hover/d:border-b-white flex items-center'>{{ x.title }}
-                                <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
+                            <RouterLink :to="x.to" :class="[!isFixed?'group-hover/d:text-blue-50':'']" class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-800 group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
 
-                                <ul class='w-72 rounded-lg hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg' v-if="(x.dropdown)">
-                                    <span class="before:w-6 before:h-6 before:bg-white before:absolute before:-top-2 before:rotate-45 "></span>
+                                <ul class='w-72 rounded-lg border hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg' v-if="(x.dropdown)">
+                                    <span class="before:w-6 before:h-6 before:border-l before:border-t before:bg-white before:absolute before:-top-3 before:left-5 before:rotate-45 "></span>
                                     <li v-for="y in x.dropdownLinks" :key="y.id"
                                         class="py-3 px-2 hover:bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 hover:text-white group/second relative rounded-lg hover:shadow-sm transition-all">
                                         <RouterLink class='dropdown-item px-5' :to='y.to'>{{ y.title }}</RouterLink>
@@ -84,9 +82,10 @@
 </template>
 
 <script>
-import { Bars3Icon, ChevronDownIcon, UserCircleIcon, XMarkIcon } from "@heroicons/vue/24/solid"
+import { Bars3Icon, ChevronDownIcon, UserCircleIcon, XMarkIcon,Bars2Icon } from "@heroicons/vue/24/solid"
 export default {
-    components: { Bars3Icon, ChevronDownIcon, UserCircleIcon, XMarkIcon },
+    props:['isFixed'],
+    components: { Bars3Icon, ChevronDownIcon, UserCircleIcon, XMarkIcon,Bars2Icon },
     data() {
         return {
             dropdown: false,

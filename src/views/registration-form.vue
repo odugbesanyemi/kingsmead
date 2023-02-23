@@ -9,12 +9,12 @@
             <div class="md:w-4/6 max-md:p-5">
                 <!-- advert -->
                 <div class="">
-                    <div class="rounded-3xl shadow p-5 relative">
+                    <div class="rounded-lg shadow p-5 relative overflow-hidden">
                         <img src="../assets/images/DSC_0568.jpg" class=" absolute inset-0 w-full h-full object-cover overflow-hidden z-0" alt="">
                         <span
                             class="absolute bg-gradient-to-r from-blue-600 to-blue-900/70 inset-0 w-full h-full overflow-hidden z-0"></span>
                         <div class="relative rounded-lg">
-                            <h2 class="text-5xl text-white md:w-4/6 z-10">Admission is in Progress</h2>
+                            <h2 class="md:text-5xl text-3xl text-white md:w-4/6 z-10">Admission is in Progress</h2>
                             <!-- <p class="md:w-3/6 mt-2 text-white/70 text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                                 Tempore,</p> -->
                         </div>
@@ -26,33 +26,6 @@
                     <p class="mt-10 font-bold">Ready to apply? <Router-link class="underline" to="/admissions/registration-form">Download Application Form</Router-link></p>
                     <p class="mt-5 font-bold">Have more questions? <Router-link class="underline" to="/about/contact-us">Contact us</Router-link></p>
                 </div>
-                <!--grids for actions -->
-                <!-- <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-5 py-10 ">
-                    <div class="rounded-2xl shadow-sm hover:shadow-xl border border-orange-300">
-                        <div class="bg-orange-300 p-5 rounded-t-2xl">
-                            <img src="../assets/icons/814848.png" alt="" class="w-20 h-20 mx-auto">
-                        </div>
-                        <div class="div p-5 ">
-                            <h2 class="text-3xl text-orange-600 text-center">Download Admission Form</h2>
-                        </div>
-                    </div>
-                    <div class="rounded-2xl shadow-sm hover:shadow-xl border border-blue-300">
-                        <div class="bg-blue-300 p-5 rounded-t-2xl">
-                            <img src="../assets/icons/5179190.png" alt="" class="w-20 h-20 mx-auto">
-                        </div>
-                        <div class="div p-5 ">
-                            <h2 class="text-3xl text-blue-600 text-center">Start Online Registration</h2>
-                        </div>
-                    </div>
-                    <div class="rounded-2xl shadow-sm hover:shadow-xl border border-red-300">
-                        <div class="bg-red-300 p-5 rounded-t-2xl">
-                            <img src="../assets/icons/854878.png" alt="" class="w-20 h-20 mx-auto">
-                        </div>
-                        <div class="div p-5 ">
-                            <h2 class="text-3xl text-red-600 text-center align-middle">Get Directions</h2>
-                        </div>
-                    </div>
-                </div> -->
             </div>
             <admissionSidebarVue />
         </div>

@@ -36,7 +36,7 @@
                                     has been in place prior to the official people.</p>
                             </div>
                             <div class="grid md:grid-cols-2 mt-4 gap-4 max-md:mb-10 text-sm text-center">
-                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg flex flex-col justify-center">
+                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg flex flex-col justify-center relative border border-white">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-red-300 rounded-bl-full ">
                                         <AcademicCapIcon class="text-white" />
                                     </span>
@@ -46,7 +46,7 @@
                                     <p><span class="font-bold">Graduated</span> Students are all doing fine in their
                                         various fields</p>
                                 </div>
-                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg ">
+                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg relative border border-white">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-orange-300 rounded-bl-full ">
                                         <GlobeEuropeAfricaIcon class="text-white" />
                                     </span>
@@ -57,7 +57,7 @@
                                         standard of intellectual and personal development through a stimulating and
                                         comprehensive programme.</p>
                                 </div>
-                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg">
+                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg relative border border-white">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-purple-300 rounded-bl-full ">
                                         <EyeIcon class="text-white" />
                                     </span>
@@ -67,7 +67,7 @@
                                     <p><span class="font-bold"></span> To be an outstanding value-based school striving
                                         for Excellence thereby, enabling our students achieve greatness.</p>
                                 </div>
-                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg">
+                                <div class="p-5 bg-white/50 backdrop-blur-sm rounded-lg relative border border-white">
                                     <span class="absolute w-10 h-10 top-0 right-0 p-2 bg-blue-300 rounded-bl-full ">
                                         <BookOpenIcon class="text-white" />
                                     </span>
@@ -87,13 +87,13 @@
                     </div>
                 </div>
             </div>
-            <div class="py-10 md:py-32  relative">
-                <img src="../assets/images/pexels-mudassir-ali-2680270.jpg" alt="" class="w-full h-full absolute inset-0">
-                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0">
+            <div class="py-10 md:py-32 relative">
+                <img src="../assets/images/pexels-mudassir-ali-2680270.jpg" alt="" class="w-full h-full absolute inset-0 -z-10">
+                <div class="max-w-6xl mx-auto max-sm:px-5 sm:px-16 md:px-0 z-20">
                     <div class="md:flex">
                         <div class="md:w-1/2 md:pr-10">
                             <img src="../assets/images/DSC_0515.jpg" alt=""
-                                class="rounded-xl rounded-tr-3xl h-full object-cover shadow-md">
+                                class="rounded-xl rounded-tr-3xl h-full object-cover shadow-md border-b-4 border-white">
                         </div>
                         <div class="md:p-10 max-md:mt-8 ">
                             <h2 class="text-5xl text-white mb-8">Our Core Values</h2>
