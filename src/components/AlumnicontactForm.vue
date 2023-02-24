@@ -24,15 +24,6 @@
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
-                        Preferred Method of Contact:
-                        <select name="" id="" class="p-3 w-full outline-none">
-                            <option value="">Email Address</option>
-                            <option value="">Phone Number</option>
-                        </select>
-                    </label>
-                </div>
-                <div class="input-element py-2">
-                    <label for="" class="py-2">
                         Email Address:
                         <input type="email" name="" id="" class="p-3 w-full outline-none" placeholder="Email Address">
                     </label>

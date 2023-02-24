@@ -1,7 +1,7 @@
 <template >
     <!-- hero section -->
     <div class="">
-        <section class="relative">
+        <section class="relative ">
             <Swiper :modules="modules" :slides-per-view="1"  class="md:h-screen " :autoplay='{ "delay": 4500 }'>
                 <swiper-slide class="relative h-full" v-for="item in slides">
                     <div class="relative h-full">
@@ -10,13 +10,16 @@
                     </div>
                 </swiper-slide>
             </Swiper>
-            <div class="absolute z-10 bottom-0 max-md:bg-blue-900/80 max-md:p-3 max-md:w-full md:top-1/2 md:-translate-y-1/2 w-10/12 md:w-8/12 xl:w-6/12 md:left-28 ">
-                <h1 class="text-4xl md:text-6xl xl:text-7xl text-white ">Learning is not a <span class="max-md:text-blue-300">Choice</span> , It's a Life</h1>
-                <div class="btn-group my-8  gap-4 text-lg relative max-md:hidden">
-                    <Router-link draggable=false to="/about" class="font-bold md:py-3 p-3 px-10 md:w-2/5 max-md:inline-block rounded-lg mr-2  text-white text-center bg-indigo-800 hover:bg-indigo-700 transition-all">Get Started</Router-link>
-                    <Router-link draggable="false" to="/tour" class="font-bold ml-2 bg-gradient-to-t from-white to-gray-100 shadow-inner text-blue-600 md:py-3 p-3 px-10 md:w-2/5 max-sm:mt-5 max-md:inline-block rounded-lg mr-4 text-center">Take a tour</Router-link>
-                </div>            
+            <div class="max-w-6xl mx-auto md:px-10">
+                <div class="absolute z-10 bottom-0 max-md:bg-blue-900/80 max-md:p-3  max-md:w-full md:top-1/2 md:-translate-y-1/2 ">
+                    <h1 class="text-4xl md:text-6xl xl:text-7xl text-white ">Learning is not a <span class="max-md:text-blue-300 block">Choice,</span>  It's a Life</h1>
+                    <div class="btn-group my-8  gap-4 text-lg relative max-md:hidden">
+                        <Router-link draggable=false to="/about" class="font-bold md:py-3 p-3 px-10 md:w-2/5 max-md:inline-block rounded-lg mr-2  text-white text-center bg-indigo-800 hover:bg-indigo-700 transition-all">Get Started</Router-link>
+                        <Router-link draggable="false" to="/tour" class="font-bold ml-2 bg-gradient-to-t from-white to-gray-100 shadow-inner text-blue-600 md:py-3 p-3 px-10 md:w-2/5 max-sm:mt-5 max-md:inline-block rounded-lg mr-4 text-center">Take a tour</Router-link>
+                    </div>            
+                </div>                
             </div>
+
         </section>
         <!-- Video plaback section -->
         <section id="tour">
@@ -108,7 +111,7 @@
                         </div>
                         <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">
                             <ChatBubbleBottomCenterIcon class="w-10 h-10 mb-4 mx-auto text-green-500" />
-                            <p class="text-gray-500  flex-wrap ">Kingsmeadelementary lagos@gmail.com</p>
+                            <p class="text-gray-500  flex-wrap ">Kingsmeadelementarylagos@gmail.com</p>
                             <!-- <p class="text-gray-500"></p> -->
                         </div>
                         <div class="bg-white p-10 hover:outline outline-blue-600 text-center  transition-all">

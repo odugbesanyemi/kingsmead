@@ -122,7 +122,7 @@
                                         </ul>
                                         <p class="mt-6 text-indigo-50 max-w-3xl">We look forward to hearing from you and helping you with your needs.</p>
                                         <p class="mt-6 text-indigo-50 max-w-3xl">Thank you for choosing Kingsmead Schools.</p>
-                                        
+
                                     </div>
 
                                     <!-- Contact form -->
@@ -137,7 +137,7 @@
                                                 <div class="mt-1">
                                                     <input type="text" name="first-name" id="first-name"
                                                         autocomplete="given-name"
-                                                        v-model="userContact.first_name" required
+                                                        v-model="form.first_name" required
                                                         class="py-3 px-4 block w-full  border text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -148,7 +148,7 @@
                                                 <div class="mt-1">
                                                     <input type="text" name="last-name" id="last-name"
                                                         autocomplete="family-name"
-                                                        v-model="userContact.last_name" required
+                                                        v-model="form.last_name" required
                                                         class="py-3 px-4 block w-full border  text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -227,12 +227,14 @@ export default {
         return {
             headerImg, defaultPic,
             userContact:{
-                first_name:"",
-                last_name:"",
                 email:"",
                 phone:"",
                 subject:"",
                 message:"",
+            },
+            form:{
+                first_name:"",
+                last_name:""
             },
             loading:{
                 done:false,
@@ -258,7 +260,7 @@ export default {
     },
     computed:{
         fullname(){
-            return this.userContact.last_name + ' ' + this.userContact.first_name
+            return this.form.last_name + ' ' + this.form.first_name
         }
     }
 }
