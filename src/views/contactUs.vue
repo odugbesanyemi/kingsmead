@@ -5,16 +5,16 @@
             <span class="absolute inset-0 w-full h-full -z-10"><img src="../assets/images/DSC_0865.jpg"
                     class="w-full h-full inset-0 object-cover object-bottom" alt=""></span>
             <span class="absolute inset-0 max-md:bg-gradient-to-tr max-md:to-blue-50/80 bg-gradient-to-r from-blue-100 via-white to-transparent -z-10"></span>
-            <div class="bg-transparent py-3 md:py-10">
-                <div class="max-w-7xl mx-auto max-md:p-5 ">
+            <div class="bg-transparent md:py-10">
+                <div class="max-w-7xl mx-auto ">
                     <div class="">
                         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
-                            <div class="relative bg-white shadow-xl ">
+                            <div class="relative bg-white  ">
                                 <h2 class="sr-only">Contact us</h2>
 
-                                <div class="grid grid-cols-1 lg:grid-cols-3 z-40">
+                                <div class="grid grid-cols-1 lg:grid-cols-3 z-40 text-sm">
                                     <!-- Contact information -->
-                                    <div class="relative overflow-hidden py-10 px-4 bg-indigo-700 sm:px-10 xl:p-12">
+                                    <div class="relative overflow-hidden py-10 px-4 bg-indigo-700 sm:px-10 xl:p-12 ">
                                         <div class="absolute inset-0 pointer-events-none sm:hidden" aria-hidden="true">
                                             <svg class="absolute inset-0 w-full h-full" width="343" height="388"
                                                 viewBox="0 0 343 388" fill="none" preserveAspectRatio="xMidYMid slice"
@@ -66,17 +66,17 @@
                                             </svg>
                                         </div>
                                         <h3 class="text-lg font-bold text-white">Contact information</h3>
-                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">Welcome to our contact page! We appreciate your interest in Kingsmead Schools and are here to assist you with any questions or concerns you may have.</p>
-                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">To get in touch with us, you can use the form provided on this page, or you can reach out to us using the following methods:</p>
+                                        <p class="mt-6 text-indigo-50 max-w-3xl">Welcome to our contact page! We appreciate your interest in Kingsmead Schools and are here to assist you with any questions or concerns you may have.</p>
+                                        <p class="mt-6 text-indigo-50 max-w-3xl">To get in touch with us, you can use the form provided on this page, or you can reach out to us using the following methods:</p>
                                         <dl class="mt-8 space-y-6">
                                             <dt><span class="sr-only">Phone number</span></dt>
-                                            <dd class="flex text-base text-indigo-50">
+                                            <dd class="flex text-indigo-50">
                                                 <PhoneIcon class="flex-shrink-0 w-6 h-6 text-indigo-200"
                                                     aria-hidden="true" />
                                                 <span class="ml-3">+1 (555) 123-4567</span>
                                             </dd>
                                             <dt><span class="sr-only">Email</span></dt>
-                                            <dd class="flex text-base text-indigo-50">
+                                            <dd class="flex text-indigo-50">
                                                 <EnvelopeIcon class="flex-shrink-0 w-6 h-6 text-indigo-200"
                                                     aria-hidden="true" />
                                                 <span class="ml-3">admin@kingsmead.edu.ng</span>
@@ -120,15 +120,15 @@
                                                 </a>
                                             </li>
                                         </ul>
-                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">We look forward to hearing from you and helping you with your needs.</p>
-                                        <p class="mt-6 text-base text-indigo-50 max-w-3xl">Thank you for choosing Kingsmead Schools.</p>
+                                        <p class="mt-6 text-indigo-50 max-w-3xl">We look forward to hearing from you and helping you with your needs.</p>
+                                        <p class="mt-6 text-indigo-50 max-w-3xl">Thank you for choosing Kingsmead Schools.</p>
                                         
                                     </div>
 
                                     <!-- Contact form -->
                                     <div class="py-10 px-4 sm:px-10 lg:col-span-2 xl:p-12">
                                         <h3 class="text-lg font-bold text-gray-900">Send us a message</h3>
-                                        <form action="#" method="POST"
+                                        <form method="POST" @submit.prevent="submit()"
                                             class="mt-6 grid grid-cols-1 gap-y-6 sm:grid-cols-2 sm:gap-x-8">
                                             <div>
                                                 <label for="first-name"
@@ -137,6 +137,7 @@
                                                 <div class="mt-1">
                                                     <input type="text" name="first-name" id="first-name"
                                                         autocomplete="given-name"
+                                                        v-model="userContact.first_name" required
                                                         class="py-3 px-4 block w-full  border text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -147,6 +148,7 @@
                                                 <div class="mt-1">
                                                     <input type="text" name="last-name" id="last-name"
                                                         autocomplete="family-name"
+                                                        v-model="userContact.last_name" required
                                                         class="py-3 px-4 block w-full border  text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -155,6 +157,7 @@
                                                     class="block text-sm font-medium text-gray-900">Email</label>
                                                 <div class="mt-1">
                                                     <input id="email" name="email" type="email" autocomplete="email"
+                                                    v-model="userContact.email" required
                                                         class="py-3 px-4 block w-full border text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -162,11 +165,12 @@
                                                 <div class="flex justify-between">
                                                     <label for="phone"
                                                         class="block text-sm font-medium text-gray-900">Phone</label>
-                                                    <span id="phone-optional"
+                                                    <span id="phone-optional" 
                                                         class="text-sm text-gray-500">Optional</span>
                                                 </div>
                                                 <div class="mt-1">
                                                     <input type="text" name="phone" id="phone" autocomplete="tel"
+                                                    v-model="userContact.phone"
                                                         class="py-3 px-4 block w-full border text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md"
                                                         aria-describedby="phone-optional" />
                                                 </div>
@@ -176,6 +180,7 @@
                                                     class="block text-sm font-medium text-gray-900">Subject</label>
                                                 <div class="mt-1">
                                                     <input type="text" name="subject" id="subject"
+                                                    v-model="userContact.subject" required
                                                         class="py-3 px-4 block w-full border text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border-gray-300 rounded-md" />
                                                 </div>
                                             </div>
@@ -187,14 +192,14 @@
                                                         characters</span>
                                                 </div>
                                                 <div class="mt-1">
-                                                    <textarea id="message" name="message" rows="4"
-                                                        class="py-3 px-4 block w-full  text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
+                                                    <textarea id="message" name="message" rows="4" v-model="userContact.message" required
+                                                        class="py-3 px-4 block w-full resize-none text-gray-900 focus:ring-indigo-500 focus:border-indigo-500 border border-gray-300 rounded-md"
                                                         aria-describedby="message-max" />
                                                 </div>
                                             </div>
                                             <div class="sm:col-span-2 sm:flex sm:justify-end">
                                                 <button type="submit"
-                                                    class="mt-2 w-full inline-flex items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto">Submit</button>
+                                                    class="mt-2 w-full inline-flex gap-3 items-center justify-center px-6 py-3 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 sm:w-auto">Submit <CheckIcon class="w-5 transition-all" v-if="loading.done"/></button>
                                             </div>
                                         </form>
                                     </div>
@@ -209,20 +214,53 @@
 </template>
 <script>
 import { AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, EnvelopeIcon } from '@heroicons/vue/24/solid'
-import { PhoneIcon } from "@heroicons/vue/24/outline"
+import { PhoneIcon,CheckIcon } from "@heroicons/vue/24/outline"
 import siteHeader from '../components/siteHeader.vue'
 import headerImg from '../assets/images/DSC_0515.jpg'
 import defaultPic from "../assets/logos/default.png"
+import axios from 'axios'
 export default {
     components: {
-        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, PhoneIcon, EnvelopeIcon
+        siteHeader, AcademicCapIcon, BookOpenIcon, EyeIcon, GlobeEuropeAfricaIcon, ArrowRightCircleIcon, PhoneIcon, EnvelopeIcon,CheckIcon
     },
     data() {
         return {
             headerImg, defaultPic,
+            userContact:{
+                first_name:"",
+                last_name:"",
+                email:"",
+                phone:"",
+                subject:"",
+                message:"",
+            },
+            loading:{
+                done:false,
+            }
+            
+        }
+    },
+    methods:{
+        async submit(){
+            try{    
+                const response = await axios.post(`${import.meta.env.VITE_SERVER_API_URL}/forms/form_contact`,{...this.userContact,fullname:this.fullname})
+                this.loading.done = true
+                console.log(response.data)
+                setTimeout(()=>{
+                    this.loading.done=false
+                },5000)
+            }
+            catch(err){
+                // toast error
+            }
 
         }
     },
+    computed:{
+        fullname(){
+            return this.userContact.last_name + ' ' + this.userContact.first_name
+        }
+    }
 }
 </script>
 <style>

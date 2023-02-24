@@ -4,7 +4,7 @@
             <div class='w-10/12 mx-auto flex justify-between items-center xl:w-11/12'>
                 <RouterLink to="/home" class='indexPage flex flex-row gap-2 items-center'><img
                         class="max-sm:w-8 max-sm:h-8 w-10 h-10" src='../assets/kingsmead.svg'>
-                    <h3 class=' font-bold md:text-lg max-md:text-md'>Kingsmead Schools</h3>
+                    <h3 class=' font-bold md:text-xl max-md:text-md'>Kingsmead Schools</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
                     <Bars3Icon class=" w-8 h-8 outline-white outline p-1" :class="[isFixed?'outline-blue-400 rounded text-blue-500':'rounded']"/>
@@ -24,7 +24,7 @@
                                 v-for="x in links" :key="x.id"
                                 @click="x.dropdown ? x.opened = !x.opened : dropdown = !dropdown">
                                 <RouterLink :to="x.to"
-                                    class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold w-full'>
+                                    class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold w-full '>
                                     {{ x.title }}
                                     <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown" :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }" />
                                 </RouterLink>
@@ -53,16 +53,16 @@
 
                 <!-- pc navbar -->
                 <div class='md:w-7/12 max-xl:hidden xl:w-8/12 '>
-                    <ul class='flex items-center justify-center'>
+                    <ul class='flex items-center justify-end'>
                         <li class='nav-item group/first mr-5 group/d relative' v-for="x in links" :key="x.id">
-                            <RouterLink :to="x.to" :class="[!isFixed?'group-hover/d:text-blue-50':'group-hover/d:text-blue-900']" class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-100 group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
+                            <RouterLink :to="x.to" :class="[isFixed?'group-hover/d:text-blue-500 font-semibold':'group-hover/d:text-blue-100']" class='text-sm relative py-7   group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
 
-                                <ul class='w-72 rounded-lg border hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg' v-if="(x.dropdown)">
+                                <ul class=' rounded-lg border hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg text-sm' v-if="(x.dropdown)">
                                     <span class="before:w-6 before:h-6 before:border-l before:border-t before:bg-white before:absolute before:-top-3 before:left-5 before:rotate-45 "></span>
                                     <li v-for="y in x.dropdownLinks" :key="y.id"
                                         class="py-3 px-2 hover:bg-gradient-to-r from-blue-900 via-blue-600 to-blue-900 hover:text-white group/second relative rounded-lg hover:shadow-sm transition-all">
-                                        <RouterLink class='dropdown-item px-5' :to='y.to'>{{ y.title }}</RouterLink>
+                                        <RouterLink class='dropdown-item px-5 whitespace-nowrap' :to='y.to'>{{ y.title }}</RouterLink>
                                         <ul class='dropDown-menu hidden group-hover/second:block absolute right-full text-blue-50 border-r border-white bg-blue-900 w-44 shadow-lg top-0 '
                                             v-if="y.dropdown">
                                             <li v-for="z in y.dropdownLinks"
