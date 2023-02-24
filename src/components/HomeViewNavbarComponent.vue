@@ -2,12 +2,12 @@
     <div>
         <nav class='max-xl:py-4 '>
             <div class='w-10/12 mx-auto flex justify-between items-center xl:w-11/12'>
-                <RouterLink to="/home" class='indexPage flex flex-row items-center'><img
-                        class="max-sm:w-8 max-sm:h-8 w-16 h-16" src='../assets/kingsmead.svg'>
-                    <h3 class=' font-bold md:text-3xl max-md:text-xl'>Kingsmead Schools</h3>
+                <RouterLink to="/home" class='indexPage flex flex-row gap-2 items-center'><img
+                        class="max-sm:w-8 max-sm:h-8 w-10 h-10" src='../assets/kingsmead.svg'>
+                    <h3 class=' font-bold md:text-lg max-md:text-md'>Kingsmead Schools</h3>
                 </RouterLink>
                 <div class="xl:hidden order-last peer" @click="dropdown = !dropdown">
-                    <Bars3Icon class=" w-8 h-8 outline-white outline p-1" :class="[isFixed?'outline-blue-400 rounded text-blue-400':'rounded']"/>
+                    <Bars3Icon class=" w-8 h-8 outline-white outline p-1" :class="[isFixed?'outline-blue-400 rounded text-blue-500':'rounded']"/>
                 </div>
                 <transition name="slide">
                     <span class="absolute h-screen inset-0 bg-gray-900/90 z-40" v-show="dropdown"
@@ -55,7 +55,7 @@
                 <div class='md:w-7/12 max-xl:hidden xl:w-8/12 '>
                     <ul class='flex items-center justify-center'>
                         <li class='nav-item group/first mr-5 group/d relative' v-for="x in links" :key="x.id">
-                            <RouterLink :to="x.to" :class="[!isFixed?'group-hover/d:text-blue-50':'']" class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-800 group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
+                            <RouterLink :to="x.to" :class="[!isFixed?'group-hover/d:text-blue-50':'group-hover/d:text-blue-900']" class='text-lg xl:text-base relative py-7  group-hover/d:text-blue-100 group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
                             </RouterLink>
 
                                 <ul class='w-72 rounded-lg border hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg' v-if="(x.dropdown)">

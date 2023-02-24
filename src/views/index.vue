@@ -35,9 +35,9 @@
                                 class="text-sm inline-block rounded-sm md:rounded-full p-2 px-8 my-4 shadow-sm hover:bg-blue-600 transition-all bg-blue-400 text-white">
                                 Read more</p>
                         </Router-link>
-                        <div class="grid grid-cols-2 ">
+                        <div class="grid grid-cols-2 gap-2">
                             <Router-link to='/admissions/criteria-policy'
-                                class="bg-red-500 flex flex-col items-center justify-center p-10 max-sm:p-5 hover:bg-red-600  transition-all m-2 rounded">
+                                class="bg-red-500 flex flex-col items-center justify-center p-10 max-sm:p-5 hover:bg-red-600  transition-all rounded">
                                 <LightBulbIcon class="text-white w-10 h-10 mb-4" />
                                 <p class="text-white text-sm font-bold text-center">Admission Guidlines</p>
                             </Router-link>
@@ -53,7 +53,7 @@
                             </Router-link>
 
                             <Router-link to="/Life-at-Kingsmead/Alumni"
-                                class="bg-indigo-500 flex flex-col md:border-l items-center justify-center p-10 max-sm:p-5 hover:bg-purple-600 m-2 rounded">
+                                class="bg-indigo-500 flex flex-col md:border-l items-center justify-center p-10 max-sm:p-5 hover:bg-purple-600  rounded">
                                 <ChatBubbleBottomCenterIcon class="text-white w-10 h-10 mb-4" />
                                 <p class="text-white text-sm font-bold text-center">Join Our community</p>
                             </Router-link>

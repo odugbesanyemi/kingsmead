@@ -19,48 +19,36 @@
                 </div>
             </div>
             <div class="grid md:grid-cols-3 gap-5 my-10">
-                <div class="relative group rounded-lg overflow-hidden border h-52 hover:shadow-lg" v-for="category in categories" :key="category.id">
-                    <p class="text-xl font-bold absolute bottom-7 ml-5 translate-y-1/2 text-black transition-all duration-500 px-4 border rounded-full">{{ category.title }}</p>
-                    
+                <div class="relative group rounded-lg overflow-hidden cursor-pointer border h-52 hover:shadow-lg" v-for="category in categories" :key="category.id" @click="$router.push({path:`/gallery/categories/${category.id}`,query:{category:``}})">
+                <img :src="category.category_image" alt="" class="w-full h-full object-cover">
+                    <p class="bg-white absolute bottom-10 -left-2 ml-5 translate-y-1/2 text-black text-sm transition-all duration-500 py-2 px-4 rounded-full">{{ category.category_name }}</p>
                 </div>
             </div>
         </div>
     </div>
 </template>
 <script>
+import axios from 'axios'
 import { Bars2Icon, FunnelIcon } from '@heroicons/vue/24/solid';
 export default {
     components:{ FunnelIcon, Bars2Icon },
     data() {
         return {
-            categories: [
-                {
-                    id: 1,
-                    title: "Sport Activities",
-                    img: "",
-                },
-                {
-                    id: 2,
-                    title: "Cultural Activites",
-                    img: "",
-                },
-                {
-                    id: 3,
-                    title: "Hostel Facilites",
-                    img: "",
-                },
-                {
-                    id: 4,
-                    title: "Clubs & societies",
-                    img: "",
-                },
-                {
-                    id: 5,
-                    title: "Parents Association",
-                    img: "",
-                },
-            ]
+            categories: []
         }
+    },
+    methods:{
+        async getGalleryCategory(){
+            try{
+                const response = await axios.get(`${import.meta.env.VITE_SERVER_API_URL}/gallery/categories`)
+                this.categories = response.data
+            }catch(err){
+                // toast error
+            }
+        }
+    },
+    mounted(){
+        this.getGalleryCategory()
     }
 }
 </script>
