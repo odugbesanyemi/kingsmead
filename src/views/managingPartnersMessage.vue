@@ -8,9 +8,9 @@
                     <div class="md:flex gap-5">
                         <div class="md:w-1/5 max-md:mb-6 ">
                             <div class="hover:shadow-xl group shadow-blue-400/10 sticky top-0">
-                                <div class="mb-0 h-56 grayscale group-hover:grayscale-0">
-                                    <img src='../assets/images/principal-image.jpg' alt=""
-                                        class="w-full h-full object-cover">
+                                <div class="mb-0 h-56 ">
+                                    <img src='../assets/images/principal-image.jpeg' alt=""
+                                        class="w-full h-full object-cover object-top">
                                 </div>
                                 <div class="desc text-center p-3 bg-blue-100">
                                     <h3 class="font-bold mb-2">Mrs. Adeolu-Idowu Ngozi</h3>
