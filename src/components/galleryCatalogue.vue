@@ -60,7 +60,7 @@ export default {
         }
     },
     mounted(){
-        this.getImages()
+        // this.getImages()
     }
 }
 </script>

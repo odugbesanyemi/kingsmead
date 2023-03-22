@@ -3,14 +3,14 @@
         <siteHeader title="Managing Partner's Message" prev-page-name="About" curr-page-name="Partner's Message"
             :img-name="headerImg" />
         <div class="page-content relative -z-30">
-            <div class="bg-transparent  py-20 md:py-32">
+            <div class="bg-transparent  py-10 md:py-32">
                 <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
                     <div class="md:flex gap-5">
                         <div class="md:w-1/5 max-md:mb-6 ">
                             <div class="hover:shadow-xl group shadow-blue-400/10 sticky top-0">
-                                <div class="mb-0 h-56 ">
+                                <div class="mb-0 md:h-56 ">
                                     <img src='../assets/images/principal-image.jpeg' alt=""
-                                        class="w-full h-full object-cover object-top">
+                                        class="w-full h-full object-cover md:object-top">
                                 </div>
                                 <div class="desc text-center p-3 bg-blue-100">
                                     <h3 class="font-bold mb-2">Mrs. Adeolu-Idowu Ngozi</h3>
@@ -96,7 +96,6 @@
 
                 </div>
             </div>
-
         </div>
     </div>
 </template>

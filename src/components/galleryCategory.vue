@@ -18,10 +18,19 @@
                     </select>
                 </div>
             </div>
-            <div class="grid md:grid-cols-3 gap-5 my-10">
+            <div class="grid md:grid-cols-3 gap-5 my-10" v-if="categories.length">
                 <div class="relative group rounded-lg overflow-hidden cursor-pointer border h-52 hover:shadow-lg" v-for="category in categories" :key="category.id" @click="$router.push({path:`/gallery/categories/${category.id}`,query:{category:`${category.category_name}`}})">
                 <img :src="category.category_image" alt="" class="w-full h-full object-cover">
                     <p class="bg-white absolute bottom-10 -left-2 ml-5 translate-y-1/2 text-black text-sm transition-all duration-500 py-2 px-4 rounded-full">{{ category.category_name }}</p>
+                </div>
+            </div>
+            <div class="flex items-center h-44 " v-if="!categories.length">
+                <div class="text-center w-full">
+                    <img src="../assets/broken-image.png" alt="" class="w-16 mx-auto my-5">
+                    <p class="text-2xl font-medium">
+                        Nothing to see here.
+                    </p>
+                    <p class="text-xs">Kindly check back later</p>
                 </div>
             </div>
         </div>
