@@ -97,7 +97,7 @@
         </section>
         <!-- testimonial section -->
         <div class="bg-blue-200 relative">
-            <span class="absolute inset-0 mix-blend-multiply opacity-20 z-0"> <img src="../assets/rough texture.webp" class="w-full h-full" alt=""></span>
+            <span class="absolute inset-0 mix-blend-multiply opacity-20 z-0"> <img src="../assets/rough-texture.webp" class="w-full h-full" alt=""></span>
             <testimonial class=""/>
         </div>
         <!-- contact section -->
