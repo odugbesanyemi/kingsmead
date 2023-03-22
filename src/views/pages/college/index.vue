@@ -100,7 +100,7 @@ export default {
                     img:"/img/collegeimages/staff1.jpeg"
                 },
                 {
-                    title:"Student Leadership",
+                    title:"STUDENT LEADERSHIP",
                     desc:"Fostering Student Leadership: Empowering Tomorrow's Leaders through Education, Service, and Community Engagement",
                     to:"/schools/college/student-leadership",
                     img:"/img/collegeimages/student-leadership.jpeg"

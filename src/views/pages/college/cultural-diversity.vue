@@ -16,7 +16,7 @@
             </div>
         </section>
         <section class="content bg-gray-100 ">
-            <p class="breadcrumb p-5 flex border-b gap-4 sticky top-16 bg-white/50 backdrop-blur-sm">
+            <p class="breadcrumb p-5 flex border-b gap-4 leader bg-white/50 backdrop-blur-sm">
                 <router-link to="/" class="hover:underline transition-all hover:text-slate-500">Home</router-link>
                 <span>></span>
                 <router-link to="/schools/college/"
