@@ -24,7 +24,7 @@
                                 v-for="x in links" :key="x.id"
                                 @click="x.dropdown ? x.opened = !x.opened : dropdown = !dropdown">
                                 <RouterLink :to="x.to"
-                                    class='text-md p-4 relative  text-gray-600 flex items-center justify-between font-bold w-full '>
+                                    class='text-md p-4 relative text-gray-600 flex items-center justify-between font-bold w-full '>
                                     {{ x.title }}
                                     <ChevronDownIcon class="w-5 h-5 ml-2 font-bold" v-if="x.dropdown" :class="{ 'rotate-180 transition-all ease-in-out duration-500': x.opened, 'transition-all duration-700': !x.opened }" />
                                 </RouterLink>
@@ -55,9 +55,7 @@
                 <div class='md:w-7/12 max-xl:hidden xl:w-8/12 '>
                     <ul class='flex items-center justify-end'>
                         <li class='nav-item group/first mr-5 group/d relative' v-for="x in links" :key="x.id">
-                            <RouterLink :to="x.to" :class="[isFixed?'group-hover/d:text-blue-500 font-semibold':'group-hover/d:text-blue-100']" class='text-sm relative py-7   group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" />
-                            </RouterLink>
-
+                            <RouterLink :to="x.to" :class="[isFixed?'group-hover/d:text-blue-500 font-semibold':'group-hover/d:text-blue-100']" class='text-sm relative py-5   group-hover/d:border-b-white flex items-center'>{{ x.title }} <ChevronDownIcon class="w-3 h-3 ml-2" v-if="x.dropdown" /></RouterLink>
                                 <ul class=' rounded-lg border hidden group-hover/first:block absolute backdrop-blur-sm z-20 text-gray-600 bg-gradient-to-t from-white to-white px-2 py-2 transition-all duration-500 top-22 shadow-lg text-sm' v-if="(x.dropdown)">
                                     <span class="before:w-6 before:h-6 before:border-l before:border-t before:bg-white before:absolute before:-top-3 before:left-5 before:rotate-45 "></span>
                                     <li v-for="y in x.dropdownLinks" :key="y.id"

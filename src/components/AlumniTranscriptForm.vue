@@ -2,42 +2,36 @@
     <div>
         <p>Please submit a request for a transcript using the form below. Be aware, response time can be up to 48 hrs.</p>
         <div class="personal-profile py-4">
-            <form action="" class="">
+            <form @submit.prevent="submit()" class="">
                 <h3 class="font-bold text-xl py-4">REQUEST FOR TRANSCRIPT/ RECORDS</h3>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Full Name:
-                        <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Your Full Name Here">
+                        <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Your Full Name Here" v-model="transcript.fullname">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Date of Birth:
-                        <select name="" id="" class="p-3 w-full outline-none">
-                            <option value="">2020</option>
-                            <option value="">2021</option>
-                        </select>
+                        <input type="date" v-model="transcript.dob" class="w-full p-3 ">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Graduation Year:
-                        <select name="" id="" class="p-3 w-full outline-none">
-                            <option value="">Email Address</option>
-                            <option value="">Phone Number</option>
-                        </select>
+                        <input type="text" v-model="transcript.graduation_year" class="p-3 w-full" placeholder="2020">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Student's Email Address:
-                        <input type="email" name="" id="" class="p-3 w-full outline-none" placeholder="Email Address">
+                        <input type="email" v-model="transcript.email" class="p-3 w-full outline-none" placeholder="Email Address">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Student's Phone Number:
-                        <input type="tel" name="" id="" class="p-3 w-full outline-none" placeholder="Phone Number">
+                        <input type="tel" v-model="transcript.phone" class="p-3 w-full outline-none" placeholder="Phone Number">
                     </label>
                 </div>
                 <div class="py-4">
@@ -51,25 +45,25 @@
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Institution name:
-                        <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Institution name">
+                        <input type="text" v-model="transcript.inst_name" class="p-3 w-full outline-none" placeholder="Institution name">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Institution Address:
-                        <textarea type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Institution Address"></textarea>
+                        <textarea type="text" v-model="transcript.inst_address" class="p-3 w-full outline-none" placeholder="Institution Address"></textarea>
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Phone:
-                        <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Institution Tel">
+                        <input type="text" v-model="transcript.phone" class="p-3 w-full outline-none" placeholder="Institution Tel">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Institution Email:
-                        <input type="text" name="" id="" class="p-3 w-full outline-none" placeholder="Email Address">
+                        <input type="text" v-model="transcript.email" class="p-3 w-full outline-none" placeholder="Email Address">
                     </label>
                 </div>
                 <button class="submit my-6 text-xl font-bold bg-indigo-600 text-white py-3 px-8 hover:bg-indigo-500 rounded-full">
@@ -80,8 +74,34 @@
     </div>
 </template>
 <script>
+import axios from 'axios'
 export default {
-
+    data(){
+        return{
+            transcript:{
+                fullname:"",
+                dob:"",
+                graduation_year:"",
+                email:"",
+                phone:"",
+                inst_name:"",
+                inst_address:"",
+                inst_phone:"",
+                inst_email:"",
+            }
+        }
+    },
+    methods:{
+        async submit(){
+            try{
+                const response = await axios.post(`${import.meta.env.VITE_SERVER_API_URL}/forms/form_transcript_request`,this.transcript)
+                alert("Successfully Sumitted Results, We will get back to you as soon as possible.")
+            }
+            catch(err){
+                // console.log(err)
+            }
+        }
+    }
 }
 </script>
 <style lang="">

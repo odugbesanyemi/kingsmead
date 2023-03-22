@@ -6,7 +6,7 @@
                 <swiper-slide class="relative h-full" v-for="item in slides">
                     <div class="relative h-full">
                         <img :src="item.img" class="w-full md:h-screen object-cover" alt="" style="min-height:300px;">
-                        <span class="absolute bg-gradient-to-tr from-blue-900 to-blue-800/20 max-md:hidden w-full h-full top-0 backdrop-blur-sm"></span>
+                        <span class="absolute bg-gradient-to-tr from-gray-900 to-blue-800/20 max-md:hidden w-full h-full top-0 mix-blend-multiply"></span>
                     </div>
                 </swiper-slide>
             </Swiper>
@@ -136,9 +136,13 @@
             </div>
         </section>        
     </div>
+    <transition  name="walk">
+        <popup @close="isPopup = !isPopup" v-if="isPopup" class=""/>    
+    </transition>
 
 </template>
 <script>
+import popup from '../components/popup.vue'
 import { LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon } from '@heroicons/vue/24/outline'
 import { Navigation, Pagination, Autoplay,EffectFade } from 'swiper'
 import { Swiper, SwiperSlide } from "swiper/vue"
@@ -150,7 +154,7 @@ import testimonial from '../components/testimonial.vue'
 // import 'swiper/css/effect'
 export default {
     components: {
-        Swiper, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon,EffectFade,testimonial
+        Swiper,popup, SwiperSlide, LightBulbIcon, UserGroupIcon, ArrowRightOnRectangleIcon, ChatBubbleBottomCenterIcon, MapIcon, PhoneIcon, ArrowRightIcon,EffectFade,testimonial
     },
     data() {
         return {
@@ -177,11 +181,37 @@ export default {
                 {
                     img: "img/DSC_0511.jpg",
                 },
-            ]
+            ],
+            isPopup:false,
         }
+    },
+    methods:{
+
+    },
+    mounted(){
+        const hasPopped = false
+        if(!hasPopped){
+            setTimeout(()=>{
+                this.isPopup = true
+            },1000)            
+        }else{
+            
+        }
+
     }
 }
 </script>
-<style>
-
+<style scoped>
+    .walk-enter-active,.walk-leave-active{
+        transition: opacity 2.5s ease;
+    }
+    .walk-enter-from{
+        transition: 2.5s ease;
+        transform: translateY(0%);
+    }
+    .walk-leave-to{
+        transition: 2.5s ease;
+        transform: translateX(-50%);
+        opacity: 0;
+    }
 </style>

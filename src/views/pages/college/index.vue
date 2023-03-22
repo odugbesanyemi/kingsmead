@@ -93,6 +93,18 @@ export default {
                     to:"/schools/college/gallery",
                     img:"/img/collegeimages/cultural2.jpeg"
                 },
+                {
+                    title:"OUR TEAM",
+                    desc:"Meet the Dedicated Team of Educators at Our School: Passionate, Experienced, and Committed to Student Success",
+                    to:"/schools/college/team",
+                    img:"/img/collegeimages/staff1.jpeg"
+                },
+                {
+                    title:"Student Leadership",
+                    desc:"Fostering Student Leadership: Empowering Tomorrow's Leaders through Education, Service, and Community Engagement",
+                    to:"/schools/college/student-leadership",
+                    img:"/img/collegeimages/student-leadership.jpeg"
+                }
             ],
             pageContent2:[
                 {

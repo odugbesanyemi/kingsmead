@@ -1,58 +1,120 @@
 <template>
-    <div>
-        <!-- page -title -->
-        <div class="h-96 relative">
-            <img src="../assets/images/cultural3.jpeg" alt="" class="absolute w-full h-full object-cover">
-            <span class="bg-gradient-to-tr from-blue-500 via-gray-500 to-blue-400 absolute inset-0 h-full w-full mix-blend-multiply backdrop-blur-sm"></span>
-            <div
-                class="content absolute top-1/2 left-1/2 text-white text-center -translate-y-1/2 -translate-x-1/2 max-md:w-full max-md:p-5">
-                <p class="text-md">26th January, 2023</p>
-                <p class="text-5xl font-bold">Tinubu visits Kingsmead Schools</p>
-                <hr class="w-20">
-
-            </div>
-            <!-- <img src="../assets/icon_star.svg" alt="" class="inset-0 absolute"> -->
-        </div>
-        <!-- page content -->
-        <div class="max-w-6xl mx-auto">
-            <div class="">
-                <div class="main md:p-10 p-5">
-                    <div class="main-content">
-                        <img src="../assets/images/cultural1.jpeg" class="my-5" alt="">
-                        <p class="text-slate-500">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quidem earum ad accusamus
-                            minus vel similique excepturi amet fuga iste! Omnis minima nisi laboriosam ut veniam
-                            aperiam,
-                            sequi temporibus perspiciatis?
-                        </p>
-                        <p class="font-bold py-5">Activities</p>
-                        <ul class="list-disc text-slate-500">
-                            <li class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem
-                                adipisci architecto natus? Et repudiandae qui illo adipisci veniam praesentium, quisquam
-                                natus saepe aut iste </li>
-                            <li class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem
-                                adipisci architecto natus? Et repudiandae qui illo adipisci veniam praesentium, quisquam
-                                natus saepe aut iste </li>
-                            <li class="py-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas quidem
-                                adipisci architecto natus? Et repudiandae qui illo adipisci veniam praesentium, quisquam
-                                natus saepe aut iste </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="sidebar p-10 bg-blue-50">
-                    <p class="font-bold text-xl mb-4 underline">Go back</p>
-                </div>
-            </div>
-
-        </div>
-        <!-- go back -->
-
-        <!-- more events -->
+  <div class="bg-gray-50">
+    <!-- page -title -->
+    <div class="h-96 relative">
+      <img :src="filteredPost.post_image" alt="" class="absolute w-full h-full object-cover">
+      <span
+        class="bg-gradient-to-tr from-blue-500 via-gray-500 to-blue-400 absolute inset-0 h-full w-full mix-blend-multiply"></span>
+      <div
+        class="content absolute top-1/2 left-1/2 text-white text-center -translate-y-1/2 -translate-x-1/2 max-md:w-full max-md:p-5">
+        <p class="text-md mb-5">{{ new Date(filteredPost.post_date).toDateString() }}</p>
+        <p class="text-5xl font-bold">{{ filteredPost.post_title }}</p>
+      </div>
+      <!-- <img src="../assets/icon_star.svg" alt="" class="inset-0 absolute"> -->
     </div>
+    <!-- page content -->
+    <div class="max-w-6xl mx-auto ">
+      <div class="max-w-6xl mx-auto py-10 p-5 flex md:flex-row flex-col items-start relative -top-24">
+        <div class="sidebar md:p-5 w-3/3 grid grid-cols-1 gap-5 max-md:order-last sticky top-16">
+          <div class="planvisit p-10 bg-blue-900 text-blue-50 relative overflow-hidden">
+            <span class="absolute opacity-10 top-0 left-28 bottom-0 z-0"><img src="../assets/kingsmead.svg" alt=""
+                class="w-full h-full"></span>
+            <h2 class="text-3xl mb-5">Need to ask Questions?</h2>
+            <router-link to="/about/contact-us" class="text-xs flex gap-2 items-center">Contact us
+              <ArrowRightIcon class="w-4" />
+            </router-link>
+          </div>
+          <div class="planvisit p-10 bg-white text-blue-700 border-blue-100 border">
+            <h2 class="text-3xl mb-5">Apply to Kingsmead Schools?</h2>
+            <router-link to="/admissions/registration-form" class="text-xs flex gap-2 items-center">Apply
+              <ArrowRightIcon class="w-4" />
+            </router-link>
+          </div>
+          <div class="QuickLinks px-3">
+            <h2 class="text-2xl text-gray-500 mb-5 ">Quick Links</h2>
+            <div class="grid grid-cols-1 gap-3 text-sm">
+              <router-link to="/about/history">About Kingsmead</router-link>
+              <router-link to="/admissions/criteria-policy">Admissions</router-link>
+              <router-link to="/academics/student-leadership">Academics</router-link>
+              <router-link to="/academics/library">Library</router-link>
+              <router-link to="/gallery/category">Gallery</router-link>
+              <router-link to="/events">Our Events</router-link>
+            </div>
+          </div>
+        </div>
+        <div class="py-5 w-full">
+          <div class="post-content bg-white md:p-10 max-md:py-10 grid grid-cols-1 gap-4" v-html="filteredPost.post_content">
+          </div>
+          <div class="other-post mt-10 grid grid-cols-3 max-md:grid-cols-1 gap-2">
+            <div class="p-5 border  hover:border-blue-600 hover:shadow-2xl transition-all bg-white"
+              v-for="item, i in featuredPosts" :key="i" v-if="featuredPosts.length"
+              @click="this.$router.push({ path: `/news/${item.id}` })">
+              <h2 class="text-2xl mb-3">{{ item.post_title }}</h2>
+              <p class="text-slate-500">{{ new Date(item.post_date).toDateString() }}</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <!-- go back -->
+
+    <!-- more events -->
+  </div>
 </template>
 <script>
+import axios from 'axios'
+import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 export default {
-
+  components: { ArrowRightIcon, },
+  data() {
+    return {
+      post: {},
+      allPosts: []
+    }
+  },
+  methods: {
+    async getPosts() {
+      // console.log("Heeleo")
+      try {
+        const post_id = this.$route.params.id
+        const response = await axios.get(`${import.meta.env.VITE_SERVER_API_URL}/post/${post_id}`)
+        this.post = response.data[0]
+        console.log(response.data[0])
+      }
+      catch (err) {
+        console.log(err)
+      }
+    },
+    getAllPosts() {
+      axios.post(`${import.meta.env.VITE_SERVER_API_URL}/getpostsByStatus`, { status: 'published' })
+        .then(result => {
+          this.allPosts = result.data
+        }).catch(err => {
+          // 
+        })
+    },
+  },
+  updated() {
+    document.title = `${this.filteredPost.post_title} | Kingsmead Schools`
+  },
+  mounted() {
+    this.getPosts()
+    this.getAllPosts()
+  },
+  computed: {
+    filteredPost() {
+      const paramsId = this.$route.params.id;
+      const filteredArray = this.allPosts.filter(item => item.id == paramsId);
+      return filteredArray.length > 0 ? filteredArray[0] : ''
+    },
+    featuredPosts() {
+      return this.allPosts.filter(item => {
+        return item.id != this.$route.params.id
+      }).slice(0, 3)
+    }
+  }
 }
 </script>
 <style lang="">

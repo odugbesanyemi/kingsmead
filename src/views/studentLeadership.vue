@@ -9,7 +9,7 @@
                         <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
                         <hr>
                         <div class="my-5">
-                            <img src="../assets/images/prefects.jpg" alt="">
+                            <img src="../assets/images/student-leadership.jpeg" alt="">
                         </div>
                         <div class="text-lg max-md:text-md text-slate-600 mb-5">
                             <p class="py-2">As student leaders at Kingsmead Schools, they will have the opportunity to

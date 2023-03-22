@@ -194,6 +194,14 @@ const router = createRouter({
         {
           path:"gallery",
           component:()=>import("../views/pages/college/gallery.vue")
+        },
+        {
+          path:"team",
+          component:()=>import("../views/pages/college/management.vue")
+        },
+        {
+          path:"student-leadership",
+          component:()=>import("../views/pages/college/student-leadership.vue")
         }
       ],
     },
@@ -232,6 +240,10 @@ const router = createRouter({
         {
           path:"gallery",
           component:()=>import("../views/pages/elementary/gallery.vue")
+        },
+        {
+          path:"team",
+          component:()=>import("../views/pages/elementary/management.vue")
         }
       ],
     },

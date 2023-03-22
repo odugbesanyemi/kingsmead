@@ -3,13 +3,13 @@
         <siteHeader title="Pastoral Care Unit" prev-page-name="Life at Kingsmead" curr-page-name="Pastoral Unit"
             :img-name="headerImg" />
         <div class="page-content relative -z-30">
-            <div class="bg-transparent  py-20 md:py-32">
-                <div class="max-w-7xl mx-auto ">
+            <div class="bg-transparent  py-10 md:py-20">
+                <div class="max-w-5xl mx-auto ">
                     <div class="md:flex gap-10">
-                        <div class="md:w-2/5 max-md:mb-6">
+                        <div class="md:w-2/5 max-md:mb-6 p-2 max-md:text-sm">
                             <div class="hover:shadow-xl group shadow-blue-400/10 sticky top-0">
                                 <div class="mb-0 h-96  group-hover:grayscale-0">
-                                    <img src='../assets/images/DSC_0767.jpg' alt="" class="w-full h-full object-cover object-top">
+                                    <img src='../assets/images/pastoral-care.jpeg' alt="" class="w-full h-full object-cover object-top">
                                 </div>
 
                                 <p class="p-3 font-bold bg-blue-900 text-white">Our Team is comprised of:</p>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                         <div class="md:w-3/5 px-5">
-                            <div class="text-lg text-slate-600 leading-loose">
+                            <div class="text-lg max-md:text-sm text-slate-600 ">
                                 <p class="pb-3">We have a comprehensive care programme of activities which ensures that no learner is ignored in the multitude of students. We are conscious of the fact that ' every child can learn at a different pace '. We are also cognizant of the truth that every child is unique.</p>
                                 <p class="pb-3">Hence, there are caregivers at every point of contact in the college. The Year Tutors are readily available to attend to the student's cognitive needs. Students also receive support from the class managers who stand as substitute parents in the academic block.</p>
                                 <p class="pb-3">The counsellor is another cord in the chain of caregivers whose core concern is to inspire a psychologically, socially and academically sound personality in every student.</p>

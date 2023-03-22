@@ -5,7 +5,7 @@
             <div class="bg-blue-50 p-3 py-10 md:py-24">
                 <div class="max-w-6xl mx-auto">
                     <div class="grid md:grid-cols-3 gap-6">
-                        <div class="bg-white p-2 rounded-lg" v-for="item in activities">
+                        <div class="bg-white rounded-lg" v-for="item in activities">
                             <img :src="item.img" alt="" class="w-full h-64 object-cover rounded object-top">
                             <div class="px-5">
                                 <h2 class="text-blue-800 text-3xl mt-4">{{ item.title }}</h2>
@@ -26,7 +26,7 @@
                             <p class="mb-2">Hostel life at Kingsmead Schools offers numerous opportunities for students to get involved in a variety of activities and events. These may include sports, clubs, cultural events, and more.</p>
                             <p class="mb-2">Our goal is to provide a well-rounded and enriching experience for all of our hostel residents.</p>
                         </div>
-                        <p class="py-3 text-slate-600 max-md:leading-loose">We believe that hostel life is an important part of the overall educational experience at Kingsmead Schools and we strive to create a welcoming and supportive environment for all of our students. If you have any questions about hostel life at Kingsmead Schools, please don't hesitate to reach out to us.</p>
+                        <p class="py-3 text-slate-600 max-md:leading-loose text-lg">We believe that hostel life is an important part of the overall educational experience at Kingsmead Schools and we strive to create a welcoming and supportive environment for all of our students. If you have any questions about hostel life at Kingsmead Schools, please don't hesitate to reach out to us.</p>
                     </div>
                 </div>
                 <div class="max-w-6xl mx-auto">

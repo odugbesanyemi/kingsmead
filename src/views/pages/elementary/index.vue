@@ -93,7 +93,12 @@ export default {
                     to:"/schools/elementary/gallery",
                     img:"/img/Elementaryimages/sport6.jpeg"
                 },
-
+                {
+                    title:"OUR TEAM",
+                    desc:"Meet the Dedicated Team of Educators at Our School: Passionate, Experienced, and Committed to Student Success",
+                    to:"/schools/elementary/team",
+                    img:"/img/Elementaryimages/staff3.jpeg"
+                },
 
             ]
         }
