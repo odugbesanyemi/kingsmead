@@ -57,13 +57,13 @@
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Phone:
-                        <input type="text" v-model="transcript.phone" class="p-3 w-full outline-none" placeholder="Institution Tel">
+                        <input type="text" v-model="transcript.inst_phone" class="p-3 w-full outline-none" placeholder="Institution Tel">
                     </label>
                 </div>
                 <div class="input-element py-2">
                     <label for="" class="py-2">
                         Institution Email:
-                        <input type="text" v-model="transcript.email" class="p-3 w-full outline-none" placeholder="Email Address">
+                        <input type="text" v-model="transcript.inst_email" class="p-3 w-full outline-none" placeholder="Email Address">
                     </label>
                 </div>
                 <button class="submit my-6 text-xl font-bold bg-indigo-600 text-white py-3 px-8 hover:bg-indigo-500 rounded-full">
@@ -72,13 +72,25 @@
             </form>
         </div>
     </div>
+        <loadingComponent v-if="isLoading"/>
+    <successPrompt
+      title="Success"
+      description="We will get back to you as soon as possible"
+      @close="successPrompt = !successPrompt"
+      v-if="successPrompt"
+    />
+    <failedPrompt title="Failed" description="Sorry! the operation failed. Try again. " @close="failedPrompt = !failedPrompt" v-if="failedPrompt"/>
 </template>
 <script>
+        import successPrompt from '../components/successPrompt.vue'
+    import failedPrompt from '../components/failedPrompt.vue'
+    import loadingComponent from '../components/loadingComponent.vue'
 import axios from 'axios'
 export default {
+    components:{successPrompt,failedPrompt,loadingComponent},
     data(){
         return{
-            transcript:{
+                transcript:{
                 fullname:"",
                 dob:"",
                 graduation_year:"",
@@ -88,17 +100,30 @@ export default {
                 inst_address:"",
                 inst_phone:"",
                 inst_email:"",
-            }
+            },
+            successPrompt:false,
+            failedPrompt:false,
+            isLoading:false,
         }
     },
     methods:{
+        clearInputs(){
+            for (let key in this.transcript){
+                this.transcript[key] = "";
+            }
+        },
         async submit(){
+            this.isLoading = true
             try{
                 const response = await axios.post(`${import.meta.env.VITE_SERVER_API_URL}/forms/form_transcript_request`,this.transcript)
-                alert("Successfully Sumitted Results, We will get back to you as soon as possible.")
+                this.clearInputs()
+                this.successPrompt = true
+                this.isLoading = false
             }
             catch(err){
                 // console.log(err)
+                this.failedPrompt = true
+                this.isLoading = false
             }
         }
     }

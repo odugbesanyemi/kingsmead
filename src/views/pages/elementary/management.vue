@@ -25,7 +25,7 @@
                 <router-link to="/schools/preschool/curriculum" class="text-slate-400">Team</router-link>
             </p>
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
-                <div class="grid grid-cols-4 max-md:grid-cols-1 gap-2">
+                <div class="grid grid-cols-4   max-md:grid-cols-1 gap-4">
                     <div class="border p-2 space-y-2 overflow-hiddden group" v-for="member,i in team" :key="i">
                         <div class="overflow-hidden">
                             <img :src="member.img" alt="" class="md:h-64 w-full object-cover md:object-top group-hover:scale-125 transition-all duration-500 group-hover:shadow-inset">
@@ -52,25 +52,26 @@ export default {
         return {
             team:[
                 {
-                    name:"Team Member 1",
-                    position:"Head Teacher",
+                    name:"MR AJENIFUJAH ROTIMI ",
+                    position:"Head of Elementary",
+                    img:"/img/Elementaryimages/team4.jpeg"
+                },
+                {
+                    name:"MRS PHILLIPS BENITA",
+                    position:"HOD Pre-School",
                     img:"/img/Elementaryimages/team1.jpeg"
                 },
                 {
-                    name:"Team Member 2",
-                    position:"Head of Finance",
+                    name:"MRS BANTALE ANNE",
+                    position:"Front Desk",
                     img:"/img/Elementaryimages/team2.jpeg"
                 },
                 {
-                    name:"Team Member 3",
-                    position:"Head of Justice",
+                    name:"MR JEREMIAH O.JOEL",
+                    position:"Admin/Front Desk",
                     img:"/img/Elementaryimages/team3.jpeg"
                 },
-                {
-                    name:"Team Member 4",
-                    position:"Arts & Culture",
-                    img:"/img/Elementaryimages/team4.jpeg"
-                },
+
             ]
         }
     }

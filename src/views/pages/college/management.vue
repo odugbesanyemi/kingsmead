@@ -31,8 +31,8 @@
                             <img :src="member.img" alt="" class="md:h-64 w-full object-cover md:object-top group-hover:scale-125 transition-all duration-500 group-hover:shadow-inset">
                         </div>
                         <div class="details px-2">
-                            <!-- <p class="font-medium text-xl">{{member.name}}</p>
-                            <p class="text-sm">{{ member.position }}</p> -->
+                            <p class="font-medium text-xl">{{member.name}}</p>
+                            <p class="text-sm">{{ member.position }}</p>
                         </div>
                     </div>
                 </div>
@@ -52,63 +52,66 @@ export default {
         return {
             team:[
                 {
-                    name:"Team Member 1",
-                    position:"Head Teacher",
+                    name:"Mr OVENO R.O",
+                    position:"Principal",
                     img:"/img/collegeimages/team1.jpeg"
                 },
                 {
-                    name:"Team Member 2",
-                    position:"Head of Finance",
-                    img:"/img/collegeimages/team2.jpeg"
-                },
-                {
-                    name:"Team Member 3",
-                    position:"Head of Justice",
-                    img:"/img/collegeimages/team3.jpeg"
-                },
-                {
-                    name:"Team Member 4",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team4.jpeg"
-                },
-                {
-                    name:"Team Member 5",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team5.jpeg"
-                },
-                {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team6.jpeg"
-                },
-                {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team7.jpeg"
-                },
-                {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
+                    name:" MR ENE R.I ",
+                    position:"Vice Principal",
                     img:"/img/collegeimages/team8.jpeg"
                 },
                 {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team9.jpeg"
+                    name:"MRS NWANKWO M.O",
+                    position:"Head Admin/ Marketing",
+                    img:"/img/collegeimages/team5.jpeg"
                 },
                 {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
-                    img:"/img/collegeimages/team10.jpeg"
+                    name:"MR ROTIFA D.A",
+                    position:"HOD Vocational",
+                    img:"/img/collegeimages/team2.jpeg"
                 },
                 {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
+                    name:"MR EDEH C.D",
+                    position:"HOD Maths",
+                    img:"/img/collegeimages/team3.jpeg"
+                },
+                {
+                    name:"MRS OGHENETEGA U.P",
+                    position:"HOD Commercial",
+                    img:"/img/collegeimages/team4.jpeg"
+                },
+
+                {
+                    name:" MR GBOLAHAN L.J",
+                    position:"Hod Science",
                     img:"/img/collegeimages/team11.jpeg"
                 },
                 {
-                    name:"Team Member ",
-                    position:"Arts & Culture",
+                    name:"MR OKOLO D.D",
+                    position:"Hod Arts",
+                    img:"/img/collegeimages/team6.jpeg"
+                },
+                {
+                    name:"MRS AWOLOLA O.C",
+                    position:"Hod Language",
+                    img:"/img/collegeimages/team7.jpeg"
+                },
+
+                {
+                    name:"MR OMOSEBI A.P",
+                    position:"Librarian",
+                    img:"/img/collegeimages/team9.jpeg"
+                },
+                {
+                    name:"MR OWOYELE T.O ",
+                    position:"Year Tutor Junior School",
+                    img:"/img/collegeimages/team10.jpeg"
+                },
+
+                {
+                    name:" MR OGIGBAH G.M",
+                    position:"Year Tutor Senior Schoool",
                     img:"/img/collegeimages/team12.jpeg"
                 },
             ]

@@ -1,5 +1,5 @@
 <template >
-    <div class="relative max-md:h-44 h-36 z-0" style="">
+    <div class="relative max-md:h-44 h-36 " style="">
         <div class="relative  h-full px-30 flex flex-col items-start justify-center">
             <div class="absolute h-full w-full bg-fixed">
                 <img :src=imgName class="w-full h-full object-cover bg-fixed" alt="">

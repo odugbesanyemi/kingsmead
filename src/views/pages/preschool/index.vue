@@ -4,7 +4,7 @@
         <section class="school title ">
             <div class="relative">
                 <div class="h-72">
-                    <img src="../../../assets/images/DSC_0562.jpg" alt="" class="absolute w-full h-full object-cover">
+                    <img src="@/assets/images/DSC_0562.jpg" alt="" class="absolute w-full h-full object-cover">
                 </div>
                 <span class="absolute inset-0 w-full bg-black/10 backdrop-blur-sm"></span>
                 <div
@@ -20,15 +20,15 @@
             </div>
         </section>
         <section class="content">
-        <div class="max-w-6xl mx-auto py-10">
+        <div class="max-w-6xl mx-auto py-10 max-md:px-2">
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
-                    <SplideSlide class="max-h-96" v-for="item in pageContent2">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 object-center">
+                    <SplideSlide  v-for="item in pageContent2" >
+                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 object-center rounded-xl" style="max-height: 400px;">
                     </SplideSlide>
                 </Splide>
             </div>
-            <div class="programs max-md:p-5 py-10">
+            <div class="programs  py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
                     <div class="border p-3 " v-for="item,i in pageContent" :key="i">
                         <router-link :to="item.to" class="">
@@ -69,13 +69,13 @@ export default {
                     title:"OUR CURRICULUM",
                     desc:"Our curriculum is the Early Years Foundation Stage framework. This is a play-based curriculum for children from birth to 5 years…",
                     to:"/schools/preschool/curriculum",
-                    img:"/img/preschoolimages/DSC_0559.jpg"
+                    img:"/img/preschoolimages/curriculum_new_image.jpg"
                 },
                 {
                     title:"HOMEWORK POLICY",
                     desc:"Home work is a reinforcement of all taught concepts. Home work is given daily - Monday to Friday and it includes activities such as soft activities…",
                     to:"/schools/preschool/homework-policy",
-                    img:"/img/preschoolimages/DSC_0561.jpg"
+                    img:"/img/preschoolimages/preschool_slide4.JPG"
                 },
                 {
                     title:"LEARNING AND DEVELOPMENT",
@@ -100,16 +100,16 @@ export default {
             ],
             pageContent2:[
                 {
-                    img:"/img/preschoolimages/DSC_0586.jpg"
+                    img:"/img/preschoolimages/preschool_slide1.JPG"
                 },
                 {
-                    img:"/img/preschoolimages/DSC_0559.jpg"
+                    img:"/img/preschoolimages/preschool_slide2.JPG"
                 },
                 {
-                    img:"/img/preschoolimages/preschool1.jpg"
+                    img:"/img/preschoolimages/preschool_slide3.JPG"
                 },
                 {
-                    img:"/img/preschoolimages/parents2.jpg"
+                    img:"/img/preschoolimages/preschool_slide4.JPG"
                 },
 
             ]

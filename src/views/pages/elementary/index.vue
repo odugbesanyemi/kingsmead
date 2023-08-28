@@ -23,8 +23,8 @@
         <div class="max-w-6xl mx-auto py-10">
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
-                    <SplideSlide class="max-h-96" v-for="item in pageContent">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 object-top">
+                    <SplideSlide  v-for="item in pageContent2">
+                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-md:h-72 object-center rounded-xl" style="max-height: 400px;">
                     </SplideSlide>
                 </Splide>
             </div>
@@ -98,6 +98,21 @@ export default {
                     desc:"Meet the Dedicated Team of Educators at Our School: Passionate, Experienced, and Committed to Student Success",
                     to:"/schools/elementary/team",
                     img:"/img/Elementaryimages/staff3.jpeg"
+                },
+
+            ],
+            pageContent2:[
+                {
+                    img:"/img/Elementaryimages/elementary_slide1.jpg"
+                },
+                {
+                    img:"/img/Elementaryimages/elementary_slide2.JPG"
+                },
+                {
+                    img:"/img/Elementaryimages/elementary_slide3.JPG"
+                },
+                {
+                    img:"/img/Elementaryimages/elementary_slide4.JPG"
                 },
 
             ]

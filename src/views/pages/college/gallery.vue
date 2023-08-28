@@ -27,8 +27,8 @@
             </p>
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
                 <div class="">
-                    <viewer :images="images" class="columns columns-4 max-md:columns-2 gap-5">
-                        <img v-for="src, i in images" :key="i" :src="src" class="border h-full object-cover mb-5">
+                    <viewer :images="images" class="grid grid-cols-4 max-md:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5">
+                        <img v-for="src, i in images" :key="i" :src="src" class="border h-full w-full object-cover">
                     </viewer>
                 </div>
             </div>
@@ -53,6 +53,7 @@ export default {
                 "/img/collegeimages/parents2.jpg",
                 "/img/collegeimages/DSC_0029.jpg",
                 "/img/collegeimages/DSC_0832.jpg",
+                "/img/homepage_12.jpeg",
             ]
         }
     }

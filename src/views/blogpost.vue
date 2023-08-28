@@ -37,8 +37,7 @@
               <router-link to="/admissions/criteria-policy">Admissions</router-link>
               <router-link to="/academics/student-leadership">Academics</router-link>
               <router-link to="/academics/library">Library</router-link>
-              <router-link to="/gallery/category">Gallery</router-link>
-              <router-link to="/events">Our Events</router-link>
+              <router-link to="/gallery/categories">Gallery</router-link>
             </div>
           </div>
         </div>
@@ -56,22 +55,24 @@
         </div>
 
       </div>
-
     </div>
     <!-- go back -->
 
     <!-- more events -->
   </div>
+  <loadingComponent v-if="isLoading"/>
 </template>
 <script>
 import axios from 'axios'
+import loadingComponent from '../components/loadingComponent.vue'
 import { ArrowRightIcon } from '@heroicons/vue/24/solid'
 export default {
-  components: { ArrowRightIcon, },
+  components: { ArrowRightIcon,loadingComponent },
   data() {
     return {
       post: {},
-      allPosts: []
+      allPosts: [],
+      isLoading:false,
     }
   },
   methods: {
@@ -99,9 +100,11 @@ export default {
   updated() {
     document.title = `${this.filteredPost.post_title} | Kingsmead Schools`
   },
-  mounted() {
-    this.getPosts()
-    this.getAllPosts()
+  async mounted() {
+    this.isLoading = true,
+    await this.getPosts()
+    await this.getAllPosts()
+    this.isLoading = false
   },
   computed: {
     filteredPost() {

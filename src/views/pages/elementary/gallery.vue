@@ -27,7 +27,7 @@
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
                 <div class="">
                     <viewer :images="images" class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                        <img v-for="src,i in images" :key="i" :src="src" class="border h-full object-cover">
+                        <img v-for="src,i in images" :key="i" :src="src" class="border w-full h-full object-cover">
                     </viewer>
                 </div>
             </div>
@@ -45,11 +45,11 @@ export default {
     data() {
         return {
             images:[
-                '/img/elementaryimages/DSC_0548.jpg',
-                '/img/elementaryimages/sport6.jpeg',
-                '/img/elementaryimages/DSC_0554.jpg',
-                '/img/elementaryimages/DSC_0579.jpg',
-                '/img/elementaryimages/DSC_0722.jpg',
+                '/img/Elementaryimages/DSC_0548.jpg',
+                '/img/Elementaryimages/sport6.jpeg',
+                '/img/Elementaryimages/DSC_0554.jpg',
+                '/img/Elementaryimages/DSC_0579.jpg',
+                '/img/Elementaryimages/DSC_0722.jpg',
             ]
         }
     }

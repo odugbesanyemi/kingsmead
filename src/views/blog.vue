@@ -30,13 +30,15 @@
             <router-link to="/admissions/criteria-policy">Admissions</router-link>
             <router-link to="/academics/student-leadership">Academics</router-link>
             <router-link to="/academics/library">Library</router-link>
-            <router-link to="/gallery/category">Gallery</router-link>
-            <router-link to="/events">Our Events</router-link>
+            <router-link to="/gallery/categories">Gallery</router-link>
           </div>
         </div>
       </div>
       <div class="py-5 w-full">
-        <div class="event bg-white grid grid-cols-1 gap-4" v-if="posts.length">
+        <div v-if="isLoading" class="bg-white">
+          <img src="../assets/Loading_icon.gif" class="mx-auto w-24">  
+        </div>
+        <div class="event bg-white grid grid-cols-1 gap-4" v-else-if="posts.length">
           <div class="content border-b border-b-blue-900/10 text-xs  p-5 hover:border-l-4 transition-all border-blue-900"
             v-for="post, i in posts.slice(pagination.currPage * pagination.limit, (pagination.currPage + 1) * pagination.limit)"
             :key="i">
@@ -47,7 +49,7 @@
             </router-link>
           </div>
         </div>
-        <div class="flex items-center h-44 my-10" v-if="!posts.length">
+        <div class="flex items-center h-44 my-10" v-else>
           <div class="text-center w-full">
             <img src="../assets/broken-image.png" alt="" class="w-16 mx-auto my-5">
             <p class="text-2xl font-medium">
@@ -112,15 +114,19 @@ export default {
       pagination: {
         currPage: 0,
         limit: 10,
-      }
+      },
+      isLoading:false,
     }
   }, methods: {
     getAllPosts() {
+      this.isLoading = true
       axios.post(`${import.meta.env.VITE_SERVER_API_URL}/getpostsByStatus`, { status: 'published' })
         .then(result => {
           this.posts = result.data
+          this.isLoading = false
         }).catch(err => {
           // 
+          this.isLoading=false
         })
     },
 

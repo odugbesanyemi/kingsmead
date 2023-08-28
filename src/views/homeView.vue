@@ -1,7 +1,7 @@
 
 <template>
   <HomeNavbarComponentVue :is-fixed="isFixed"
-    :class="{ 'fixed w-full top-0 bg-white/80 backdrop-blur-sm text-blue-900 z-20': isFixed, 'bg-gray-700 text-white z-0': !isFixed }" />
+    :class="{ 'fixed w-full top-0 bg-white/90 rounded-b-xl shadow-xl backdrop-blur-sm text-blue-900 z-20': isFixed, 'bg-blue-900 text-white z-0 transition-all': !isFixed }" />
   <RouterView />
   <!-- add footer -->
   <footerComponentVue />

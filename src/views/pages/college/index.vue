@@ -20,15 +20,15 @@
 
     </section>
     <section class="content">
-        <div class="max-w-6xl mx-auto py-10">
+        <div class="max-w-6xl mx-auto py-10 px-2">
             <div class="image-slide ">
                 <Splide :options="{ rewind:true , autoplay:true}" aria-label="My Favorite Images">
                     <SplideSlide class="" v-for="item in pageContent2">
-                        <img :src="item.img" alt="Sample 1" class="w-full object-cover max-h-96 object-center">
+                        <img :src="item.img" :alt="item.img" class="w-full object-cover max-h-96 object-center rounded-xl" style="max-height:400px;">
                     </SplideSlide>
                 </Splide>
             </div>
-            <div class="programs max-md:p-5 py-10">
+            <div class="programs  py-10">
                 <div class="grid md:grid-cols-3 grid-cols-1 md:gap-8 gap-5">
                     <div class="border p-3" v-for="item,i in pageContent" :key="i">
                         <router-link :to="item.to" class="">
@@ -73,7 +73,7 @@ export default {
                     title:"BOARDING EXPERIENCE",
                     desc:"At Kingsmead College, our boarding program is designed to provide students with a safe, supportive and stimulating environment where they can grow both academically and personally. ",
                     to:"/schools/college/boarding-experience",
-                    img:"/img/collegeimages/DSC_0832.jpg"
+                    img:"/img/boarding_experience.JPG"
                 },
                 {
                     title:"CODE OF CONDUCT",
@@ -108,7 +108,7 @@ export default {
             ],
             pageContent2:[
                 {
-                    img:"/img/collegeimages/DSC_0087.jpg"
+                    img:"/img/collegeimages/college_slide1.jpg"
                 },
                 {
                     img:"/img/collegeimages/cultural3.jpeg"

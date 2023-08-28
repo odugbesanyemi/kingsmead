@@ -8,7 +8,7 @@
   </div>
   <div class="bg-gray-50">
     <div class="max-w-6xl mx-auto py-10 p-5 flex md:flex-row flex-col relative -top-24">
-      <div class="sidebar md:p-5 w-3/3 grid grid-cols-1 gap-5 max-md:order-last">
+      <div class="sidebar w-3/3 grid grid-cols-1 gap-5 max-md:order-last">
         <div class="planvisit p-10 bg-blue-900 text-blue-50 relative overflow-hidden">
           <span class="absolute opacity-10 top-0 left-28 bottom-0 z-0"><img src="../assets/kingsmead.svg" alt=""
               class="w-full h-full"></span>
@@ -35,61 +35,20 @@
           </div>
         </div>
       </div>
-      <div class="py-5 w-full">
-        <div class="event bg-white grid grid-cols-1 gap-4" v-if="posts.length">
-          <div
-            class="content border-b border-b-blue-900/10 text-xs  p-5 hover:border-l-4 transition-all border-orange-400"
-            v-for="post, i in posts.slice(pagination.currPage * pagination.limit, pagination.currPage + 1 * pagination.limit)"
-            :key="i">
-            <router-link :to="/news/ + post.id">
-              <h2 class="text-2xl">{{ post.post_title }}</h2>
-              <p class="text-slate-500 py-3">{{ post.post_excerpt }}</p>
-              <p class="text-orange-700">{{ new Date(post.post_date).toLocaleString() }}</p>
-            </router-link>
+      <div class="w-full">
+        <div class="settings bg-gray-700 p-2 flex justify-between items-center w-full text-white">
+          <div>
+            <p class="font-medium text-xl">All Events</p>
+          </div>
+          <div class="display-settings flex items-center space-x-3">
+            <span>Display | </span>
+            <span class="controls flex items-center space-x-3"><button class="flex items-center" @click="viewOptions.displayType='list'"><i class="fi fi-rr-list"></i></button> <button class="flex" @click="viewOptions.displayType='grid'"><i class="fi fi-br-layout-fluid"></i></button></span>
           </div>
         </div>
-        <div class="flex items-center h-44 my-10" v-if="!posts.length">
-          <div class="text-center w-full">
-            <img src="../assets/broken-image.png" alt="" class="w-16 mx-auto my-5">
-            <p class="text-2xl font-medium">
-              Nothing to see here.
-            </p>
-            <p class="text-xs">Kindly check back later</p>
+        <div class="p-5 bg-white grid grid-cols-3">
+          <div class="gridElem">
+            {{ viewOptions.displayType }}
           </div>
-        </div>
-        <div class="footer ">
-          <nav class="bg-white px-4 py-3 flex items-center justify-between border-t border-gray-200 sm:px-6"
-            aria-label="Pagination">
-            <div class="hidden sm:block">
-              <p class="text-sm text-gray-700">
-                Showing
-                {{ ' ' }}
-                <span class="font-medium">{{ pagination.currPage * pagination.limit + 1 }}</span>
-                {{ ' ' }}
-                to
-                {{ ' ' }}
-                <span class="font-medium">{{ pagination.currPage + 1 * pagination.limit
-                  > posts.length ? posts.length : pagination.currPage + 1 * pagination.limit }}</span>
-                {{ ' ' }}
-                of
-                {{ ' ' }}
-                <span class="font-medium">{{ posts.length }}</span>
-                {{ ' ' }}
-                results
-              </p>
-            </div>
-            <div class="flex-1 flex justify-between sm:justify-end">
-              <button href="#"
-                class="relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-                :disabled="pagination.currPage <= 0" @click="pagination.currPage--">
-                Previous </button>
-              <button href="#"
-                class="ml-3 relative inline-flex items-center px-4 py-2 border border-gray-300 text-sm font-medium rounded-md text-gray-700 bg-white hover:bg-gray-50"
-                :disabled="posts.length <= pagination.currPage + 1 * pagination.limit"
-                @click.prevent="pagination.currPage++">
-                Next </button>
-            </div>
-          </nav>
         </div>
       </div>
 
@@ -113,6 +72,9 @@ export default {
       pagination: {
         currPage: 0,
         limit: 10,
+        viewOptions:{
+          displayType:""
+        }
       }
     }
   }, methods: {

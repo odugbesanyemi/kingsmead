@@ -27,7 +27,7 @@
                             don't hesitate to reach out to us.
                         </p>
                         <p class="py-4">
-                            communications and Marketing <br> +234 700 300 4300
+                            communications and Marketing <br> (+234) +234 906 048 3704
                         </p>
                     </div>
                 </div>
@@ -44,8 +44,8 @@
             <div class="max-w-7xl mx-auto">
                 <div class="relative p-5 md:p-10">
                     <div class="py-4 text-white text-2xl font-bold text-center">Alunmi Spotlight</div>
-                    <div class="grid gap-3 md:grid-cols-3 grid-cols-1">
-                        <div class="relative cursor-pointer" v-for="item in alumniSpotlight" :key="item.id">
+                    <div class="grid gap-3 md:grid-cols-3 grid-cols-1" v-if="alumniSpotlight.length">
+                        <div class="relative cursor-pointer" v-for="item in alumniSpotlight" :key="item.id" >
                             <img :src="item.imgName" alt=""
                                 class="relative h-72 w-full object-cover ">
                             <span class="absolute bg-gradient-to-t from-black/80 to-white/0 w-full h-full inset-0"></span>
@@ -55,11 +55,13 @@
                             </div>
                         </div>
                     </div>
+                        <div v-else class="text-center text-white">
+                            <p class="text-center text-xs">Something nice is cooking up. Check back later.</p>
+                        </div>
                 </div>
             </div>
-
         </div>
-        <div class="alumni-updates bg-slate-700 py-10 text-white">
+<!--         <div class="alumni-updates bg-slate-700 py-10 text-white">
             <div class="max-w-6xl mx-auto">
                 <h2 class="py-5 text-center text-3xl">ALUMNI UPDATES</h2>
                 <div class="update p-4 group group-odd: border-b border-white/10 cursor-pointer" v-for="item in alumniUpdates">
@@ -69,7 +71,7 @@
                     <p class="date text-slate-50 text-xs">{{item.date}}</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 
 </template>
@@ -107,24 +109,24 @@ export default {
                 },
             ],
             alumniSpotlight:[
-                {
-                    id:1,
-                    imgName:"/img/cultural4.jpeg",
-                    title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
-                    to:"",
-                },
-                {
-                    id:1,
-                    imgName:"/img/sport1.jpeg",
-                    title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
-                    to:"",
-                },
-                {
-                    id:1,
-                    imgName:"/img/sport7.jpeg",
-                    title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
-                    to:"",
-                },
+                // {
+                //     id:1,
+                //     imgName:"/img/cultural4.jpeg",
+                //     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
+                //     to:"",
+                // },
+                // {
+                //     id:1,
+                //     imgName:"/img/sport1.jpeg",
+                //     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
+                //     to:"",
+                // },
+                // {
+                //     id:1,
+                //     imgName:"/img/sport7.jpeg",
+                //     title:"Bummi 2022 Graduation Set Won the AFFAR Awards",
+                //     to:"",
+                // },
             ],
             alumniUpdates:[
                 {

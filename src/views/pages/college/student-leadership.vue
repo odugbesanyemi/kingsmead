@@ -52,110 +52,130 @@ export default {
         return {
             leaders:[
                 {
-                    name:"leader 1",
-                    position:"Head Teacher",
+                    name:"Adeniyi-Akee Halid",
+                    position:"Head Boy",
+                    img:"/img/collegeimages/head_boy.JPG"
+                },
+                {
+                    name:"Oluwadiya Inioluwa",
+                    position:"Head Girl",
+                    img:"/img/collegeimages/head_girl.JPG"
+                },
+                {
+                    name:"Ibrahim Imisioluwa",
+                    position:"Ass. Health Prefect",
+                    img:"/img/collegeimages/fakunle_esther.JPG"
+                },
+                {
+                    name:"Hunje Sesede",
+                    position:"Chapel Prefect (girl)",
                     img:"/img/collegeimages/leader1.jpeg"
                 },
                 {
-                    name:"leader 2",
-                    position:"Head of Finance",
+                    name:"Ayodele-Peters Charles",
+                    position:"Ass. Head Boy",
                     img:"/img/collegeimages/leader2.jpeg"
                 },
                 {
-                    name:"leader 3",
-                    position:"Head of Justice",
+                    name:"Osifowora Abolaji",
+                    position:"House Captain (Red House)",
                     img:"/img/collegeimages/leader3.jpeg"
                 },
                 {
-                    name:"leader 4",
+                    name:"Gbadebo Sultan",
                     position:"Library Prefect",
                     img:"/img/collegeimages/leader4.jpeg"
                 },
                 {
-                    name:"leader 5",
-                    position:"Hostel Prefect",
+                    name:"Agbai Angel",
+                    position:"Hostel Prefect (Girl)",
                     img:"/img/collegeimages/leader5.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Yussuf Fatai",
+                    position:"Ass. Sports Prefect",
                     img:"/img/collegeimages/leader6.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Sports Prefect",
+                    name:"Afolabi Kingsley",
+                    position:"Sports Prefect(Boy)",
                     img:"/img/collegeimages/leader7.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Okeugo-Kenneth Isaac",
+                    position:"Ass. Labour Precfect",
                     img:"/img/collegeimages/leader8.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Aina Olanrewaju",
+                    position:"Food Prefect",
                     img:"/img/collegeimages/leader9.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Odia Praise",
+                    position:"Laboratory Prefect",
                     img:"/img/collegeimages/leader10.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Osemeke Faith",
+                    position:"Class Captain",
                     img:"/img/collegeimages/leader11.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Alowonle Adegbenga",
+                    position:"House Captain (green house)",
                     img:"/img/collegeimages/leader12.jpeg"
                 },
                 {
-                    name:"leader 1",
-                    position:"Head Teacher",
+                    name:"Omamogho Efemena",
+                    position:"Social Prefect(Boy)",
                     img:"/img/collegeimages/leader13.jpeg"
                 },
                 {
-                    name:"leader 2",
-                    position:"Head of Finance",
+                    name:"Adeniyi Adeoluwa",
+                    position:"Hostel Prefect(Boy)",
                     img:"/img/collegeimages/leader14.jpeg"
                 },
                 {
-                    name:"leader 3",
-                    position:"Head of Justice",
+                    name:"Femi Josephine",
+                    position:"Labour Prefect",
                     img:"/img/collegeimages/leader15.jpeg"
                 },
                 {
-                    name:"leader 4",
-                    position:"Arts & Culture",
+                    name:"Olorunfemi Esther",
+                    position:"Health Prefect(Girl)",
                     img:"/img/collegeimages/leader16.jpeg"
                 },
                 {
-                    name:"leader 5",
-                    position:"Arts & Culture",
+                    name:"Ajadi Oyindamola",
+                    position:"House Captain (Blue House)",
                     img:"/img/collegeimages/leader17.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Oveno Glory",
+                    position:"House Captain (Yello House)",
                     img:"/img/collegeimages/leader18.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Ola-Balogun Foladara",
+                    position:"Ass. Head Girl",
                     img:"/img/collegeimages/leader19.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Gbadebo Mubarak",
+                    position:"Class Captain",
                     img:"/img/collegeimages/leader20.jpeg"
                 },
                 {
-                    name:"leader ",
-                    position:"Arts & Culture",
+                    name:"Osemeke Faith",
+                    position:"Class Captain",
                     img:"/img/collegeimages/leader21.jpeg"
                 },
+                {
+                    name:"Fella Fiyinfoluwa",
+                    position:"Ass. Social Prefect",
+                    img:"/img/collegeimages/fela.jpg"
+                }
 
             ]
         }

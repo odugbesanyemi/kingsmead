@@ -9,17 +9,17 @@
       <p class="border-l h-5 max-md:hidden"></p>
       <div class="">
         <p class="text-slate-600 ">PHONE</p>
-        <p class="font-semibold ">(+234) 01 906 0000</p>
+        <p class="font-semibold ">(+234)+234 906 048 3704</p>
       </div>
       <p class="border-l h-5 max-md:hidden"></p>
       <div class="group relative">
         <span
           class="group-hover:before:absolute group-hover:before:inset-0 group-hover:before:w-full before:w-0 group-hover:before:bg-blue-100 group-hover:before:-z-10"></span>
-        <p
-          class="flex gap-1 max-md:p-2 p-2 px-3 text-sm rounded items-center bg-transparent border font-semibold border-blue-300/50 z-10 ">
+        <a href="https://portal.kingsmeadschools.org.ng"
+          class=" text-md flex items-center gap-2 hover:outline hover:outline-1 p-2 px-4 rounded hover:text-white hover:bg-blue-900 transition-all">
           Student Portal
-          <PlayIcon class="text-blue-400 w-5 " />
-        </p>
+          <i class="fi fi-ss-circle-user m-0 align-middle flex text-lg"></i>
+        </a>
       </div>
     </div>
   </nav>
@@ -30,9 +30,7 @@
   <footerComponentVue class="" />
 </template>
 
-<style scoped>
-
-</style>
+<style scoped></style>
 <script>
 import { RouterView } from 'vue-router'
 import NavbarComponentVue from '../components/HomeViewNavbarComponent.vue';

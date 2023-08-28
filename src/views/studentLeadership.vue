@@ -4,11 +4,10 @@
             :img-name="headerImg" />
         <div class="page-content">
             <div class="bg-blue-50  py-10 md:py-20">
-                <div class="max-w-7xl mx-auto max-md:p-2 sm:px-10">
-                    <div class="bg-white max-md:p-5 p-10">
+                <div class="max-w-6xl mx-auto max-md:p-2 sm:px-10">
+                    <div class="bg-white max-md:p-5 p-10 rounded-xl">
                         <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-5 text-center">Embracing the power of student voice</h1>
-                        <hr>
-                        <div class="my-5">
+                        <div class="my-5 overflow-hidden rounded-lg">
                             <img src="../assets/images/student-leadership.jpeg" alt="">
                         </div>
                         <div class="text-lg max-md:text-md text-slate-600 mb-5">

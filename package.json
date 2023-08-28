@@ -9,6 +9,7 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "@flaticon/flaticon-uicons": "^2.1.0",
     "@fullcalendar/core": "^6.0.2",
     "@fullcalendar/daygrid": "^6.0.2",
     "@fullcalendar/interaction": "^6.0.2",
@@ -26,6 +27,7 @@
     "vue": "^3.2.45",
     "vue-carousel": "^0.18.0",
     "vue-gallery-slideshow": "^1.5.2",
+    "vue-gtag": "^2.0.1",
     "vue-light-gallery": "^1.0.1",
     "vue-router": "^4.1.6",
     "vue-scroll-fixed-navbar": "^0.1.5",
@@ -33,6 +35,7 @@
     "vue3-carousel": "^0.2.9"
   },
   "devDependencies": {
+    "@iconify/vue": "^4.1.1",
     "@rushstack/eslint-patch": "^1.1.4",
     "@vitejs/plugin-vue": "^3.2.0",
     "@vue/eslint-config-prettier": "^7.0.0",

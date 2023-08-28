@@ -32,7 +32,7 @@
                     </ul>
 
                     <h3 class="mt-5">For more information about KINGMEAD Admissions please contact the Admissions
-                        Officer at <button class="text-red-700">admission@Kingsmead.edu.ng</button></h3>
+                        Officer at <button class="text-red-700">admissions@Kingsmead.edu.ng</button></h3>
                 </div>
             </div>
             <sidebar/>

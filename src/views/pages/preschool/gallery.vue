@@ -25,9 +25,9 @@
                 <router-link to="/schools/preschool/gallery" class="text-slate-400">Gallery</router-link>
             </p>
             <div class="max-w-6xl mx-auto bg-white md:p-20 p-5 text-lg text-slate-600">
-                <div class="">
+                <div class="relative">
                     <viewer :images="images" class="grid grid-cols-2 md:grid-cols-4 gap-5">
-                        <img v-for="src,i in images" :key="i" :src="src" class="border h-full object-cover">
+                        <img v-for="src,i in images" :key="i" :src="src" class="border w-full h-full object-cover">
                     </viewer>
                 </div>
             </div>
@@ -55,6 +55,10 @@ export default {
                 '/img/preschoolimages/DSC_0566.jpg',
                 '/img/preschoolimages/DSC_0568.jpg',
                 '/img/preschoolimages/DSC_0586.jpg',
+                '/img/preschoolimages/preschool_slide1.JPG',
+                '/img/preschoolimages/preschool_slide2.JPG',
+                '/img/preschoolimages/preschool_slide3.JPG',
+                '/img/preschoolimages/preschool_slide4.JPG',
             ]
         }
     }

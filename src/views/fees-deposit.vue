@@ -32,13 +32,39 @@
                                     <th class="py-2 border-b border">Account Name</th>
                                     <th class="py-2 border-b border">Account Number</th>
                                     <th class="py-2 border-b border">Bank Name</th>
+                                    <th class="py-2 border-b border">Purpose</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 <tr class="text-slate-500 text-center hover:bg-slate-50">
                                     <td class="py-2 border-b">Kingsmead College</td>
-                                    <td class="py-2 border-b">4781370012</td>
-                                    <td class="py-2 border-b">First Bank of Nigeria</td>
+                                    <td class="py-2 border-b">1015243675</td>
+                                    <td class="py-2 border-b">Zenith Bank Plc</td>
+                                    <td class="py-2 border-b">Tuition</td>
+                                </tr>
+                                <tr class="text-slate-500 text-center hover:bg-slate-50">
+                                    <td class="py-2 border-b">Kingsmead College</td>
+                                    <td class="py-2 border-b">1014838643</td>
+                                    <td class="py-2 border-b">Zenith Bank Plc</td>
+                                    <td class="py-2 border-b">Transportation</td>
+                                </tr>
+                                <tr class="text-slate-500 text-center hover:bg-slate-50">
+                                    <td class="py-2 border-b">Kingsmead College</td>
+                                    <td class="py-2 border-b">1014613284</td>
+                                    <td class="py-2 border-b">Zenith Bank Plc</td>
+                                    <td class="py-2 border-b">Lunch / Hostel</td>
+                                </tr>
+                                <tr class="text-slate-500 text-center hover:bg-slate-50">
+                                    <td class="py-2 border-b">Kingsmead College</td>
+                                    <td class="py-2 border-b">1015243682</td>
+                                    <td class="py-2 border-b">Zenith Bank Plc</td>
+                                    <td class="py-2 border-b">Uniform</td>
+                                </tr>
+                                <tr class="text-slate-500 text-center hover:bg-slate-50">
+                                    <td class="py-2 border-b">Kingsmead College</td>
+                                    <td class="py-2 border-b">1014613277</td>
+                                    <td class="py-2 border-b">Zenith Bank Plc</td>
+                                    <td class="py-2 border-b">Books</td>
                                 </tr>
                             </tbody>
                         </table>                        

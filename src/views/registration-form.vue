@@ -23,7 +23,7 @@
                 <div class="mt-8 text-lg max-md:text-sm text-slate-600">
                     <p class="mb-2">Welcome to Kingsmead Schools! We are delighted that you are considering joining our community.</p>
                     <p class="mb-2">At Kingsmead Schools, we pride ourselves in providing a high-quality education and a supportive learning environment. We are committed to helping our students reach their full potential and to preparing them for success in the world beyond our walls.</p>
-                    <p class="mt-10 font-bold">Ready to apply? <Router-link class="underline" to="/admissions/registration-form">Download Application Form</Router-link></p>
+                    <p class="mt-10 font-bold space-x-3">Ready to apply? <Router-link class="font-normal" to="/admissions/registration-form">Download Application Form</Router-link><Router-link class=" font-normal" to="/admissions/registration-form">Fill Form now</Router-link></p>
                     <p class="mt-5 font-bold">Have more questions? <Router-link class="underline" to="/about/contact-us">Contact us</Router-link></p>
                 </div>
             </div>

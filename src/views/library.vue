@@ -2,11 +2,11 @@
     <div>
         <siteHeader title="Library" prev-page-name="About" curr-page-name="Library" :img-name="headerImg" />
         <div class="page-content">
-            <div class="bg-blue-50  py-10 md:py-32">
-                <div class="max-w-7xl mx-auto max-md:p-5 sm:px-10">
-                    <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-5 text-center">Welcome to the school Library !</h1>
-                    <div class="md:flex gap-8 items-center">
-                        <div class="libInt md:w-2/5 md:text-lg text-slate-600 text-justify max-md:order-last" >
+            <div class="bg-blue-50/50  py-10 md:py-24">
+                <div class="max-w-6xl mx-auto max-md:p-5 sm:px-10">
+                    <h1 class="text-5xl max-md:text-3xl text-blue-800 mb-10 text-center">Welcome to the school Library !</h1>
+                    <div class="md:flex gap-8 items-start">
+                        <div class="libInt md:w-3/5 md:text-lg text-slate-600 text-justify max-md:order-last" >
                             <p class="mb-5">Our library is a place where students can come to find books, do research,
                                 work on projects, and relax with a good book. We have a wide selection of fiction and
                                 nonfiction books for all ages, as well as magazines, newspapers, and online resources.
@@ -22,8 +22,8 @@
                                 resources it has to offer. Happy reading!</p>
 
                         </div>
-                        <div class="img md:w-3/5 max-md:order-first">
-                            <img src="../assets/images/DSC_0633.jpg" alt="">
+                        <div class="img md:w-3/5 max-md:order-first h-full rounded-xl overflow-hidden">
+                            <img src="../assets/images/DSC_0633.jpg" class="h-full" alt="">
                         </div>
                     </div>
                 </div>

@@ -14,7 +14,7 @@
                     </label>
                 </div>
                 <div class="input-element py-2">
-                    <label for="" class="py-2 border">
+                    <label for="" class="py-2">
                         Graduation Year:
                         <input  class="p-3 w-full outline-none" v-model="contact.graduation_year" placeholder="2020"/>
                     </label>
@@ -116,10 +116,22 @@
             </form>
         </div>
     </div>
+    <loadingComponent v-if="isLoading"/>
+    <successPrompt
+      title="Success"
+      description="We will get back to you as soon as possible"
+      @close="successPrompt = !successPrompt"
+      v-if="successPrompt"
+    />
+    <failedPrompt title="Failed" description="Sorry! the operation failed. Try again. " @close="failedPrompt = !failedPrompt" v-if="failedPrompt"/>
 </template>
 <script>
+    import successPrompt from '../components/successPrompt.vue'
+    import failedPrompt from '../components/failedPrompt.vue'
+    import loadingComponent from '../components/loadingComponent.vue'
 import axios from 'axios'
 export default {
+    components:{successPrompt,failedPrompt,loadingComponent},
     data(){
         return{
             contact:{
@@ -134,17 +146,29 @@ export default {
                 employment_offers:"",
                 merchandise_sale:"",
                 social_media_follower:""
-            }
+            },
+            successPrompt:false,
+            failedPrompt:false,
+            isLoading:false,
         }
     },
     methods:{
+        clearInputs(){
+            for (let key in this.contact){
+                this.contact[key] = "";
+            }
+        },
         async submit(){
+            this.isLoading = true
             try{
                 const response = await axios.post(`${import.meta.env.VITE_SERVER_API_URL}/forms/form_alumni_profile`,this.contact)
-                alert("Successfully Sumitted Results, We will get back to you as soon as possible.")
+                this.clearInputs()
+                this.successPrompt = true
+                this.isLoading = false
             }
             catch(err){
-                console.log(err)
+                this.failedPrompt = true
+                this.isLoading = false
             }
         }
     }
